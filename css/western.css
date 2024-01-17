@@ -15,6 +15,10 @@
 body{
   font-family: var(--primary-font);
   color: #212121;
+  overflow-x: hidden;
+}
+.f-primary{
+  font-family: var(--primary-font);
 }
 .f-secondary{
   font-family: var(--secondary-font);
@@ -106,8 +110,14 @@ body{
 .nav-pills .nav-link {
   color: #333;
 }
+.leaves-1 {
+  top: -210px;
+  /* left: -160px; */
+  right: -240px;
+}
 .leaves-2 {
-  top: 100px;
+  top: 150px;
+  left: -160px;
 }
 .leaves-3 {
   bottom: -190px;
@@ -165,7 +175,9 @@ body{
   }
 }
 
-
+.decoration{
+  pointer-events: none;
+}
 
 #history{
   border-top: 18px solid var(--c-primary);
@@ -173,6 +185,8 @@ body{
 #photos img{
   max-height: 525px;
   width: auto;
+  height: 70vh;
+  object-fit: cover;
 }
 @media screen and (max-width: 900px) {
   #photos img{
