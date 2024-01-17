@@ -1,16 +1,26 @@
 @import "_custom.css";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oooh+Baby&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-.f-baby {
-  font-family: 'Oooh Baby', cursive;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Noto+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital@0;1&display=swap');
+
+:root{
+  --c-primary: #D7B7A2;
+  --c-primary-light: #F5D09C;
+  --c-secondary: #424242;
+  --black: #333;
+  --black-2: #707070;
+  --primary-font: 'Montserrat', sans-serif;
+  --secondary-font: 'Noto Serif', serif;
+  --terciary-font: 'Noto Serif', serif;
 }
-.f-montserrat {
-  font-family: 'Montserrat', sans-serif;
+body{
+  font-family: var(--primary-font);
+  color: #212121;
 }
-.f-playfair {
-  font-family: 'Playfair Display', serif;
+.f-secondary{
+  font-family: var(--secondary-font);
 }
-.f-playfair-sc {
-  font-family: 'Playfair Display SC', serif;
+.f-terciary{
+  font-family: var(--terciary-font);
 }
 .cut-1 {
   background: url('http://eventdate.test/img/templates/chic/cut-1.svg') no-repeat center bottom;
@@ -27,6 +37,24 @@
   background-size: 100%;
   height: 171px;
 }
+.c-primary{
+  color: var(--c-primary) !important;
+}
+.c-secondary{
+  color: var(--c-secondary) !important;
+}
+.bg-dark{
+  background-color: var(--black);
+}
+.bg-primary{
+  background-color: var(--c-primary) !important;
+}
+.bg-primary-light{
+  background-color: var(--c-primary-light) !important;
+}
+.bg-secondary{
+  background-color: var(--c-secondary) !important;
+}
 .bg-green {
   background-color: #7C8F90;
 }
@@ -34,7 +62,7 @@
   background-color: #ced3d1;
 }
 .bg-green-light {
-  background-color: #B9C3BF;
+  background-color: #8C8C8C;
 }
 .bg-green-dark {
   background-color: #8C8C8C;
@@ -72,8 +100,8 @@
   right: 0;
 }
 .nav-pills .nav-link.active {
-  background: #212529;
-  color: #FFF;
+  background: #fff;
+  color: #333333;
 }
 .nav-pills .nav-link {
   color: #333;
@@ -134,5 +162,21 @@
   }
   .cut-3 {
     background-size: auto 100%;
+  }
+}
+
+
+
+#history{
+  border-top: 18px solid var(--c-primary);
+}
+#photos img{
+  max-height: 525px;
+  width: auto;
+}
+@media screen and (max-width: 900px) {
+  #photos img{
+    max-height: 300px;
+    width: auto;
   }
 }
