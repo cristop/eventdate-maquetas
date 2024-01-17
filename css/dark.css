@@ -1,0 +1,114 @@
+@import "_custom.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+.text-gold {
+  color: #C19E6B;
+}
+.bg-gold {
+  background-color: #C19E6B;
+}
+.arrowCta {
+  display: block;
+  height: 13px;
+  width: 13px;
+  border: 11px solid transparent;
+  transform: rotate(45deg);
+  position: relative;
+  margin: 3rem auto 0;
+}
+.arrowCta:after, .arrowCta:before {
+  content: "";
+  display: block;
+  height: inherit;
+  width: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.arrowCta:after {
+  border-bottom: 3px solid #C19E6B;
+  border-right: 3px solid #C19E6B;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  animation: bottom-arrow 1.65s infinite;
+}
+.arrowCta:before {
+  top: 0;
+  left: 0;
+  border-bottom: 3px solid #C19E6B;
+  border-right: 3px solid #C19E6B;
+  animation: top-arrow 1.65s infinite;
+}
+@keyframes bottom-arrow {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  45% {
+    opacity: 0;
+    transform: translate(12px, 12px);
+  }
+  46% {
+    opacity: 0;
+    transform: translate(-16px, -16px);
+  }
+  90% {
+    opacity: 1;
+    transform: translate(-6px, -6px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-6px, -6px);
+  }
+}
+@keyframes top-arrow {
+  0% {
+    transform: translate(-6px, -6px);
+  }
+  35% {
+    transform: translate(0, 0);
+  }
+  90% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+.tns-controls {
+  left: 0;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+.tns-controls [data-controls="prev"], .tns-controls [data-controls="next"] {
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: 0;
+  height: 24px;
+  padding: 0;
+  position: absolute;
+  width: 24px;
+}
+.tns-controls [data-controls="prev"] {
+  background-image: url('https://emidica.com/img/icos/ico-arrow-prev.svg');
+}
+.tns-controls [data-controls="next"] {
+  background-image: url('https://emidica.com/img/icos/ico-arrow-next.svg');
+  right: 0;
+}
+.accordion-button::after {
+  filter: grayscale(100%) brightness(10) invert(100%);
+}
+.accordion-button:not(.collapsed)::after {
+  filter: grayscale(100%) brightness(10);
+}
+.accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed {
+  box-shadow: none !important;
+}

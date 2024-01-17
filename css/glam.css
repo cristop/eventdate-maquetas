@@ -1,0 +1,96 @@
+@import "_custom.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Parisienne&display=swap');
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+.f-parisienne {
+  font-family: 'Parisienne', serif;
+}
+.bg-red {
+  background-color: #F66;
+}
+.bg-pink {
+  background-color: #FF9493;
+}
+.text-red {
+  color: #F66;
+}
+.accordion-button:not(.collapsed) {
+  background: white;
+}
+.accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed {
+  box-shadow: none !important;
+}
+.tns-controls {
+  left: 0;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+.tns-controls [data-controls="prev"], .tns-controls [data-controls="next"] {
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: 0;
+  height: 24px;
+  padding: 0;
+  position: absolute;
+  width: 24px;
+}
+.tns-controls [data-controls="prev"] {
+  background-image: url('https://emidica.com/img/icos/ico-arrow-prev.svg');
+}
+.tns-controls [data-controls="next"] {
+  background-image: url('https://emidica.com/img/icos/ico-arrow-next.svg');
+  right: 0;
+}
+.nav-pills .nav-link.active {
+  background: #FFF;
+  color: #000;
+}
+.nav-pills .nav-link {
+  color: #FFF;
+}
+#countdown2 div {
+  color: white;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 1;
+}
+#countdown2 div .nmbr {
+  background: #FF9493;
+  border-radius: 50%;
+  display: block;
+  height: 120px;
+  line-height: 110px;
+  text-align: center;
+  width: 120px;
+}
+#countdown2 div .txt {
+  font-family: 'Parisienne', serif;
+  font-size: 32px;
+  color: black;
+}
+@media (max-width: 767px) {
+  #countdown2 div {
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1;
+    margin: 0 10px;
+  }
+  #countdown2 div .nmbr {
+    background: #FF9493;
+    border-radius: 50%;
+    display: block;
+    height: 70px;
+    line-height: 65px;
+    text-align: center;
+    width: 70px;
+  }
+  #countdown2 div .txt {
+    font-family: 'Parisienne', serif;
+    font-size: 18px;
+    color: black;
+  }
+}

@@ -1,0 +1,108 @@
+@import "_custom.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ms+Madi&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.f-madi {
+  font-family: 'Ms Madi', cursive;
+}
+.f-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+.f-playfair {
+  font-family: 'Playfair Display', serif;
+}
+.f-playfair-sc {
+  font-family: 'Playfair Display SC', serif;
+}
+.bg-brown-dark {
+  background-color: #AEA6A0;
+}
+.bg-brown {
+  background-color: #ECE7E3;
+}
+.bg-brown-full {
+  background-color: #AE4F10;
+}
+.border-brown-full {
+  border-color: #AE4F10 !important;
+}
+.text-red {
+  color: #F66;
+}
+.accordion-button:not(.collapsed) {
+  background: white;
+}
+.accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed {
+  box-shadow: none !important;
+}
+.tns-controls {
+  left: 0;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+.tns-controls [data-controls="prev"], .tns-controls [data-controls="next"] {
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: 0;
+  height: 24px;
+  padding: 0;
+  position: absolute;
+  width: 24px;
+}
+.tns-controls [data-controls="prev"] {
+  background-image: url('https://emidica.com/img/icos/ico-arrow-prev.svg');
+}
+.tns-controls [data-controls="next"] {
+  background-image: url('https://emidica.com/img/icos/ico-arrow-next.svg');
+  right: 0;
+}
+.nav-pills .nav-link.active {
+  background: #AE4F10;
+  color: #FFF;
+}
+.nav-pills .nav-link {
+  color: #333;
+}
+.leaves-2 {
+  bottom: -300px;
+}
+.leaves-3 {
+  bottom: -430px;
+}
+.leaves-6 {
+  top: -230px;
+}
+.leaves-7 {
+  top: -260px;
+}
+@media (max-width: 767px) {
+  .leaves-1 {
+    width: 330px;
+  }
+  .leaves-2 {
+    bottom: -140px;
+    width: 290px;
+  }
+  .leaves-3 {
+    display: none;
+  }
+  .leaves-4 {
+    margin-right: -23px;
+    top: 130px;
+    width: 200px;
+  }
+  .leaves-5 {
+    margin-left: -70px;
+    top: -50px;
+    width: 200px;
+  }
+  .leaves-6 {
+    margin-right: -15px;
+    top: -130px;
+    width: 200px;
+  }
+  .leaves-7 {
+    top: -130px;
+    width: 200px;
+  }
+}

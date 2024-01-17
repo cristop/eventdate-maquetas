@@ -1,0 +1,131 @@
+@import "_custom.css";
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+* {
+  font-family: 'Quicksand', sans-serif;
+}
+.accordion-button:not(.collapsed) {
+  background: white;
+}
+.accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed {
+  box-shadow: none !important;
+}
+.bg-green {
+  background-color: #C7D7D0 !important;
+}
+.bg-green-light {
+  background-color: #C7D7D0 !important;
+}
+.bg-green-light-2 {
+  background-color: #DFEBE6 !important;
+}
+.bg-green-dark {
+  background-color: #979797 !important;
+}
+.border-green {
+  border-color: #C7D7D0 !important;
+}
+.text-gold {
+  color: #AE9461;
+}
+.cut-1 {
+  background: url('http://eventdate.test/img/templates/aqua/cut-1.svg') no-repeat center bottom;
+  background-size: 100%;
+  height: 308px;
+}
+.cut-2 {
+  background: url('http://eventdate.test/img/templates/aqua/cut-2.svg') no-repeat center bottom;
+  background-size: 100%;
+  height: 190px;
+}
+.cut-3 {
+  background: url('http://eventdate.test/img/templates/aqua/cut-3.svg') no-repeat center top;
+  background-size: 100%;
+  height: 118px;
+}
+.cut-4 {
+  background: url('http://eventdate.test/img/templates/aqua/cut-4.svg') no-repeat center bottom;
+  background-size: 100%;
+  height: 161px;
+}
+.cut-5 {
+  background: url('http://eventdate.test/img/templates/aqua/cut-5.svg') no-repeat center top;
+  background-size: 100%;
+  height: 232px;
+}
+.img-place {
+  width: 600px;
+}
+.nav-pills .nav-link.active {
+  background: #FFF;
+  color: #333;
+}
+.nav-pills .nav-link {
+  color: #FFF;
+}
+.leaves-2 {
+  margin-bottom: -145px;
+  z-index: 2;
+}
+.leaves-3 {
+  margin-top: 100px;
+}
+.leaves-4 {
+  margin-bottom: -405px;
+}
+.leaves-5 {
+  margin-bottom: -220px;
+}
+.tns-controls {
+  left: 0;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+.tns-controls [data-controls="prev"], .tns-controls [data-controls="next"] {
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: 0;
+  height: 24px;
+  padding: 0;
+  position: absolute;
+  width: 24px;
+}
+.tns-controls [data-controls="prev"] {
+  background-image: url('https://emidica.com/img/icos/ico-arrow-prev.svg');
+}
+.tns-controls [data-controls="next"] {
+  background-image: url('https://emidica.com/img/icos/ico-arrow-next.svg');
+  right: 0;
+}
+@media (max-width: 767px) {
+  .leaves-1 {
+    width: 180px;
+  }
+  .cut-1, .cut-2, .cut-3, .cut-4, .cut-5 {
+    background-size: auto 100%;
+  }
+  .leaves-2 {
+    margin-bottom: -45px;
+    width: 210px;
+  }
+  .leaves-3 {
+    margin-top: 230px;
+    width: 180px;
+  }
+  .img-place {
+    width: auto;
+  }
+  .leaves-4 {
+    margin-bottom: -207px;
+    width: 180px;
+  }
+  .leaves-5 {
+    margin-bottom: -185px;
+    width: 180px;
+  }
+  .leaves-6 {
+    margin-bottom: -50px;
+    width: 120px;
+  }
+}
