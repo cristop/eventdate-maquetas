@@ -1,0 +1,166 @@
+@import "_custom.css";
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&family=Montserrat&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+  }
+
+.container{
+    max-width: 1140px;
+}
+
+.bg-aqua{
+    background-color: #a9c4ba;
+}
+
+.bg-pink{
+    background-color: #DC8272;
+}
+
+.bg-grey{
+    background-color: #f2f2f2;
+}
+
+.text-pink{
+    color: #DC8272;
+}
+
+.title{
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 20px;
+}
+
+.bg-img h3{
+    font-size: 100px;
+    font-family: 'Meow Script', cursive;
+    color: #E8C1BA;
+    font-weight: 300;
+}
+
+.bg-img h1{
+    font-size: 20px;
+}
+
+.phrase p{
+    font-size: 16px;
+}
+
+.date .column-left .bg p{
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+}
+
+.date .column-left .bg{
+    background-color: #F2F2F2;
+    padding: 0px 30px;
+    border-radius: 100px;
+    display: inline-flex;
+}
+
+.line::after{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #e8c1ba;
+    margin: 2rem auto;
+
+}
+
+
+.date .address{
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 20px;
+}
+
+.date a{
+    padding: 7px 24px;
+}
+
+.form{
+    min-height: 600px;
+    display: flex;
+    align-items: center
+}
+
+.gold{
+    min-height: 76px;
+}
+
+.hash, .dress-code, .gift{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.hash .btn, .dress-code .btn{
+    width: auto;
+    margin: 0 auto;
+}
+
+.gift .bg-grey{
+    padding: 6rem;
+    border-radius: 60px;
+}
+
+.gift h2{
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.gift .tab-content{
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.gift .tab-content ul{
+    list-style: none;
+    text-align: left;
+}
+
+.confirmed{
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+}
+
+.confirmed h2{
+    font-family: 'Meow Script', cursive;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.confirmed img{
+    opacity: 0.5;
+    height: 100%;
+}
+
+.confirmed .column-right {
+    border-radius: 100px;
+    padding: 50px;
+}
+
+.confirmed .column-right .form-check-label{
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.confirmed .column-right .form-check-input{
+    /* width: 13px;
+    height: 13px; */
+}
+
+.confirmed .column-right .form-check{}
+
+.confirmed .column-left .texto{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
