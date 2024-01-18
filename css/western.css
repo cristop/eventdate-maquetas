@@ -113,26 +113,30 @@ body{
 .leaves-1 {
   top: -210px;
   /* left: -160px; */
-  right: -240px;
+  right: -16vw;
 }
 .leaves-2 {
-  top: 150px;
-  left: -160px;
+  top: 30vh;
+  left: -11vw;
 }
 .leaves-3 {
-  bottom: -190px;
+  bottom: -460px;
+  right: -19vw;
 }
 .leaves-4 {
   bottom: -360px;
 }
 .leaves-5 {
-  top: -500px;
+  top: -400px;
+  left: -18vw;
 }
 .leaves-6 {
-  top: -390px;
+  top: 440px;
+  right: -18vw;
 }
 .leaves-7 {
-  bottom: -200px;
+  top: -530px;
+  left: -17vw;
 }
 @media (max-width: 767px) {
   .leaves-1 {
