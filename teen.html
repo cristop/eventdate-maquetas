@@ -30,14 +30,14 @@
 		</div>
 
 		<section id="phrase" class="bg-aqua text-center py-5 position-relative">
-			<div class="container text-center py-5 fs-21 text-white">
+			<div class="container text-center py-5 text-white">
 				<p class="px-4 px-sm-0"><em>A todos ustedes que estuvieron siempre a mi lado, que llenaron de felicidad mis días, quiero invitarlos a compartir la magia de una noche que sin duda será única e inolvidable.</em></p>
 			</div>
 		</section>
 
 		<section class="date">
-			<div class="container text-center py-5 position-relative d-flex align-items-center">
-				<div class="row align-items-center">
+			<div class="container text-center py-5 my-5 position-relative">
+				<div class="row align-items-center justify-content-between">
 					<div class="col-md-6 column-left">
 						<div class="bg"><p>4 SEPTIEMBRE, 21:00 HS</p></div>
 
@@ -48,7 +48,9 @@
 						<div><a class="btn bg-aqua text-white text-uppercase fw-500 rounded-5" href="#">ver ubicación</a></div>
 					</div>
 					<div class="col-md-6 column-right">
-						<img alt="" src="img/templates/teen/teen-salon-01.jpg" />
+						<div class="img">
+							<img alt="" width="100%" height="100%" src="img/templates/teen/teen-salon-01.jpg" />
+						</div>
 					</div>
 				</div>
 			</div>
@@ -61,22 +63,22 @@
 					<p class="text">sugerí las canciones que pensás que no pueden faltar en mi fiesta</p>
 					<div>
 						<form class="" id="" action="">
-							<div class="d-flex align-items-center justify-content-center">
+							<div class="d-flex align-items-center gap-2 justify-content-center">
 								<div>
 									<label class="d-block" for="">Nombre de la canción*</label>
-									<input type="text">
+									<input class="border-0 py-1 px-2 mt-2 bg-grey" type="text">
 								</div>
 								<div>
 									<label class="d-block" for="">Autor*</label>
-									<input type="text">
+									<input class="border-0 py-1 px-2 mt-2 bg-grey" type="text">
 								</div>
 								<div>
 									<label class="d-block" for="">Link de Spotify, Youtube, etc</label>
-									<input type="text">
+									<input class="border-0 py-1 px-2 mt-2 bg-grey" type="text">
 								</div>
 							</div>
-							<div>
-								<button type="button">Enviar</button>
+							<div class="mt-3 text-end">
+								<a href="#" class="btn bg-aqua text-white text-uppercase fw-500 rounded-5">Enviar</a>
 							</div>
 						</form>
 					</div>
@@ -95,9 +97,10 @@
 						<img src="img/templates/teen/icon-01.png" width="100"  alt="">
 					</div>
 					<h2 class="title">Durante el cumpleaños utiliza el hashtag</h2>
-					<div class="bg">
+					<div class="bg-grey">
 						<p>#MIS15LUDMILA</p>
 					</div>
+					<p></p>
 					<a class="btn bg-aqua text-white text-uppercase fw-500 rounded-5" href="#">ver en instagram</a>
 				</div>
 			</div>
@@ -126,7 +129,7 @@
 						<img src="img/templates/teen/icon-02.png" width="100" alt="">
 					</div>
 					<h2 class="title">Dress Code</h2>
-					<div class="bg">
+					<div class="bg-grey">
 						<p>Semi-Formal</p>
 					</div>
 					<p>UNA AYUDA PARA TU VESTUARIO</p>
@@ -143,10 +146,15 @@
 
 					<div class="tab-content">
 						<div class="tab-pane fade show active" id="pills-info" role="tabpanel" aria-labelledby="pills-info-tab" tabindex="0">
-							<div>
-								<a href="#" class="datos btn bg-aqua text-white text-uppercase fw-500 rounded-5">DATOS BANCARIOS</a>
+							<div class="d-flex">
+								<a href="#" class="btn align-items-center gap-3 bg-aqua text-white text-uppercase fw-500 rounded-5 d-flex">
+									<div class="datos">DATOS BANCARIOS</div>
+									<div class="icon">
+										<img src="img/templates/teen/PLUS.svg" width="17" height="17" alt="">
+									</div>
+								</a>
 							</div>
-							<div class="py-4 fs-sm-16 fw-500">
+							<div class="py-4 fs-sm-16 fw-400">
 								<ul>
 									<li>TITULAR:</li>
 									<li>CBU:</li>
@@ -186,11 +194,22 @@
 								</div>
 	
 
-								<textarea class="form-control  form-control-lg fs-sm-24 fs-18 rounded-5 border-0 p-4 mb-3" rows="4" placeholder="Ingrese algún dato importante..."></textarea>
-								<input type="text" class="form-control  form-control-lg py-3 fs-sm-24 fs-18 px-4 border-0 rounded-pill mb-3" name="" placeholder="Nombre completo">
-								<button class="border-0  d-inline-block text-white rounded-4 px-5 py-3 lh-1 fs-sm-21 fs-18 fw-700 text-uppercase mx-auto d-block">Confirmar</button>
+								<textarea class="form-control  form-control-lg fs-sm-24 fs-18 rounded-5 border-0 bg-grey p-4 mb-3" rows="4" placeholder="Ingrese algún dato importante..."></textarea>
+								<input type="text" class="form-control bg-grey  form-control-lg py-3 fs-sm-24 fs-18 px-4 border-0 rounded-pill mb-3" name="" placeholder="Nombre completo">
+								<button class="btn bg-aqua text-white text-uppercase fw-500 rounded-5 mx-auto d-block">Confirmar</button>
 							</div>
 						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="footer py-4">
+			<div class="container">
+				<div class="d-flex gap-2 align-items-center justify-content-center">
+					<h2 class="heading-title text-white mb-0 fw-500">Invitación creada con</h2>
+					<div class="img">
+						<img src="img/templates/teen/logo-evendate.png" width="100" height="20" alt="">
 					</div>
 				</div>
 			</div>

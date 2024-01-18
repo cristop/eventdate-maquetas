@@ -78,14 +78,32 @@
     line-height: 20px;
 }
 
+.form .container{
+    max-width: 900px;
+}
+
 .date a{
     padding: 7px 24px;
+}
+
+.date .column-right img{
+    border-radius: 40px 40px 40px 40px;
 }
 
 .form{
     min-height: 600px;
     display: flex;
     align-items: center
+}
+
+.form form .d-flex > div{
+    width: 100%;
+}
+
+
+.form form input{
+    border-radius: 10px;
+    width: 100%;
 }
 
 .gold{
@@ -102,6 +120,22 @@
     margin: 0 auto;
 }
 
+.dress-code .bg-grey, .hash .bg-grey{
+    width: 500px;
+    margin: 0 auto;
+    border-radius: 50px;
+    padding: 15px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.dress-code .bg-grey p, .hash .bg-grey p{
+    font-size: 25px;
+    font-weight: 800;
+    text-transform: capitalize;
+    margin-bottom: 0px;
+}
+
 .gift .bg-grey{
     padding: 6rem;
     border-radius: 60px;
@@ -113,7 +147,7 @@
 }
 
 .gift .tab-content{
-    max-width: 200px;
+    max-width: 250px;
     margin: 0 auto;
 }
 
@@ -157,10 +191,90 @@
 
 .confirmed .column-right .form-check{}
 
+.confirmed .column-right textarea.form-control-lg{
+    min-height: 100px;
+    height: 100px;
+}
+
+.confirmed .column-right textarea.form-control-lg::placeholder, .confirmed .column-right input.form-control::placeholder{
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.confirmed .column-right input.form-control{
+    min-height: auto;
+}
+
+.confirmed .column-right input.form-control, .confirmed .column-right textarea.form-control-lg{
+    padding: 5px 5px 5px 10px!important;
+    margin: 4px 4px 4px 4px;
+    border-radius: 10px 10px 10px 10px!important;
+
+}
+
+
 .confirmed .column-left .texto{
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 1px;
+}
+
+.footer{
+    background-color: #8DCCC5;
+}
+
+.footer .heading-title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+@media (max-width: 567px){
+
+    .date .row{
+        gap: 30px;
+    }
+
+    .form form .d-flex{
+        display: block!important;
+    }
+
+    #phrase{
+        padding: 0px!important;
+    }
+
+    .title{
+        font-size: 16px;
+        letter-spacing: 2px;
+        margin-top: 20px;
+    }
+
+    .dress-code .bg-grey, .hash .bg-grey{
+        padding: 10px 15px;
+    }
+
+    .dress-code .row, .hash .row, .confirmed .row{
+        margin: 10px;
+    }
+
+    .gift .bg-grey{
+        padding: 2rem;
+    }
+
+    .confirmed .column-right{
+        padding: 20px;
+        border-radius: 50px;
+    }
+
+    .hash, .dress-code, .gift{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .bg-img img.leaves-1{
+        display: none;
+    }
+
 }
