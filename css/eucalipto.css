@@ -12,10 +12,13 @@
   --secondary-font: 'Cormorant Garamond', serif;
   --terciary-font: 'Cormorant Garamond', serif;
 }
+::placeholder{
+  color: inherit !important;
+}
 body{
   font-family: var(--primary-font);
   color: #212121;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 .f-primary{
   font-family: var(--primary-font);
@@ -101,10 +104,11 @@ body{
 }
 .tns-controls [data-controls="prev"] {
   background-image: url('https://emidica.com/img/icos/ico-arrow-prev.svg');
+  left: -6px;
 }
 .tns-controls [data-controls="next"] {
   background-image: url('https://emidica.com/img/icos/ico-arrow-next.svg');
-  right: 0;
+  right: -6px;
 }
 .nav-pills .nav-link.active {
   background: #fff;
@@ -113,35 +117,48 @@ body{
 .nav-pills .nav-link {
   color: #333;
 }
-.leaves-1 {
-  top: -210px;
-  /* left: -160px; */
-  right: -16vw;
+[class*="leaves-"]{
+  width: 400px;
+  max-width: 100%;
 }
-.leaves-2 {
-  top: 49vh;
-  left: -11vw;
+.leaves-1,
+.leaves-2{
   width: 480px;
   max-width: 100%;
 }
+.leaves-1 {
+  top: -130px;
+  right: -10vw;  
+}
+.leaves-2 {
+  top: 55vh;
+  left: -170px;
+}
 .leaves-3 {
-  bottom: -460px;
-  right: -19vw;
+  bottom: -200px;
+  right: -190px;
 }
 .leaves-4 {
   bottom: -360px;
 }
 .leaves-5 {
-  top: -400px;
-  left: -18vw;
+  bottom: -150px;
+  left: -181px;
 }
 .leaves-6 {
-  top: 440px;
-  right: -18vw;
+  top: -240px;
+  right: -180px;
 }
 .leaves-7 {
-  top: -530px;
-  left: -17vw;
+  top: -230px;
+  left: -220px;
+}
+.leaves-8 {
+  top: -130px;
+  right: -150px;
+}
+.invert{
+  transform: scaleX(-1);
 }
 @media (max-width: 767px) {
   .leaves-1 {
@@ -201,7 +218,12 @@ body{
 }
 @media screen and (max-width: 900px) {
   #photos img{
-    max-height: 300px;
-    width: auto;
+    max-height: 350px;
+    width: 100%;
+  }
+  #photos #tns2-mw{
+    padding: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
   }
 }

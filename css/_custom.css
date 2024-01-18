@@ -380,4 +380,8 @@ a, a:hover, a:active, a:focus, a:visited {
 	.bg-xs-white {
 		background-color: white !important;
 	}
+
+	.text-center-mobile{
+		text-align: center;
+	}
 }
