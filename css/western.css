@@ -15,7 +15,9 @@
 body{
   font-family: var(--primary-font);
   color: #212121;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+  width: 100vw;
+  touch-action: pan-y;
 }
 .f-primary{
   font-family: var(--primary-font);

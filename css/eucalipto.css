@@ -19,6 +19,8 @@ body{
   font-family: var(--primary-font);
   color: #212121;
   overflow-x: hidden !important;
+  width: 100vw;
+  touch-action: pan-y;
 }
 .f-primary{
   font-family: var(--primary-font);
@@ -162,16 +164,20 @@ body{
 }
 @media (max-width: 767px) {
   .leaves-1 {
-    width: 120px;
+    width: 250px;
+    top: -80px;
+    right: -26vw;
   }
   .leaves-2 {
-    bottom: 0;
+    bottom: -130px;
     top: inherit;
-    width: 220px;
+    width: 250px;
+    left: -100px;
   }
   .leaves-3 {
-    width: 130px;
-    bottom: 100px;
+    width: 250px;
+    bottom: -120px;
+    right: -140px;
   }
   .leaves-4 {
     bottom: -100px;
@@ -179,16 +185,23 @@ body{
     width: 200px;
   }
   .leaves-5 {
-    top: -80px;
-    width: 110px;
+    top: inherit;
+    width: 250px;
+    bottom: -150px;
+    left: -161px;
   }
   .leaves-6 {
-    top: -190px;
-    width: 160px;
+    top: -100px;
+    width: 250px;
+    right: -115px;
   }
   .leaves-7 {
-    bottom: -170px;
-    width: 130px;
+    width: 250px;
+    top: -170px;
+    left: -150px;
+  }
+  .leaves-8{
+    width: 250px;
   }
   .cut-1 {
     background-size: auto 100%;
