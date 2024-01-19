@@ -1,0 +1,245 @@
+@import "_custom.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+*{
+    font-family: 'Playfair Display', serif;
+}
+
+.bg-dark{
+    background-color: #212121;
+}
+
+.text-dark{
+    background-color: #212121;
+}
+
+.bg-grey{
+    background-color: #F6F6F6;
+}
+
+.bg-golden{
+    background: rgb(233,195,90);
+    background: linear-gradient(73deg, rgba(233,195,90,1) 0%, rgba(204,159,45,1) 27%, rgba(249,207,108,1) 62%, rgba(179,128,11,1) 100%);
+}
+
+.titles{
+    font-size: 50px;
+}
+
+.btn{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bg-img h3{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bg-img .leaves-1, .bg-img .leaves-2{
+    top: 6rem;
+    height: 600px;
+}
+
+.btn:hover{
+    opacity: 0.5;
+}
+
+.line::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #FFFFFF;
+    margin: 2rem auto;
+}
+
+
+.diary{
+    background-color: #707070;
+}
+
+.diary .container{
+    max-width: 1000px;
+}
+
+.adress .bg-white{
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 5rem;
+    width: fit-content;
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.161));
+    transform: rotate(358deg);
+}
+
+
+.gallery .bg-white{
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 5rem;
+}
+
+.soong-book input{
+    border: 2px solid #212121;
+}
+
+.soong-book label, .soong-book input, .dress-code p.text, .dress-code .text-white, .album .text-down, .confirmation label, .confirmation p, .confirmation .btn{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.soong-book .d-block > div{
+    text-align: left;
+}
+
+.soong-book .leaves-1{
+    top: 13rem;
+}
+
+.dress-code h2{
+    font-weight: 700;
+}
+
+.dress-code .row .col-md-6 > div{
+    width: 400px;
+}
+
+
+.album .container{
+    max-width: 1000px;
+}
+
+.album .countdown .bg-golden{
+    width: 113px;
+    height: 113px;
+
+}
+
+.confirmation input, .confirmation textarea{
+    border-radius: 0;
+}
+
+.confirmation input::placeholder, .confirmation input, .confirmation textarea, .confirmation textarea::placeholder{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.confirmation .leaves-6{
+    top: 30rem;
+}
+
+@media (max-width: 576px){
+    .bg-img .leaves-1{
+        transform: rotate(90deg);
+        display: none;
+    }
+    .bg-img .leaves-2{
+        top: 0;
+        transform: rotate(90deg);
+        display: none;
+        height: 100%;
+    }
+    .titles{
+        font-size: 37px!important;
+    }
+    .adress{
+        background-color: #F2EFEB!important;
+    }
+    .adress .bg-white{
+        width: auto;
+        margin-bottom: 5rem;
+    }
+    .adress .bg-white img{
+        width: 100%;
+    }
+    .diary  .leaves-1, .leaves-2{
+        height: 225px;
+    }
+    .diary .leaves-1{
+        top: 12rem;
+    }
+    .diary .leaves-2{
+        bottom: -8rem;
+    }
+    .diary .countdown{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-right: 0;
+    }
+    .diary .row.text-center{
+        justify-content: center;
+    }
+    .gallery .my-slider{
+        flex-direction: column;
+        padding: 30px;
+    }
+    .soong-book .leaves-1{
+        height: 180px;
+        top: 1rem;
+    }
+    .soong-book p, .gift p, .album p{
+        font-size: 20px!important;
+        font-weight: 500;
+    }
+    .soong-book label{
+        font-weight: 700;
+        font-size: 18px!important;
+    }
+    .soong-book .h-100{
+        padding-left: 0px!important;
+        padding-right: 0px!important;
+    }
+    .dress-code .row{
+        gap: 50px;
+    }
+    .dress-code .row .col-md-6 > div{
+        width: 100%!important;
+    }
+    .dress-code .row .col-md-6{
+        width: 100%!important;
+    }
+    .dress-code .leaves-2{
+        z-index: 1;
+        top: 24rem;
+    }
+    .dress-code .container{
+        z-index: 2;
+        position: relative;
+    }
+    .gift .leaves-1{
+        height: 180px;
+    }
+    .gift .h-100{
+        padding-left: 10px!important;
+        padding-right: 10px!important;
+    }
+    .album{
+        padding-top: 100px!important;
+    }
+    .album .leaves-2{
+        top: -4rem;
+    }
+    .album .line{
+        display: none;
+    }
+    .album .countdown{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .album .countdown p.fw-800{
+        font-size: 40px!important;
+    }
+    .album .countdown p.fw-700{
+        font-weight: 700!important;
+    }
+    .confirmation {
+        padding-top: 100px;
+        padding-bottom: 80px;
+    }
+    .confirmation .leaves-6{
+        height: 180px;
+        top: 0;
+    }
+    .confirmation label{
+        font-size: 18px!important;
+    }
+}
