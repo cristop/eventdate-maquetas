@@ -137,7 +137,9 @@ body{
     z-index: 1;
 }
 
-.diary{}
+.adress .col-md-6.column-left{
+    width: auto;
+}
 
 @media (max-width: 576px){
     .adress .bg-white{
