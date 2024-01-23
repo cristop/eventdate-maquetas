@@ -13,19 +13,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js"></script><![endif]-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
-    <link rel="stylesheet" type="text/css" href="css/hollywood.css">
+    <link rel="stylesheet" type="text/css" href="css/red-rose.css">
 </head>
 
 <body>
 
     <div class="min-vh-100 bg-img bg-img-fixed position-relative"
-        style="background-image: url('img/templates/hollywood/bg-01.jpg');">
-        <img src="img/templates/hollywood/h2.png" class="leaves-1 position-absolute end-0">
-        <img src="img/templates/hollywood/h1.png" class="leaves-2 position-absolute start-0 bottom-0">
+        style="background-image: url('img/templates/red-rose/BG-PRINCIPAL.jpg');">
+        <img src="img/templates/red-rose/left.png" class="leaves-1 position-absolute end-0">
+        <img src="img/templates/red-rose/right.png" class="leaves-2 position-absolute start-0 bottom-0">
         <div class="cut-1 position-absolute bottom-0 start-0 w-100"></div>
         <div class="w-100 min-vh-100 d-flex flex-column align-items-center justify-content-center bg-black bg-opacity-50">
             <div class="text-center d-grid">
-                <h1 class="fs-sm-175 fs-62 text-white mb-4 lh-1 text-uppercase f-secondary">Malena</h1>
+                <h1 class="fs-sm-175 fs-62 text-white lh-1 f-secondary">Jonatas</h1>
                 <h3
                     class="fs-sm-37 ls-5 bg-golden fs-16 rounded-pill text-white text-center py-3 px-3 text-uppercase m-0 lh-1 fw-400">
                     Mis 15 años</h3>
@@ -33,7 +33,7 @@
         </div>
     </div>
 
-    <section class="bg-dark pb-4 pt-4">
+    <section class="bg-pink pb-4 pt-4">
         <div class="line"></div>
         <div class="container">
             <div class="row">
@@ -44,23 +44,23 @@
     </section>
 
     <section class="bg-light adress py-5 position-relative">
-                <img src="img/templates/hollywood/h3.png" class="leaves-3 position-absolute end-0">
+                <!-- <img src="img/templates/red-rose/left.png" class="leaves-3 position-absolute end-0"> -->
         <div class="container py-sm-5">
             <div class="row align-items-center pt-5 pb-5 justify-content-center">
                 <div class="col-md-6 column-left text-center">
                     <div class="bg-white rotate-45">
-                        <img alt="" src="img/templates/hollywood/salon-01.jpg" />
+                        <img alt="" src="img/templates/red-rose/salon-01.jpg" />
                     </div>
                 </div>
                 <div class="col-md-6 column-right text-center">
                     <div class="icon">
-                        <img src="img/templates/hollywood/location.svg" width="80" height="80" alt="">
+                        <img src="img/templates/red-rose/location.svg" width="80" height="80" alt="">
                     </div>
                     <div class="jumbotron">
-                        <h2 class="mt-4 mb-2 fs-sm-42 fs-32 f-secondary text-uppercase">City Espacio de Eventos</h2>
+                        <h2 class="mt-4 mb-2 fs-sm-42 fs-32 f-secondary">City Espacio de Eventos</h2>
                         <p class="fs-sm-21 fs-18 fw-700 text-uppercase">Deán Funes 3750, Córdoba</p>
                         <div class="pb-4 pt-4">
-                            <a class="btn py-3 px-5 border-0 rounded-pill bg-red btn-primary btn-large" href="#">VER
+                            <a class="btn py-3 px-5 border-0 rounded-pill  bg-red btn-primary btn-large" href="#">VER
                                 UBICACIÓN</a>
                         </div>
 
@@ -72,32 +72,15 @@
     </section>
 
     <section class="diary position-relative d-flex align-items-center py-5">
-        <img src="img/templates/hollywood/h4.png" class="leaves-3 position-absolute star-0">
+        <img src="img/templates/red-rose/left.png" height="250" class="leaves-3 position-absolute star-0">
         <div class="container ">
-            <div class="row text-center">
-                <p class="text-white fs-sm-24 fs-21 fw-400 mb-5">"Quiero compartir este día único y especial junto a las
+            <div class="row text-center justify-content-center">
+                <p class="fs-sm-24 fs-21 fw-400 mb-5">"Quiero compartir este día único y especial junto a las
                     personas que me apoyan día a día, <br>
                     y vos sos una de ellas, por eso estas invitado a mi fiesta."
                 </p>
 
-                <div class="row mt-5 countdown">
-                    <div class="col-md-3">
-                        <p class="text-white fs-sm-72 fs-62 mb-0 f-secondary">103</p>
-                        <p class="text-white fs-sm-24 fw-700 fs-24 text-uppercase">Días</p>
-                    </div>
-                    <div class="col-md-3">
-                        <p class="text-white fs-sm-72 fs-62 mb-0 f-secondary">20</p>
-                        <p class="text-white fs-sm-24 fw-700 fs-24 text-uppercase">Hrs</p>
-                    </div>
-                    <div class="col-md-3">
-                        <p class="text-white fs-sm-72 fs-62 mb-0 f-secondary">43</p>
-                        <p class="text-white fs-sm-24 fw-700 fs-24 text-uppercase">Min</p>
-                    </div>
-                    <div class="col-md-3">
-                        <p class="text-white fs-sm-72 fs-62 mb-0 f-secondary">20</p>
-                        <p class="text-white fs-sm-24 fw-700 fs-24 text-uppercase">Seg</p>
-                    </div>
-                </div>
+                <div class="countdown d-flex justify-content-evenly flex-column flex-sm-row" id="countdown2"></div>
 
                 <div class="pb-4 pt-4 mt-4">
                     <a class="btn py-3 px-5 border-0 rounded-pill bg-red btn-primary btn-large" href="#">AGENDAR
@@ -109,25 +92,25 @@
         </div>
     </section>
 
-    <div class="bg-golden" style="height: 34px;"></div>
+    <div class="bg-dark" style="height: 34px;"></div>
 
-    <section class="bg-red gallery pb-4 pt-4">
+    <section class="bg-light gallery pb-4 pt-4">
         <div class="line"></div>
         <div class="container">
             <div class="row text-center">
                 <div class="icon mb-5 mt-3">
-                    <img src="img/templates/hollywood/camera.svg" width="80" height="80" alt="">
+                    <img src="img/templates/red-rose/camera.svg" width="80" height="80" alt="">
                 </div>
             </div>
 
-            <div class="position-relative mb-5 pb-5">
+            <div class="position-relative pb-5">
                 <div class="my-slider gap-4 d-flex align-items-center">
                     <div class="bg-white px-3 pt-3">
-                        <img src="img/templates/hollywood/gallery-01.jpg" width="100%" class="d-block">
+                        <img src="img/templates/red-rose/gallery-01.jpg" width="100%" class="d-block">
                     </div>
-                    <div class="bg-white px-3 pt-3"><img src="img/templates/hollywood/gallery-02.jpg" width="100%" class="d-block">
+                    <div class="bg-white px-3 pt-3"><img src="img/templates/red-rose/gallery-02.jpg" width="100%" class="d-block">
                     </div>
-                    <div class="bg-white px-3 pt-3"><img src="img/templates/hollywood/gallery-03.jpg" width="100%" class="d-block">
+                    <div class="bg-white px-3 pt-3"><img src="img/templates/red-rose/gallery-01.jpg" width="100%" class="d-block">
                     </div>
                 </div>
             </div>
@@ -136,15 +119,15 @@
     </section>
 
     <section class="soong-book bg-dark position-relative">
-        <img src="img/templates/hollywood/h2.png" class="leaves-3 position-absolute bottom-0 end-0">
+        <img src="img/templates/red-rose/right.png" class="leaves-3 position-absolute bottom-0 end-0">
         <div class="container">
             <div class="row align-items-md-stretch">
                 <div class="col-md-12">
                     <div class="h-100 p-5 text-center text-white">
                         <div class="icon mb-5 mt-3">
-                            <img src="img/templates/hollywood/music.svg" width="80" height="80" alt="">
+                            <img src="img/templates/red-rose/music.svg" width="80" height="80" alt="">
                         </div>
-                        <h2 class="f-secondary fs-sm-42 fs-32 text-uppercase">¿Qué canciones no pueden faltar?</h2>
+                        <h2 class="f-secondary fs-sm-42 fs-32">¿Qué canciones no pueden faltar?</h2>
                         <p class="fs-sm-21 fs-21 mt-4 mb-5">
                             ¡Ayudame sugiriendo las canciones que pensás que no pueden faltar en la fiesta!
                         </p>
@@ -183,11 +166,11 @@
                 <div class="col-md-6">
                     <div class="h-100 bg-white px-3 py-5 d-grid border text-center">
                         <div class="icon">
-                            <img src="img/templates/elegant/dress.svg" width="80" height="80" alt="">
+                            <img src="img/templates/red-rose/dress-code.svg" width="80" height="80" alt="">
                         </div>
-                        <h2 class="mt-4 f-secondary text-uppercase">Dress Code</h2>
+                        <h2 class="mt-4 f-secondary">Dress Code</h2>
                         <p class="fs-sm-21">Una ayuda para tu vestuario. <br></p>
-                        <div class="bg-red rounded-pill py-3 p-5">
+                        <div class="bg-green-dark rounded-pill py-3 p-5">
                             <p class="text-white mb-0 fw-500">ELEGANTE</p>
                         </div>
                     </div>
@@ -195,13 +178,13 @@
                 <div class="col-md-6">
                     <div class="h-100 bg-white px-3 py-5 d-grid border text-center">
                         <div class="icon">
-                            <img src="img/templates/elegant/instagram.svg" width="80" height="80" alt="">
+                            <img src="img/templates/red-rose/instagram.svg" width="80" height="80" alt="">
                         </div>
-                        <h2 class="mt-4 f-secondary text-uppercase">Mural de Fotos</h2>
+                        <h2 class="mt-4 f-secondary">Mural de Fotos</h2>
                         <p class="fs-sm-21">Durante la fiesta utiliza
                             el hashtag.
                         </p>
-                        <div class="bg-red rounded-pill py-3 p-5">
+                        <div class="bg-green-dark rounded-pill py-3 p-5">
                             <p class="text-white mb-0 fw-500">#MIS15MALENA</p>
                         </div>
                     </div>
@@ -210,15 +193,15 @@
         </div>
     </section>
 
-    <section class="gift bg-red position-relative pb-4 pt-4">
+    <section class="gift position-relative pb-4 pt-4">
         <div class="container">
             <div class="row align-items-md-stretch">
                 <div class="col-md-12">
-                    <div class="h-100 p-5 text-white text-center">
+                    <div class="h-100 p-5 text-center">
                         <div class="icon mb-5 mt-3">
-                            <img src="img/templates/hollywood/gift.svg" width="80" height="80" alt="">
+                            <img src="img/templates/red-rose/gift.svg" width="80" height="80" alt="">
                         </div>
-                        <h2 class="f-secondary fs-sm-42 fs-32 text-uppercase fw-500">Mesa de Regalos</h2>
+                        <h2 class="f-secondary fs-sm-42 fs-32 fw-500">Mesa de Regalos</h2>
                         <p class="fs-sm-21 fs-21 mt-4 mb-5 fw-500">
                             Tu presencia es mi mayor regalo, pero si quieres hacerme un regalo <br>
                             puedes hacerlos por estos medios.
@@ -237,10 +220,10 @@
 
 
     <section id="count-down" class="album position-relative pb-4 pt-4 bg-light align-items-center pt-5 pb-5">
-        <img src="img/templates/hollywood/h3.png" class="leaves-2 position-absolute bottom-0 end-0">
+        <img src="img/templates/red-rose/left.png" class="leaves-2 position-absolute top-0 start-0">
         <div class="container py-5">
             <div class="row mt-5 justify-content-center">
-                <h2 class="f-secondary text-center fs-sm-42 fs-32 text-uppercase my-4">Álbum Selpix</h2>
+                <h2 class="f-secondary text-center fs-sm-42 fs-32 my-4">Álbum Selpix</h2>
                 <p class="fs-sm-24 text-center fw-400 fs-21 mb-5">Desde las 18 hs va a estar habilitado el Álbum de Selpix para que vayas<br>
                         subiendo fotos de la previa al cumple.
                 </p>
@@ -253,17 +236,17 @@
         </div>
     </section>
 
-    <div style="height: 200px; background-color: #707070;"></div>
+    <!-- <div style="height: 200px; background-color: #707070;"></div> -->
 
     <section class="confirmation bg-dark py-sm-5 position-relative">
-        <img src="img/templates/hollywood/h1.png" class="leaves-6 position-absolute start-0">
+        <img src="img/templates/red-rose/right.png" class="leaves-6 position-absolute end-0">
         <div class="container py-sm-5">
-            <div class="icon mb-5 mt-3">
-                <img src="img/templates/hollywood/confirmed.svg" height="80" width="80" class="mx-auto d-block">
+            <div class="icon mt-3">
+                <img src="img/templates/red-rose/confirmed.svg" height="80" width="80" class="mx-auto d-block">
             </div>
 
             <form class="py-sm-5 px-4 mb-5">
-                <h3 class="fs-sm-42 fs-32  text-uppercase text-center mb-5 f-secondary text-white">Confirmación</h3>
+                <h3 class="fs-sm-42 fs-32 text-center mb-5 f-secondary text-white">Confirmación</h3>
                 <p class="fs-sm-21 fs-21 mb-5 text-center text-white">Para poder participar de todo esto, es necesario que confirmes tu asistencia cuanto antes.<br>
                     La fecha límite es el 20 de Octubre del 2024.<br>
                     Completá el siguiente formulario para confirmar tu asistencia.</p>
@@ -283,7 +266,7 @@
 
                         <input type="text" class="form-control form-control-lg py-3 fs-sm-18 text-white fs-18 px-4 border-0 mb-3 rounded-5" name="" placeholder="Nombre completo">
                         <textarea class="form-control form-control-lg fs-sm-18 text-white fs-18 border-0 p-4 mb-3 rounded-5" rows="4" placeholder="Ingrese algún dato importante..."></textarea>
-                        <button class="btn border-0 bg-red d-inline-block text-white px-5 rounded-pill py-3 lh-1 fs-sm-21 fs-21 fw-500 text-uppercase mx-auto d-block f-roboto">Enviar</button>
+                        <button class="btn border-0 bg-red d-inline-block text-white px-5 rounded-pill py-3 lh-1 fs-sm-21 fs-21 fw-500 text-uppercase mx-auto d-block">Enviar</button>
                     </div>
                 </div>
             </form>
@@ -332,7 +315,23 @@
             clearInterval(x);
             document.getElementById("countdown").innerHTML = "EXPIRED";
             }
+
+          // Display the result in the element with id="demo"
+          document.getElementById("countdown2").innerHTML =
+        '<div class="fs-sm-62 fs-48 lh-1"><p class="rounded-pill d-flex align-items-center justify-content-center fs-sm-42 f-secondary mb-0">' + days + '</p><span class="fs-24 text-uppercase text-center fw-700 fs-sm-18 mt-3 d-block pt-3">Días</span>&nbsp;</div>' +
+        '<div class="fs-sm-62 fs-48 lh-1"><p class="rounded-pill d-flex align-items-center justify-content-center fs-sm-42 f-secondary mb-0">' + hours + '</p><span class="fs-24 text-uppercase text-center fw-700 fs-sm-18 mt-3 d-block pt-3">Horas</span>&nbsp;</div>' +
+        '<div class="fs-sm-62 fs-48 lh-1"><p class="rounded-pill d-flex align-items-center justify-content-center fs-sm-42 f-secondary mb-0">' + minutes + '</p><span class="fs-24 text-uppercase text-center fw-700 fs-sm-18 mt-3 d-block pt-3">Min</span>&nbsp;</div>' +
+        '<div class="fs-sm-62 fs-48 lh-1"><p class="rounded-pill d-flex align-items-center justify-content-center fs-sm-42 f-secondary mb-0">' + seconds + '</p><span class="fs-24 text-uppercase text-center fw-700 fs-sm-18 mt-3 d-block pt-3">Seg</span>&nbsp;</div>';
+
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("countdown2").innerHTML = "EXPIRED";
+            }
+
         }, 1000);
+        
     </script>
 
 </body>
