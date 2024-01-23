@@ -80,24 +80,8 @@
                     y vos sos una de ellas, por eso estas invitado a mi fiesta."
                 </p>
 
-                <div class="row mt-5 countdown">
-                    <div class="col-md-3">
-                        <p class="text-white fs-sm-72 fs-62 mb-0 f-secondary">103</p>
-                        <p class="text-white fs-sm-24 fw-700 fs-24 text-uppercase">Días</p>
-                    </div>
-                    <div class="col-md-3">
-                        <p class="text-white fs-sm-72 fs-62 mb-0 f-secondary">20</p>
-                        <p class="text-white fs-sm-24 fw-700 fs-24 text-uppercase">Hrs</p>
-                    </div>
-                    <div class="col-md-3">
-                        <p class="text-white fs-sm-72 fs-62 mb-0 f-secondary">43</p>
-                        <p class="text-white fs-sm-24 fw-700 fs-24 text-uppercase">Min</p>
-                    </div>
-                    <div class="col-md-3">
-                        <p class="text-white fs-sm-72 fs-62 mb-0 f-secondary">20</p>
-                        <p class="text-white fs-sm-24 fw-700 fs-24 text-uppercase">Seg</p>
-                    </div>
-                </div>
+                <div class="countdown d-flex justify-content-evenly flex-column flex-sm-row" id="countdown2"></div>
+
 
                 <div class="pb-4 pt-4 mt-4">
                     <a class="btn py-3 px-5 border-0 rounded-pill bg-red btn-primary btn-large" href="#">AGENDAR
@@ -332,6 +316,22 @@
             clearInterval(x);
             document.getElementById("countdown").innerHTML = "EXPIRED";
             }
+
+        
+          // Display the result in the element with id="demo"
+          document.getElementById("countdown2").innerHTML =
+        '<div class="fs-sm-62 fs-48 lh-1"><p class="rounded-pill d-flex align-items-center justify-content-center text-white fs-sm-72 fs-62 f-secondary mb-0">' + days + '</p><span class="text-white fs-sm-24 fw-700 fs-24 text-uppercase text-center mt-3 d-block pt-3">Días</span>&nbsp;</div>' +
+        '<div class="fs-sm-62 fs-48 lh-1"><p class="rounded-pill d-flex align-items-center justify-content-center text-white fs-sm-72 fs-62 f-secondary mb-0">' + hours + '</p><span class="text-white fs-sm-24 fw-700 fs-24 text-uppercase text-center mt-3 d-block pt-3">Horas</span>&nbsp;</div>' +
+        '<div class="fs-sm-62 fs-48 lh-1"><p class="rounded-pill d-flex align-items-center justify-content-center text-white fs-sm-72 fs-62 f-secondary mb-0">' + minutes + '</p><span class="text-white fs-sm-24 fw-700 fs-24 text-uppercase text-center mt-3 d-block pt-3">Min</span>&nbsp;</div>' +
+        '<div class="fs-sm-62 fs-48 lh-1"><p class="rounded-pill d-flex align-items-center justify-content-center text-white fs-sm-72 fs-62 f-secondary mb-0">' + seconds + '</p><span class="text-white fs-sm-24 fw-700 fs-24 text-uppercase text-center mt-3 d-block pt-3">Seg</span>&nbsp;</div>';
+
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("countdown2").innerHTML = "EXPIRED";
+            }
+
         }, 1000);
     </script>
 
