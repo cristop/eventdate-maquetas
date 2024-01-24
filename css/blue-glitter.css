@@ -1,0 +1,74 @@
+@import "_custom.css";
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --c-primary: #272727;
+    --c-secondary: #225BFB;
+    --light: #FFFEFD;
+    --brown: #AE9461;
+    /* --dark: #272727; */
+    --blue-light: #DEE7FC;
+    --primary-font: 'Quicksand', sans-serif;
+
+}
+
+
+body{
+    font-family: var(--primary-font);
+    color: var(--c-primary);
+    overflow-x: hidden !important;
+    width: 100vw;
+    touch-action: pan-y;
+}
+
+.bg-blue{
+    background-color: var(--c-secondary)!important;
+}
+
+.bg-light{
+    background-color: var(--light);
+}
+
+.bg-blue-light{
+    background-color: var(--blue-light);
+}
+
+.border-brown{
+    border-color: var(--brown)!important;
+}
+
+.c-primary{
+    color: var(--c-primary);
+}
+
+.c-secondary{
+    color: var(--c-secondary)!important;
+}
+
+.soong-book .container{
+    max-width: 1000px;
+}
+
+.dress-code .row .col-md-6 > div{
+    width: 400px;
+    border: 4px solid var(--c-secondary)!important;
+    border-radius: 20px;
+}
+
+.gift{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gift .nav-pills .nav-link.active{
+    background-color: var(--brown);
+}
+
+.confirmation .form-control::placeholder{
+    color: var(--c-primary);
+}
+
+.gallery, .gift {
+    background-size: contain!important;
+}
