@@ -72,3 +72,12 @@ body{
 .gallery, .gift {
     background-size: contain!important;
 }
+
+.gallery{
+    background-image: url('../img/templates/blue-glitter/bg-blue-01.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
