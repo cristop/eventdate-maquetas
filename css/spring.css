@@ -171,11 +171,13 @@ img {
     height: 200px;
   }
   .bg-img .leaves-2 {
+    left: -7rem !important;
     top: -5rem;
-    height: 300px;
+    height: 300px
   }
   .bg-img .leaves-1 {
     bottom: -5rem;
+    right: -8rem!important;
     height: 300px;
   }
   #countdown {
@@ -212,14 +214,17 @@ img {
   }
   .gallery .leaves-1{
     top: -8rem!important;
-    left: -4rem!important;
+    left: -9rem!important;
   }
   .gift .leaves-1{
     top: -8rem;
-    right: -9rem!important;
+    right: -11rem!important;
   }
   .confirmation .leaves-1{
-    left: -5rem!important;
+    left: -9rem!important;
+  }
+  .dress-code .row .col-md-6, .dress-code .row .col-md-6 > div{
+    width: 100%!important;
   }
   .rectangle{
     height: 40px;
