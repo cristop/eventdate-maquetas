@@ -1,6 +1,5 @@
 @import "_custom.css";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap');
-@import url("https://fonts.cdnfonts.com/css/times-new-roman");
 
 :root {
   --c-primary: #f5d09c;
@@ -10,7 +9,6 @@
   --dark: #272727;
   --gray-light: #979797;
   --gray: #424242;
-  --f-secondary: "Times New Roman", sans-serif;
   --f-terciary: 'Poppins', sans-serif;
 }
 
@@ -46,10 +44,6 @@
   border: 4px solid var(--c-primary);
 }
 
-.f-secondary {
-  font-family: "Times New Roman", sans-serif;
-}
-
 
 * {
   font-family: "Montserrat", sans-serif;
@@ -73,26 +67,37 @@ img {
 }
 
 .bg-img .leaves-2 {
-  top: -10rem;
-  left: -8rem !important;
+  top: -6rem;
+  left: -4rem !important;
+}
+
+.bg-img .leaves-1, .bg-img .leaves-2{
+  width: 300px;
+}
+
+.bg-img h1, #count-down p,.text-descprition .text-light, .soong-book p, .dress-code p, .gift p.text-gift, .confirmation p, .bg-img .border-yellow{
+  font-family: serif;
 }
 
 .gallery .leaves-1 {
-  top: -20rem;
+  top: -15rem;
+  width: 400px;
 }
 
 .gift .leaves-1 {
-  top: -19rem;
-  right: -14rem !important;
+  top: -15rem;
+  right: -12rem !important;
+  width: 400px;
 }
 
 .confirmation .leaves-1 {
   left: -10rem !important;
-  top: -1rem;
+  top: -3rem;
+  width: 400px;
 }
 
 .confirmation .leaves-2 {
-  width: 550px;
+  width: 400px;
   right: -10rem !important;
 }
 
@@ -166,7 +171,6 @@ img {
     height: 200px;
   }
   .bg-img .leaves-2 {
-    left: -2rem !important;
     top: -5rem;
     height: 300px;
   }
@@ -223,7 +227,7 @@ img {
   .soong-book h2{
     font-weight: 700;
   }
-  .text-descprition .text-light, .adress h2, .adress p{
-    font-family: 'Poppins', sans-serif;
+  .text-descprition .text-light, .adress h2, .adress p, .confirmation p, h2, .confirmation .form-check-label, .confirmation .form-check-label::placeholder, .dress-code .bg-lilac-light, .soong-book label{
+    font-family: 'Poppins', sans-serif!important;
   }
 }
