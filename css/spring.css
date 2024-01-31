@@ -1,5 +1,6 @@
 @import "_custom.css";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.cdnfonts.com/css/times-new-roman");
 
 :root {
   --c-primary: #f5d09c;
@@ -9,19 +10,20 @@
   --dark: #272727;
   --gray-light: #979797;
   --gray: #424242;
-  --f-secondary: "Poppins", sans-serif;
+  --f-secondary: "Times New Roman", sans-serif;
+  --f-terciary: 'Poppins', sans-serif;
 }
 
 .text-gray {
   color: var(--gray);
 }
 
-.text-dark{
-    color: var(--dark);
+.text-dark {
+  color: var(--dark);
 }
 
-.text-yellow{
-    color: var(--c-primary);
+.text-yellow {
+  color: var(--c-primary);
 }
 
 .bg-yellow-dark {
@@ -40,13 +42,18 @@
   background-color: var(--c-tericary) !important;
 }
 
-.border-yellow{
-    border: 4px solid var(--c-primary);
+.border-yellow {
+  border: 4px solid var(--c-primary);
 }
 
+.f-secondary {
+  font-family: "Times New Roman", sans-serif;
+}
+
+
 * {
-    font-family: 'Montserrat', sans-serif;
-  }
+  font-family: "Montserrat", sans-serif;
+}
 
 body {
   color: var(--dark);
@@ -55,8 +62,38 @@ body {
   touch-action: pan-y;
 }
 
-img{
-    max-width: 100%;
+img {
+  max-width: 100%;
+}
+
+.bg-img .leaves-1 {
+  right: -5rem !important;
+  bottom: -14rem;
+  z-index: 1;
+}
+
+.bg-img .leaves-2 {
+  top: -10rem;
+  left: -8rem !important;
+}
+
+.gallery .leaves-1 {
+  top: -20rem;
+}
+
+.gift .leaves-1 {
+  top: -19rem;
+  right: -14rem !important;
+}
+
+.confirmation .leaves-1 {
+  left: -10rem !important;
+  top: -1rem;
+}
+
+.confirmation .leaves-2 {
+  width: 550px;
+  right: -10rem !important;
 }
 
 .home .waves {
@@ -64,29 +101,129 @@ img{
   left: 0;
 }
 
-.soong-book .container{
-    max-width: 1000px;
+.soong-book .container {
+  max-width: 1000px;
 }
 
-.dress-code .row .col-md-6 > div{
-    width: 400px;
+.dress-code .row .col-md-6 > div {
+  width: 400px;
 }
 
-.nav-link{
-    color: white;
+.nav-link {
+  color: white;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: white;
+  color: #000;
+}
+
+.nav-link:hover {
+  opacity: 0.7;
+  color: white !important;
+}
+
+.form-check-input:checked {
+  background-color: var(--c-primary);
+  border-color: var(--c-primary);
+}
+
+.tns-controls {
+  left: 0;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+.tns-controls [data-controls="prev"],
+.tns-controls [data-controls="next"] {
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: 0;
+  height: 24px;
+  padding: 0;
+  position: absolute;
+  width: 24px;
+  z-index: 2;
+}
+.tns-controls [data-controls="prev"] {
+  background-image: url("https://emidica.com/img/icos/ico-arrow-prev.svg");
+  left: -10px;
+}
+.tns-controls [data-controls="next"] {
+  background-image: url("https://emidica.com/img/icos/ico-arrow-next.svg");
+  right: -10px;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
-    background-color: white;
-    color: #000;
+  color: #000!important;
 }
 
-.nav-link:hover{
-    opacity: 0.7;
-    color: white!important;
-}
-
-.form-check-input:checked{
-    background-color: var(--c-primary);
-    border-color: var(--c-primary);
+@media (max-width: 576px) {
+  .leaves-1,
+  .leaves-2 {
+    height: 200px;
+  }
+  .bg-img .leaves-2 {
+    left: -2rem !important;
+    top: -5rem;
+    height: 300px;
+  }
+  .bg-img .leaves-1 {
+    bottom: -5rem;
+    height: 300px;
+  }
+  #countdown {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .gallery .my-slider {
+    flex-direction: column;
+    padding: 30px;
+  }
+  .gallery .tns-item {
+    padding-right: 15px !important;
+    transform: translateX(-15px);
+  }
+  .gallery .tns-item img {
+    max-width: calc(100% - 15px);
+  }
+  .soong-book .h-100 {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .soong-book p, .gift p, .album p {
+    font-size: 20px !important;
+    font-weight: 500;
+  }
+  .soong-book form .d-flex {
+    display: block !important;
+  }
+  .dress-code .row{
+    gap: 50px;
+  }
+  .dress-code .waves{
+    margin-top: 80px;
+  }
+  .gallery .leaves-1{
+    top: -8rem!important;
+    left: -4rem!important;
+  }
+  .gift .leaves-1{
+    top: -8rem;
+    right: -9rem!important;
+  }
+  .confirmation .leaves-1{
+    left: -5rem!important;
+  }
+  .rectangle{
+    height: 40px;
+  }
+  .soong-book h2{
+    font-weight: 700;
+  }
+  .text-descprition .text-light, .adress h2, .adress p{
+    font-family: 'Poppins', sans-serif;
+  }
 }

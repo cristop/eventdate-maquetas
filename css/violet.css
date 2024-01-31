@@ -113,7 +113,7 @@ img{
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
     background-color: white;
-    color: #000;
+    color: #000!important;
 }
 
 .nav-link:hover{
