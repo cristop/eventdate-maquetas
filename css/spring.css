@@ -235,4 +235,7 @@ img {
   .text-descprition .text-light, .adress h2, .adress p, .confirmation p, h2, .confirmation .form-check-label, .confirmation .form-check-label::placeholder, .dress-code .bg-lilac-light, .soong-book label{
     font-family: 'Poppins', sans-serif!important;
   }
+  .confirmation .leaves-2{
+    right: -12rem!important;
+  }
 }
