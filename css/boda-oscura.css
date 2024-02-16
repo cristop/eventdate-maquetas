@@ -118,11 +118,11 @@ body{
   right: 0;
 }
 .nav-pills .nav-link.active {
-  background: #fff;
+  background: var(--c-primary);
   color: #333333;
 }
 .nav-pills .nav-link {
-  color: #333;
+  color: white;
 }
 [class*="leaves-"]{
   width: 350px;
@@ -221,11 +221,21 @@ body{
 #history{
   /* border-top: 18px solid var(--c-primary); */
 }
+
+#songs .form-control::placeholder{
+  font-family: var(--secondary-font);
+}
+
 #photos img{
   max-height: 525px;
   width: auto;
   height: 70vh;
   object-fit: cover;
+}
+
+#photos .img-flower{
+  width: 56px!important;
+  height: 44px!important;
 }
 
 #recomendations .accordion-button::after{
@@ -243,6 +253,10 @@ body{
 #confirmation .form-check-input:checked{
   background-color: var(--c-primary);
   border-color: var(--c-primary);
+}
+
+#confirmation .form-control::placeholder{
+  font-family: var(--secondary-font);
 }
 
 @media screen and (max-width: 900px) {
