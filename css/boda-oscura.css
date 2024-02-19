@@ -112,6 +112,7 @@ body{
 }
 .tns-controls [data-controls="prev"] {
   background-image: url('https://emidica.com/img/icos/ico-arrow-prev.svg');
+  left: 0;
 }
 .tns-controls [data-controls="next"] {
   background-image: url('https://emidica.com/img/icos/ico-arrow-next.svg');
@@ -271,5 +272,55 @@ body{
   .border-mobile{
     border-right: 0 !important;
     border-bottom: 1px solid var(--c-primary) !important;
+  }
+  
+  #events .item > div{
+    border-left: 1px solid;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 675px;
+  }
+  #count-down{
+    border-bottom: 1px solid var(--c-primary);
+  }
+  #count-down .container{
+    padding-top: 150px!important;
+    padding-bottom: 130px!important;
+  }
+  #count-down .flower-right{
+    bottom: 20px;
+  }
+  .dress-code .col-md-6{
+    padding: 0;
+  }
+  .dress-code .col-md-6 > div{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .dress-code h2{
+    font-weight: 400;
+  }
+  .dress-code p, .dress-code .text-dark, #songs p{
+    font-size: 16px!important;
+    font-weight: 400;
+  }
+  .dress-code .text-dark{
+    text-transform: inherit!important;
+  }
+  .dress-code .col-md-6 .bg-black{
+    font-size: 18px!important;
+    font-weight: 400;
+  }
+  #songs h3{
+    margin-bottom: 30px!important;
+  }
+  #songs button{
+    margin-top: 30px;
+  }
+  .godparents h2, .godparents h4{ 
+    font-weight: 400;
+  }
+  #gifts #tns3 > .tns-item > div{
+    border: 1px solid var(--c-primary);
   }
 }
