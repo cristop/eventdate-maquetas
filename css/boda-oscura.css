@@ -59,10 +59,10 @@ body{
   color: var(--c-secondary) !important;
 }
 .bg-dark{
-  background-color: var(--black);
+  background-color: var(--black) !important;
 }
 .bg-dark-light{
-  background-color: var(--black-2);
+  background-color: var(--black-2) !important;
 }
 .bg-primary{
   background-color: var(--c-primary) !important;
@@ -267,6 +267,9 @@ body{
 }
 
 
-section#godparents {
-    background-color: #E7D8CB;
+@media screen and (max-width: 900px) {
+  .border-mobile{
+    border-right: 0 !important;
+    border-bottom: 1px solid var(--c-primary) !important;
+  }
 }
