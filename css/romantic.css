@@ -254,3 +254,24 @@ body{
     margin-right: 30px;
   }
 }
+
+
+#events .d-flex.justify-content-between{
+  gap: 10px;
+  text-align: center;
+}
+#events .d-flex.justify-content-between a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1200px) {
+  #events .d-flex.justify-content-between{
+    flex-direction: column;
+    gap: 10px;
+  }
+  #events .d-flex.justify-content-between a{
+    display: block;
+    text-align: center;
+  } 
+}
