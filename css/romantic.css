@@ -190,7 +190,7 @@ body{
     top: -98px;
   }
   .leaves-4 {
-    bottom: -140px;
+    bottom: -80px;
     top: inherit;
     width: 90px;
   }
@@ -274,4 +274,8 @@ body{
     display: block;
     text-align: center;
   } 
+}
+
+section#theme .container {
+    position: relative;
 }

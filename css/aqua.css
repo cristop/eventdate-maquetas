@@ -62,6 +62,9 @@
 .nav-pills .nav-link {
   color: #FFF;
 }
+[class*="leaves"]{
+  pointer-events: none;
+}
 .leaves-2 {
   margin-bottom: -145px;
   z-index: 2;
