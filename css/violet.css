@@ -16,6 +16,10 @@
     color: var(--gray);
 }
 
+.text-dark{
+    color: var(--dark)!important;
+}
+
 .bg-lilac-dark{
     background-color: var(--c-primary);
 }
@@ -80,7 +84,7 @@ img{
     right: -10rem!important;
 }
 
-.gift .leaves-1{
+#gifts .leaves-1{
     top: -20rem;
     left: -6rem!important;
 }
@@ -128,6 +132,18 @@ img{
 
 .confirmation .form-control::placeholder{
     color: var(--dark);
+}
+
+.gallery .tns-controls [data-controls="next"]{
+    right: -27px;
+}
+
+.gallery .tns-controls [data-controls="prev"]{
+    left: -27px;
+}
+
+.my-slider, .my-slider-2{
+    margin: 0 auto;
 }
 
 .tns-controls {
@@ -186,7 +202,7 @@ img{
     .confirmation .leaves-1{
         height: 120px;
     }
-    .gift .leaves-1{
+    #gifts .leaves-1{
         top: -5rem;
     }
     .gallery .leaves-1{
@@ -221,11 +237,17 @@ img{
         padding-left: 0px!important;
         padding-right: 0px!important;
     }
-    .soong-book p, .gift p, .album p{
+    .soong-book p, .album p{
         font-size: 20px!important;
         font-weight: 500;
     }
     .soong-book form .d-flex{
         display: block!important;
+    }
+    .gallery .tns-controls [data-controls="next"]{
+        right: 0px;
+    }
+    .gallery .tns-controls [data-controls="prev"]{
+        left: 0px;
     }
 }
