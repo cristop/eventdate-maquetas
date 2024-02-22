@@ -127,6 +127,10 @@
 }
 
 @media (max-width: 576px){
+    .bg-img-fixed h1{ 
+        text-align: center;
+    }
+
     .bg-img .leaves-1{
         transform: rotate(90deg);
         display: none;

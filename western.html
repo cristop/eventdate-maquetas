@@ -311,7 +311,7 @@
 			<div class="container py-sm-5">
 				<h3 class="fs-sm-42 fs-28 fw-800 text-center my-5 f-secondary pb-4"><i>Padrinos</i></h3>
 				<div class="px-4 px-sm-0">
-					<div class="row justify-content-evenly">
+					<div class="my-slider-3 d-flex align-items-center justify-content-evenly">
 						<div class="col-sm-3 mb-5">
 							<div class="ratio ratio-1x1 rounded-circle bg-light mb-5">
 								<div class="p-3">
@@ -544,6 +544,29 @@
 							},
 							900: {
 								items: 4
+							}
+						}
+					});
+				}
+
+				if ( $('.my-slider-3').length > 0 ) {
+					var slider2 = tns({
+						container: '.my-slider-3',
+						items: 1,
+						gutter: 30,
+						controlsText: ['', ''],
+						nav: false,
+						autoplayButtonOutput: false,
+						mouseDrag: true,
+						slideBy: 1,
+						autoplay: true,
+						items: 1,
+						responsive: {
+							640: {
+								items: 1
+							},
+							900: {
+								items: 2
 							}
 						}
 					});
