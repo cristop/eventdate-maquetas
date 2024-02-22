@@ -231,7 +231,9 @@ body{
 section#godparents {
     background-color: #E7D8CB;
 }
-
+section#godparents .tns-controls{
+  filter: brightness(0);
+}
 
 #events .d-flex.justify-content-between{
   gap: 10px;
@@ -252,3 +254,4 @@ section#godparents {
     text-align: center;
   } 
 }
+
