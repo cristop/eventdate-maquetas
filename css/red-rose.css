@@ -1,7 +1,7 @@
 @import "_custom.css";
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Roboto+Slab:wght@400;500;600;700;800;900&display=swap');
 
-:root{
+:root {
     --c-primary: #212121;
     /* --c-secondary: #272727; */
     --pink: #f6b3a6;
@@ -14,7 +14,7 @@
 }
 
 
-body{
+body {
     font-family: var(--primary-font);
     color: var(--c-primary);
     overflow-x: hidden !important;
@@ -22,57 +22,60 @@ body{
     touch-action: pan-y;
 }
 
-.bg-pink{
+.bg-pink {
     background-color: var(--pink);
 }
 
-.bg-light{
-    background-color: var(--light)!important;
+.bg-light {
+    background-color: var(--light) !important;
 }
 
-.bg-green{
-    background-color: var(--green)!important;
+.bg-green {
+    background-color: var(--green) !important;
 }
 
-.bg-green-dark{
+.bg-green-dark {
     background-color: var(--green-dark);
 }
 
-.c-primary{
+.border-green-dark {
+    border-color: var(--green-dark) !important;
+}
+
+.c-primary {
     color: var(--c-primary) !important;
 }
 
-.f-primary{
+.f-primary {
     font-family: var(--primary-font);
 }
 
-.f-secondary{
+.f-secondary {
     font-family: var(--secondary-font);
 }
 
-.btn{
-    background-color: var(--green-dark)!important;
+.btn {
+    background-color: var(--green-dark) !important;
 }
 
-.btn:hover{
+.btn:hover {
     opacity: 0.5;
 }
 
-.diary, .gift {
+.diary,
+.#gifts {
     background-color: #efecdd;
 }
 
-.diary .leaves-3{
+.diary .leaves-3 {
     transform: rotate(30deg);
     left: -5rem;
     bottom: 0;
 }
 
-#count-date .countdown p{
+#count-date .countdown p {}
 
-}
-
-.adress .bg-white{
+.adress .bg-white {
     padding-top: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -82,95 +85,176 @@ body{
     transform: rotate(358deg);
 }
 
-.adress .col-md-6.column-left{
+.adress .col-md-6.column-left {
     width: auto;
 }
 
-.gallery .bg-white{
-    padding-bottom: 5rem;
-    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.161));
+.gallery .bg-white {
+    padding-bottom: 5rem !important;
+    /* filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.161)); */
 }
 
-.soong-book .leaves-3{
+.gallery .bg-white::before {
+    content: "";
+    display: block;
+}
+
+.tns-controls {
+    filter: brightness(0);
+}
+
+.gallery .tns-controls [data-controls="prev"] {
+    left: -30px;
+}
+
+.gallery .tns-controls [data-controls="next"] {
+    right: -30px;
+}
+
+.soong-book .leaves-3 {
     top: -5rem;
-    right: -3rem!important;
+    right: -3rem !important;
     transform: rotate(179deg);
 }
 
-.dress-code .col-md-6{
+.dress-code .col-md-6 {
     max-width: 400px;
 }
 
-.album .leaves-2{
+.album .leaves-2 {
     transform: rotate(65deg);
-    left: -4rem!important;
+    left: -4rem !important;
 }
 
-#countdown p{
+#countdown p {
     background-color: var(--pink);
     color: white;
     width: 113px;
     height: 113px;
 }
 
-.confirmation .leaves-6{
+.confirmation .leaves-6 {
     transform: rotate(204deg);
     height: 400px;
 }
 
-@media (max-width: 576px){
+.tns-controls {
+    left: 0;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
 
-    .bg-img .leaves-2{
+.tns-controls [data-controls="prev"],
+.tns-controls [data-controls="next"] {
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 0;
+    height: 24px;
+    padding: 0;
+    position: absolute;
+    width: 24px;
+    z-index: 2;
+}
+
+.tns-controls [data-controls="prev"] {
+    background-image: url('https://emidica.com/img/icos/ico-arrow-prev.svg');
+    left: -10px;
+}
+
+.tns-controls [data-controls="next"] {
+    background-image: url('https://emidica.com/img/icos/ico-arrow-next.svg');
+    right: -10px;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: var(--green-dark);
+}
+.nav-pills .nav-link{
+    color: var(--c-primary);
+}
+
+.my-slider, .my-slider-2{
+    margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+
+    .bg-img .leaves-2 {
         display: none;
     }
-    .adress .bg-white{
+
+    .adress .bg-white {
         width: auto;
         margin-bottom: 5rem;
     }
-    .adress .bg-white img{
+
+    .adress .bg-white img {
         width: 100%;
     }
-    .diary .countdown{
-        display: grid!important;
-        grid-template-columns: repeat(2, 1fr)!important;
-        padding-right: 0!important;
+
+    .diary .countdown {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        padding-right: 0 !important;
     }
-    .album #countdown{
-        display: grid!important;
-        grid-template-columns: repeat(2, 1fr)!important;
+
+    .album #countdown {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
         justify-items: center;
     }
-    .diary .leaves-3{
+
+    .diary .leaves-3 {
         height: 150px;
     }
-    .gallery .my-slider{
+
+    .gallery .my-slider {
         flex-direction: column;
         padding: 30px;
     }
-    .soong-book .leaves-3{
+
+    .soong-book .leaves-3 {
         height: 200px;
-        right: 0!important;
-    
+        right: 0 !important;
+
     }
-    .soong-book .h-100, .gift .h-100{
-        padding: 5rem 1rem!important;
+
+    .soong-book .h-100,
+    #gifts .h-100 {
+        padding: 5rem 1rem !important;
     }
-    .dress-code .row{
+
+    .dress-code .row {
         gap: 3rem;
     }
-    .confirmation .leaves-6{
+
+    .confirmation .leaves-6 {
         height: 200px;
         top: -5rem;
         transform: initial;
     }
-    .confirmation{
+
+    .confirmation {
         padding: 5rem 0rem;
     }
-    .confirmation h3{
+
+    .confirmation h3 {
         margin-top: 3rem;
     }
-    .album .leaves-2{
+
+    .album .leaves-2 {
         height: 250px;
-    top: -5rem!important;
+        top: -5rem !important;
+    }
+
+    .gallery .tns-controls [data-controls="prev"] {
+        left: 0px;
+    }
+
+    .gallery .tns-controls [data-controls="next"] {
+        right: 0px;
     }
 }
