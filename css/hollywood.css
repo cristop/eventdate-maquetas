@@ -243,4 +243,15 @@ body{
     .confirmation .leaves-6{
         display: none;
     }
+    .gallery .tns-controls [data-controls="next"]{
+        right: 0px;
+    }
+    .gallery .tns-controls [data-controls="prev"]{
+        left: 0;
+    }
+    .diary .countdown{
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        padding-right: 0 !important;
+    }
 }
