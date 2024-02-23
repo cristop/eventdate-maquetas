@@ -161,6 +161,17 @@ body{
     margin-left: -5px;
 }
 
+.slider-events, .my-slider, .my-slider-2{
+    margin: 0 auto;
+}
+
+#gallery .tns-controls [data-controls="prev"]{
+    left: -20px;
+}
+#gallery .tns-controls [data-controls="next"]{
+    right: -30px;
+}
+
 @media screen and (max-width: 900px) {
     #countdown{
         display: grid !important;
@@ -208,6 +219,12 @@ body{
 	.stars7 {
 		width: 120px;
 	}
+    #gallery .tns-controls [data-controls="next"]{
+        right: 0px;
+    }
+    #gallery .tns-controls [data-controls="prev"]{
+        left: 0px;
+    }
 
 }
 
