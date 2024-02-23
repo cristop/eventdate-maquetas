@@ -107,11 +107,14 @@ body{
 }
 .tns-controls [data-controls="prev"] {
   background-image: url('https://emidica.com/img/icos/ico-arrow-prev.svg');
-  left: -6px;
+  left: -10px;
 }
 .tns-controls [data-controls="next"] {
   background-image: url('https://emidica.com/img/icos/ico-arrow-next.svg');
-  right: -6px;
+  right: -10px;
+}
+#events .tns-controls, #photos .tns-controls, #godparents .tns-controls{
+  filter: brightness(0);
 }
 .nav-pills .nav-link.active {
   background: #fff;
@@ -167,6 +170,23 @@ body{
 }
 .invert{
   transform: scaleX(-1);
+}
+#events .tns-controls [data-controls="prev"], #photos .tns-controls [data-controls="prev"]{
+  left: -40px;
+}
+#events .tns-controls [data-controls="next"], #photos .tns-controls [data-controls="next"]{
+  right: -40px;
+}
+.slider-events, .my-slider, .my-slider-3{
+  margin: 0 auto;
+}
+#godparents .ratio{
+  height: 350px;
+  width: 350px;
+  margin: 0 auto;
+}
+#godparents .tns-controls [data-controls="next"]{
+  right: 0;
 }
 @media (max-width: 767px) {
   .leaves-1 {
@@ -230,6 +250,12 @@ body{
   }
   .hashtag-phrase{
     word-break: break-all;
+  }
+  #events .tns-controls [data-controls="prev"], #photos .tns-controls [data-controls="prev"]{
+    left: 0px;
+  }
+  #events .tns-controls [data-controls="next"], #photos .tns-controls [data-controls="next"]{
+    right: 0px;
   }
 }
 

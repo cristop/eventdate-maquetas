@@ -75,7 +75,7 @@ img {
   width: 300px;
 }
 
-.bg-img h1, #count-down p,.text-descprition .text-light, .soong-book p, .dress-code p, .gift p.text-gift, .confirmation p, .bg-img .border-yellow{
+.bg-img h1, #count-down p,.text-descprition .text-light, .soong-book p, .dress-code p, #gifts p.text-gift, .confirmation p, .bg-img .border-yellow{
   font-family: serif;
 }
 
@@ -84,7 +84,7 @@ img {
   width: 400px;
 }
 
-.gift .leaves-1 {
+#gifts .leaves-1 {
   top: -15rem;
   right: -12rem !important;
   width: 400px;
@@ -161,10 +161,25 @@ img {
   right: -10px;
 }
 
+.gallery .tns-controls [data-controls="next"]{
+  right: -27px;
+}
+
+.gallery .tns-controls [data-controls="prev"]{
+  left: -27px;
+}
+
+.tns-controls{
+  filter: brightness(0);
+}
+
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
   color: #000!important;
 }
 
+.my-slider, .my-slider-2{
+  margin: 0 auto;
+}
 @media (max-width: 576px) {
   .leaves-1,
   .leaves-2 {
@@ -199,7 +214,7 @@ img {
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
-  .soong-book p, .gift p, .album p {
+  .soong-book p, .album p {
     font-size: 20px !important;
     font-weight: 500;
   }
@@ -216,7 +231,7 @@ img {
     top: -8rem!important;
     left: -9rem!important;
   }
-  .gift .leaves-1{
+  #gifts .leaves-1{
     top: -8rem;
     right: -11rem!important;
   }

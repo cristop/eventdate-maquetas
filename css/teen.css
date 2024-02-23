@@ -113,7 +113,7 @@
 
 .hash,
 .dress-code,
-.gift {
+#gifts {
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -257,6 +257,10 @@
     width: 100%;
 }
 
+.tns-controls{
+    filter: brightness(0);
+}
+
 .tns-controls [data-controls="prev"],
 .tns-controls [data-controls="next"] {
     background-color: transparent;
@@ -286,6 +290,10 @@
 
 #photos .tns-controls [data-controls="next"]{
     right: -27px;
+}
+
+.my-slider, .my-slider-2{
+    margin: 0 auto;
 }
 
 @media (max-width: 567px) {
@@ -319,7 +327,7 @@
         margin: 10px;
     }
 
-    .gifts .bg-grey {
+    #gifts .bg-grey {
         padding: 2rem;
     }
 
@@ -330,7 +338,7 @@
 
     .hash,
     .dress-code,
-    .gift {
+    #gifts {
         padding-top: 50px;
         padding-bottom: 50px;
     }
