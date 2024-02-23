@@ -112,20 +112,14 @@
                             <img src="img/templates/hollywood/gallery-01.jpg" width="100%" class="d-block">
                         </div>
                     </div>
-                    <div class="col-sm">
-                        <div class="bg-white px-3 pt-3"><img src="img/templates/hollywood/gallery-02.jpg" width="100%"
-                            class="d-block">
-                        </div>
+                    <div class="bg-white px-3 pt-3">
+						<img src="img/templates/hollywood/gallery-02.jpg" width="100%" class="d-block">
                     </div>
-                    <div class="col-sm">
-                        <div class="bg-white px-3 pt-3"><img src="img/templates/hollywood/gallery-03.jpg" width="100%"
-                            class="d-block">
-                        </div>
+                    <div class="bg-white px-3 pt-3">
+						<img src="img/templates/hollywood/gallery-03.jpg" width="100%" class="d-block">
                     </div>
-                    <div class="col-sm">
-                        <div class="bg-white px-3 pt-3"><img src="img/templates/hollywood/gallery-03.jpg" width="100%"
-                            class="d-block">
-                        </div>
+					<div class="bg-white px-3 pt-3">
+						<img src="img/templates/hollywood/gallery-02.jpg" width="100%" class="d-block">
                     </div>
                 </div>
             </div>
@@ -512,6 +506,31 @@
 
         }, 1000);
     </script>
+	
+	<script type="module">
+				if ( $('.my-slider').length > 0 ) {
+					var slider = tns({
+						container: '.my-slider',
+						items: 1,
+						gutter: 30,
+						controlsText: ['', ''],
+						nav: false,
+						autoplayButtonOutput: false,
+						mouseDrag: true,
+						slideBy: 1,
+						autoplay: true,
+						items: 1,
+						responsive: {
+							640: {
+								items: 2
+							},
+							900: {
+								items: 3
+							}
+						}
+					});
+				}
+	</script>
 
     <script>
         if ($('.my-slider').length > 0) {
