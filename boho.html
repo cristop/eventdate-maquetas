@@ -317,12 +317,12 @@
 		</section>
 
 		<section id="godparents" class="bg-brown py-5">
-			<div class="container mb-sm-5">
+			<div class="container mb-sm-5 position-relative">
 				<h3 class="f-madi text-center fs-sm-72 fs-48 mb-5">Padrinos</h3>
 				<div class="px-4 px-sm-0">
-					<div class="row justify-content-evenly">
+					<div class="row justify-content-evenly my-slider-3">
 						<div class="col-sm-4 mb-5">
-							<div class="ratio ratio-1x1 rounded-circle bg-brown-full mb-5">
+							<div class="ratio ratio-1x1 rounded-circle bg-brown-full mb-5 w-75 mx-auto">
 								<div class="p-3">
 									<div class="bg-img h-100 rounded-circle overflow-hidden" style="background-image: url('img/templates/boho/parent-1.jpg');"></div>
 								</div>
@@ -331,7 +331,25 @@
 							<p class="fs-sm-24 fs-21 f-playfair fst-italic text-center fw-500">Hermano del Novio</p>
 						</div>
 						<div class="col-sm-4 mb-5">
-							<div class="ratio ratio-1x1 rounded-circle bg-brown-full mb-5">
+							<div class="ratio ratio-1x1 rounded-circle bg-brown-full mb-5 w-75 mx-auto">
+								<div class="p-3">
+									<div class="bg-img h-100 rounded-circle overflow-hidden" style="background-image: url('img/templates/boho/parent-2.jpg');"></div>
+								</div>
+							</div>
+							<h5 class="fs-sm-48 f-madi text-center">Belén Cardozo</h5>
+							<p class="fs-sm-24 fs-21 f-playfair fst-italic text-center fw-500">Amiga de la Novia</p>
+						</div>
+						<div class="col-sm-4 mb-5">
+							<div class="ratio ratio-1x1 rounded-circle bg-brown-full mb-5 w-75 mx-auto">
+								<div class="p-3">
+									<div class="bg-img h-100 rounded-circle overflow-hidden" style="background-image: url('img/templates/boho/parent-1.jpg');"></div>
+								</div>
+							</div>
+							<h5 class="fs-sm-48 f-madi text-center">Agustín Gutiérrez</h5>
+							<p class="fs-sm-24 fs-21 f-playfair fst-italic text-center fw-500">Hermano del Novio</p>
+						</div>
+						<div class="col-sm-4 mb-5">
+							<div class="ratio ratio-1x1 rounded-circle bg-brown-full mb-5 w-75 mx-auto">
 								<div class="p-3">
 									<div class="bg-img h-100 rounded-circle overflow-hidden" style="background-image: url('img/templates/boho/parent-2.jpg');"></div>
 								</div>
@@ -538,6 +556,29 @@
 						},
 						900: {
 							items: 4
+						}
+					}
+				});
+			}
+
+			if ( $('.my-slider-3').length > 0 ) {
+				var slider3 = tns({
+					container: '.my-slider-3',
+					items: 1,
+					gutter: 30,
+					controlsText: ['', ''],
+					nav: false,
+					autoplayButtonOutput: false,
+					mouseDrag: true,
+					slideBy: 1,
+					autoplay: true,
+					items: 1,
+					responsive: {
+						640: {
+							items: 2
+						},
+						900: {
+							items: 2
 						}
 					}
 				});
