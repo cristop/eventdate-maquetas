@@ -354,3 +354,16 @@ body{
 		height: 520px;
 	}
 }
+
+.column-1 .tns-controls [data-controls="next"]{
+	right: 25px;
+}
+.column-1 .tns-controls [data-controls="prev"]{
+	left: -20px;
+}
+.column-2 .tns-controls [data-controls="next"]{
+	right: -25px;
+}
+.column-2 .tns-controls [data-controls="prev"]{
+	left: 20px;
+}
