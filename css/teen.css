@@ -1,51 +1,52 @@
 @import "_custom.css";
 @import url('https://fonts.googleapis.com/css2?family=Meow+Script&family=Montserrat&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+
 * {
     font-family: 'Poppins', sans-serif;
-  }
+}
 
-.container{
+.container {
     max-width: 1140px;
 }
 
-.bg-aqua{
+.bg-aqua {
     background-color: #a9c4ba;
 }
 
-.bg-pink{
+.bg-pink {
     background-color: #DC8272;
 }
 
-.bg-grey{
+.bg-grey {
     background-color: #f2f2f2;
 }
 
-.text-pink{
+.text-pink {
     color: #DC8272;
 }
 
-.title{
+.title {
     font-size: 18px;
     font-weight: 800;
     line-height: 20px;
 }
 
-.bg-img h3{
+.bg-img h3 {
     font-size: 100px;
     font-family: 'Meow Script', cursive;
     color: #E8C1BA;
     font-weight: 300;
 }
 
-.bg-img h1{
+.bg-img h1 {
     font-size: 20px;
 }
 
-.phrase p{
+.phrase p {
     font-size: 16px;
 }
 
-.date .column-left .bg p{
+.date .column-left .bg p {
     font-size: 20px;
     font-weight: 800;
     text-transform: uppercase;
@@ -53,14 +54,14 @@
     margin-bottom: 0px;
 }
 
-.date .column-left .bg{
+.date .column-left .bg {
     background-color: #F2F2F2;
     padding: 0px 30px;
     border-radius: 100px;
     display: inline-flex;
 }
 
-.line::after{
+.line::after {
     content: "";
     display: block;
     width: 100px;
@@ -71,56 +72,60 @@
 }
 
 
-.date .address{
+.date .address {
     font-size: 14px;
     font-weight: 500;
     text-transform: uppercase;
     line-height: 20px;
 }
 
-.form .container{
+.form .container {
     max-width: 900px;
 }
 
-.date a{
+.date a {
     padding: 7px 24px;
 }
 
-.date .column-right img{
+.date .column-right img {
     border-radius: 40px 40px 40px 40px;
 }
 
-.form{
+.form {
     min-height: 600px;
     display: flex;
     align-items: center
 }
 
-.form form .d-flex > div{
+.form form .d-flex>div {
     width: 100%;
 }
 
 
-.form form input{
+.form form input {
     border-radius: 10px;
     width: 100%;
 }
 
-.gold{
+.gold {
     min-height: 76px;
 }
 
-.hash, .dress-code, .gift{
+.hash,
+.dress-code,
+.gift {
     padding-top: 100px;
     padding-bottom: 100px;
 }
 
-.hash .btn, .dress-code .btn{
+.hash .btn,
+.dress-code .btn {
     width: auto;
     margin: 0 auto;
 }
 
-.dress-code .bg-grey, .hash .bg-grey{
+.dress-code .bg-grey,
+.hash .bg-grey {
     width: 500px;
     margin: 0 auto;
     border-radius: 50px;
@@ -129,46 +134,58 @@
     margin-bottom: 1rem;
 }
 
-.dress-code .bg-grey p, .hash .bg-grey p{
+.dress-code .bg-grey p,
+.hash .bg-grey p {
     font-size: 25px;
     font-weight: 800;
     text-transform: capitalize;
     margin-bottom: 0px;
 }
 
-.gift .bg-grey{
+#gifts .bg-grey {
     padding: 6rem;
     border-radius: 60px;
 }
 
-.gift h2{
+#gifts h2 {
     font-size: 18px;
     font-weight: 800;
 }
 
-.gift .tab-content{
-    max-width: 250px;
+#gifts .tab-content {
     margin: 0 auto;
 }
 
-.gift .tab-content ul{
+#gifts .tab-content ul {
     list-style: none;
     text-align: left;
 }
 
-.confirmed{
+#gifts .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: #a9c4ba;
+}
+
+#gifts .nav-link:focus, .nav-link:hover{
+    color: white;
+}
+
+#gifts .nav-pills .nav-link{
+    color:#000000;
+}
+
+.confirmed {
     min-height: 700px;
     display: flex;
     align-items: center;
 }
 
-.confirmed h2{
+.confirmed h2 {
     font-family: 'Meow Script', cursive;
     font-size: 50px;
     font-weight: 500;
 }
 
-.confirmed img{
+.confirmed img {
     opacity: 0.5;
     height: 100%;
 }
@@ -178,43 +195,45 @@
     padding: 50px;
 }
 
-.confirmed .column-right .form-check-label{
+.confirmed .column-right .form-check-label {
     font-size: 14px;
     font-weight: 500;
     color: #000000;
 }
 
-.confirmed .column-right .form-check-input{
+.confirmed .column-right .form-check-input {
     /* width: 13px;
     height: 13px; */
 }
 
-.confirmed .column-right .form-check{}
+.confirmed .column-right .form-check {}
 
-.confirmed .column-right textarea.form-control-lg{
+.confirmed .column-right textarea.form-control-lg {
     min-height: 100px;
     height: 100px;
 }
 
-.confirmed .column-right textarea.form-control-lg::placeholder, .confirmed .column-right input.form-control::placeholder{
+.confirmed .column-right textarea.form-control-lg::placeholder,
+.confirmed .column-right input.form-control::placeholder {
     font-size: 14px;
     font-weight: 500;
     color: #000000;
 }
 
-.confirmed .column-right input.form-control{
+.confirmed .column-right input.form-control {
     min-height: auto;
 }
 
-.confirmed .column-right input.form-control, .confirmed .column-right textarea.form-control-lg{
-    padding: 5px 5px 5px 10px!important;
+.confirmed .column-right input.form-control,
+.confirmed .column-right textarea.form-control-lg {
+    padding: 5px 5px 5px 10px !important;
     margin: 4px 4px 4px 4px;
-    border-radius: 10px 10px 10px 10px!important;
+    border-radius: 10px 10px 10px 10px !important;
 
 }
 
 
-.confirmed .column-left .texto{
+.confirmed .column-left .texto {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -222,58 +241,101 @@
     letter-spacing: 1px;
 }
 
-.footer{
+.footer {
     background-color: #8DCCC5;
 }
 
-.footer .heading-title{
+.footer .heading-title {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
 }
 
-@media (max-width: 567px){
+.tns-controls {
+    left: 0;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
 
-    .date .row{
+.tns-controls [data-controls="prev"],
+.tns-controls [data-controls="next"] {
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 0;
+    height: 24px;
+    padding: 0;
+    position: absolute;
+    width: 24px;
+    z-index: 2;
+}
+
+.tns-controls [data-controls="prev"] {
+    background-image: url('https://emidica.com/img/icos/ico-arrow-prev.svg');
+    left: -10px;
+}
+
+.tns-controls [data-controls="next"] {
+    background-image: url('https://emidica.com/img/icos/ico-arrow-next.svg');
+    right: -10px;
+}
+
+#photos .tns-controls [data-controls="prev"] {
+    left: -27px;
+}
+
+#photos .tns-controls [data-controls="next"]{
+    right: -27px;
+}
+
+@media (max-width: 567px) {
+
+    .date .row {
         gap: 30px;
     }
 
-    .form form .d-flex{
-        display: block!important;
+    .form form .d-flex {
+        display: block !important;
     }
 
-    #phrase{
-        padding: 0px!important;
+    #phrase {
+        padding: 0px !important;
     }
 
-    .title{
+    .title {
         font-size: 16px;
         letter-spacing: 2px;
         margin-top: 20px;
     }
 
-    .dress-code .bg-grey, .hash .bg-grey{
+    .dress-code .bg-grey,
+    .hash .bg-grey {
         padding: 10px 15px;
     }
 
-    .dress-code .row, .hash .row, .confirmed .row{
+    .dress-code .row,
+    .hash .row,
+    .confirmed .row {
         margin: 10px;
     }
 
-    .gift .bg-grey{
+    .gifts .bg-grey {
         padding: 2rem;
     }
 
-    .confirmed .column-right{
+    .confirmed .column-right {
         padding: 20px;
         border-radius: 50px;
     }
 
-    .hash, .dress-code, .gift{
+    .hash,
+    .dress-code,
+    .gift {
         padding-top: 50px;
         padding-bottom: 50px;
     }
 
-    .bg-img img.leaves-1{
+    .bg-img img.leaves-1 {
         display: none;
     }
 
