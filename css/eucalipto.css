@@ -162,6 +162,24 @@ body{
 .invert{
   transform: scaleX(-1);
 }
+
+.slider-events, .my-slider, .my-slider-2, .my-slider-3{
+  margin: 0 auto;
+}
+
+#events .tns-controls [data-controls="prev"], #photos .tns-controls [data-controls="prev"]{
+  left: -30px;
+}
+
+#events .tns-controls [data-controls="next"], #photos .tns-controls [data-controls="next"]{
+  right: -30px;
+}
+
+#godparents .ratio{
+  height: 350px;
+  width: 350px;
+  margin: 0 auto;
+}
 @media (max-width: 767px) {
   .leaves-1 {
     width: 250px;
@@ -211,6 +229,13 @@ body{
   }
   .cut-3 {
     background-size: auto 100%;
+  }
+  #events .tns-controls [data-controls="prev"], #photos .tns-controls [data-controls="prev"], #godparents .tns-controls [data-controls="prev"]{
+    left: 0px;
+  }
+  
+  #events .tns-controls [data-controls="next"], #photos .tns-controls [data-controls="next"], #godparents .tns-controls [data-controls="next"]{
+    right: 0px;
   }
 }
 

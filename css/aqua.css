@@ -133,4 +133,8 @@
     margin-bottom: -50px;
     width: 120px;
   }
+  #confirmation .leaves-6{
+    z-index: -1;
+    width: 80px;
+  }
 }

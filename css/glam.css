@@ -71,13 +71,17 @@ body {
   font-size: 32px;
   color: black;
 }
+#photos .tns-controls{
+  filter: brightness(0) invert(77%) sepia(67%) saturate(5029%) hue-rotate(320deg) brightness(103%) contrast(100%);
+}
 @media (max-width: 767px) {
   #countdown2 div {
     color: white;
     font-size: 32px;
     font-weight: 600;
     line-height: 1;
-    margin: 0 10px;
+    margin: 0 auto;
+    margin-bottom: 30px;
   }
   #countdown2 div .nmbr {
     background: #FF9493;
@@ -92,5 +96,13 @@ body {
     font-family: 'Parisienne', serif;
     font-size: 18px;
     color: black;
+  }
+  .tns-controls [data-controls="prev"]{
+    left: 0;
+  }
+  #selpix #countdown2{
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    padding-right: 0 !important;
   }
 }
