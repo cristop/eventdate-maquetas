@@ -77,6 +77,12 @@
 .leaves-7 {
   top: -260px;
 }
+#events .tns-controls [data-controls="next"]{
+  right: -30px;
+}
+#events .tns-controls [data-controls="prev"]{
+  left: -30px;
+}
 @media (max-width: 767px) {
   .leaves-1 {
     width: 330px;
@@ -114,6 +120,12 @@
     z-index: 0;
     top: 0px;
     width: 150px;
+  }
+  #events .tns-controls [data-controls="next"]{
+    right: 0px;
+  }
+  #events .tns-controls [data-controls="prev"]{
+    left: 0px;
   }
 }
 

@@ -279,12 +279,12 @@ body {
 
 .tns-controls [data-controls="prev"] {
     background-image: url('https://emidica.com/img/icos/ico-arrow-prev.svg');
-    left: -10px;
+    left: 0;
 }
 
 .tns-controls [data-controls="next"] {
     background-image: url('https://emidica.com/img/icos/ico-arrow-next.svg');
-    right: -10px;
+    right: 0;
 }
 
 .tns-controls{

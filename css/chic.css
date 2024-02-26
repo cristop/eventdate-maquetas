@@ -77,11 +77,11 @@
 @media screen and (max-width: 900px) {
 	.tns-controls [data-controls="prev"] {
 	  background-image: url('https://emidica.com/img/icos/ico-arrow-prev.svg');
-	  left: 7px;
+	  left: 0px;
 	}
 	.tns-controls [data-controls="next"] {
 	  background-image: url('https://emidica.com/img/icos/ico-arrow-next.svg');
-	  right: 7px;
+	  right: 0px;
 	}
 }
 .nav-pills .nav-link.active {
@@ -108,6 +108,10 @@
 }
 .leaves-7 {
   bottom: -200px;
+}
+
+#events .tns-controls{
+  filter: invert();
 }
 @media (max-width: 767px) {
   .leaves-1 {

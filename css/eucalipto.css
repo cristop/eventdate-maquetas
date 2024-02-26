@@ -237,6 +237,11 @@ body{
   #events .tns-controls [data-controls="next"], #photos .tns-controls [data-controls="next"], #godparents .tns-controls [data-controls="next"]{
     right: 0px;
   }
+
+  #godparents .ratio{
+    width: 100%;
+    height: 100%;
+  }
 }
 
 #photos #tns2-mw{
