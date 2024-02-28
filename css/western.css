@@ -187,6 +187,21 @@ body{
   filter: brightness(0);
 }
 
+.tns-controls [data-controls="prev"]{
+  left: 0;
+}
+
+.tns-controls [data-controls="next"]{
+  right: 0;
+}
+
+@media (max-width: 767px){
+  #instagram .ratio{
+    width: 100%;
+    height: 100%;
+  }
+}
+
 @media (max-width: 767px) {
   .leaves-1 {
     width: 150px;
