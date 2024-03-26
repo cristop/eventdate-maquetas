@@ -1,13 +1,16 @@
 @import "_custom.css";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root{
+  --gold: #C19E6B;
+}
 body {
   font-family: 'Montserrat', sans-serif;
 }
 .text-gold {
-  color: #C19E6B;
+  color: var(--gold);
 }
 .bg-gold {
-  background-color: #C19E6B;
+  background-color: var(--gold);
 }
 .arrowCta {
   display: block;
@@ -28,8 +31,8 @@ body {
   left: 0;
 }
 .arrowCta:after {
-  border-bottom: 3px solid #C19E6B;
-  border-right: 3px solid #C19E6B;
+  border-bottom: 3px solid var(--gold);
+  border-right: 3px solid var(--gold);
   top: 0;
   left: 0;
   opacity: 1;
@@ -38,8 +41,8 @@ body {
 .arrowCta:before {
   top: 0;
   left: 0;
-  border-bottom: 3px solid #C19E6B;
-  border-right: 3px solid #C19E6B;
+  border-bottom: 3px solid var(--gold);
+  border-right: 3px solid var(--gold);
   animation: top-arrow 1.65s infinite;
 }
 @keyframes bottom-arrow {
@@ -111,4 +114,36 @@ body {
 }
 .accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed {
   box-shadow: none !important;
+}
+
+/* Instagram */
+#instagram-cumple .title{
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+#instagram-cumple img{
+  border-color: var(--gold) !important;
+}
+
+/* Filtro */
+#instagram-filtro .instructions{
+  background-color: #F2F2F2;
+  padding: 110px 40px;
+  width: 650px;
+}
+#instagram-filtro .title{
+  text-transform: uppercase;
+  font-size: 30px !important;
+  color: var(--gold);
+}
+#instagram-filtro .text{
+  font-size: 16px !important;
+  max-width: 480px;
+}
+#instagram-filtro .instructions .btn{
+  background-color: #000 !important;
+  color: white;
+  border-radius: 0px !important;
+  font-weight: 500;
 }

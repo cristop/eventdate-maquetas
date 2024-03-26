@@ -169,6 +169,10 @@
 			</form>
 		</section>
 
+		<div id="instagram-cumple-load"></div>
+
+		<div id="instagram-filtro-load"></div>
+
         <footer class="py-4 px-3 text-white text-center bg-black">
             Invitación creada con 
 			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15.385" viewBox="0 0 16 15.385">
@@ -282,6 +286,39 @@
 				});
 			}
 		</script>
+
+		<!-- CARGA DE MODULOS EXTERNOS -->
+		<script>
+			$(document).ready(function() {
+				// Rellenar las variables con los valores deseados
+				var data = {
+					var1: 'Valor 1',
+					// Agrega más variables según sea necesario
+				};
+			
+				// Cargar el contenido del archivo HTML externo
+				$('#instagram-cumple-load').load('componentes/instagram-cumple.html', function() {
+					// Reemplazar las variables en el contenido cargado
+					$(this).html(function(_, html) {
+						return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
+							return data[key] || match;
+						});
+					});
+				});
+
+				//////////////////////////////////
+				$('#instagram-filtro-load').load('componentes/instagram-filtro.html', function() {
+					// Reemplazar las variables en el contenido cargado
+					$(this).html(function(_, html) {
+						return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
+							return data[key] || match;
+						});
+					});
+				});
+			});
+		</script>
+		<!-- CARGA DE MODULOS EXTERNOS -->
+
     </body>
 
 </html>
