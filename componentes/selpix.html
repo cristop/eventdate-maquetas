@@ -1,0 +1,92 @@
+<section id="selpix" class="py-5 text-center ">
+    <div class="container py-5" style="max-width: 850px">
+        <div class="logo mb-5">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="109" height="109" viewBox="0 0 109 109">
+                <defs>
+                  <clipPath id="clip-path">
+                    <rect id="Rectángulo_104" data-name="Rectángulo 104" width="67.697" height="68.13" fill="#fff"/>
+                  </clipPath>
+                </defs>
+                <g id="ICONO_SELPIX" data-name="ICONO SELPIX" transform="translate(-904 -4400)">
+                  <rect id="Rectángulo_1362" data-name="Rectángulo 1362" width="109" height="109" transform="translate(904 4400)" fill="#212121"/>
+                  <g id="Grupo_96" data-name="Grupo 96" transform="translate(925 4420)">
+                    <g id="Grupo_95" data-name="Grupo 95" clip-path="url(#clip-path)">
+                      <path id="Trazado_3582" data-name="Trazado 3582" d="M51.805,0H15.892A15.836,15.836,0,0,0,0,15.779V52.351A15.817,15.817,0,0,0,13.584,67.962V33.1h.025a20.068,20.068,0,1,1,8.046,16.973V68.13H51.805A15.836,15.836,0,0,0,67.7,52.351V15.779A15.836,15.836,0,0,0,51.805,0m3.437,17.014a4.119,4.119,0,1,1,4.149-4.119,4.134,4.134,0,0,1-4.149,4.119" transform="translate(0 0)" fill="#fff"/>
+                      <path id="Trazado_3583" data-name="Trazado 3583" d="M86.127,97.413A10.009,10.009,0,1,0,76.047,87.4a10.045,10.045,0,0,0,10.08,10.009" transform="translate(-52.41 -53.339)" fill="#fff"/>
+                      <path id="Trazado_3584" data-name="Trazado 3584" d="M86.127,97.413A10.009,10.009,0,1,0,76.047,87.4a10.045,10.045,0,0,0,10.08,10.009" transform="translate(-52.41 -53.339)" fill="#fff"/>
+                    </g>
+                  </g>
+                </g>
+            </svg>              
+        </div>
+        <div class="title fs-sm-28 fs-28 fw-800 mb-4">ÁLBUM SELPIX</div>
+        <div class="text mb-5">
+            ¡Me encantaría que formen parte de los recuerdos especiales de mis quinces. <br>
+            Por eso, les comparto este álbum digital donde podrán subir todas las fotos que quieran compartir. <br>
+            ¡No dejen pasar ninguna oportunidad de capturar sus recuerdos! <br>
+            ¡Gracias por ser parte de este gran día!
+        </div>
+        <div id="selpix-countdown" class="py-5">
+            <div class="row">
+                <div class="col position-relative mb-5">
+                    <div class="points position-absolute end-0 fw-800 fs-sm-32 pt-4">:</div>
+                    <div class="number fw-700 fs-sm-32" id="days">00</div>
+                    <div class="status fs-sm-18">Dias</div>
+                </div>
+                <div class="col position-relative mb-5">
+                    <div class="points position-absolute end-0 fw-800 fs-sm-32 pt-4 d-none d-sm-block">:</div>
+                    <div class="number fw-700 fs-sm-32" id="hours">00</div>
+                    <div class="status fs-sm-18">Hrs</div>
+                </div>
+                <div class="col position-relative mb-5">
+                    <div class="points position-absolute end-0 fw-800 fs-sm-32 pt-4">:</div>
+                    <div class="number fw-700 fs-sm-32" id="mins">00</div>
+                    <div class="status fs-sm-18">Min</div>
+                </div>
+                <div class="col position-relative mb-5">
+                    <div class="number fw-700 fs-sm-32" id="segs">00</div>
+                    <div class="status fs-sm-18">Seg</div>
+                </div>
+            </div>
+        </div>
+        <div class="btn fw-800 px-5 py-3">
+            IR AL ÁLBUM
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript">
+    // Set the date we're counting down to
+    var countDownDate_selpix = new Date("Jan 5, 2026 15:37:25").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+    // Get today's date and time
+    var now_selpix = new Date().getTime();
+
+    // Find the distance between now_selpix and the count down date
+    var distance_selpix = countDownDate_selpix - now_selpix;
+
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance_selpix / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance_selpix % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance_selpix % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance_selpix % (1000 * 60)) / 1000);
+    
+    // Display the result in the element with id="demo"
+    // document.getElementById("selpix-countdown").innerHTML = '<div class="text-gold fs-sm-48 fw-800 lh-1">' + days + '<br><span class="fs-sm-18 text-white fw-300 text-uppercase">días</span></div><div class="text-gold fs-sm-48 fw-800 lh-1">' + hours + '<br><span class="fs-sm-18 text-white fw-300 text-uppercase">horas</span></div><div class="text-gold fs-sm-48 fw-800 lh-1">' + minutes + '<br><span class="fs-sm-18 text-white fw-300 text-uppercase">minutos</span></div><div class="text-gold fs-sm-48 fw-800 lh-1">' + seconds + '<br><span class="fs-sm-18 text-white fw-300 text-uppercase">segundos</span></div>';
+    
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("mins").innerHTML = minutes;
+    document.getElementById("segs").innerHTML = seconds;
+    
+
+    // If the count down is finished, write some text
+    if (distance_selpix < 0) {
+        clearInterval(x);
+        document.getElementById("selpix-countdown").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+</script>

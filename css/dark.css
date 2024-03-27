@@ -130,7 +130,7 @@ body {
 #instagram-filtro .instructions{
   background-color: #F2F2F2;
   padding: 110px 40px;
-  width: 650px;
+  max-width: 650px;
 }
 #instagram-filtro .title{
   text-transform: uppercase;
@@ -146,4 +146,63 @@ body {
   color: white;
   border-radius: 0px !important;
   font-weight: 500;
+  border: 0 !important;
+}
+
+/* Video */
+#video{
+  background-color: #212121;
+  color: white;
+}
+#video .title{
+  color: var(--gold);
+}
+
+/* Selpix */
+#selpix{
+  background-color: #F2F2F2;
+}
+#selpix .btn{
+  background-color: #000;
+  color: white;
+  border-radius: 0;
+}
+#selpix .number{
+  background-color: var(--gold);
+  color: #fff;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+}
+#selpix .status{
+  text-transform: uppercase;
+}
+
+/* gifts */
+#gifts{
+  background-color: #212121 !important;
+  color: #fff;
+}
+#gifts .bg-white{
+  color: #000;
+}
+#gifts .pills .rounded-pill{
+  border-radius: 0 !important;
+}
+#gifts .title{
+  text-transform: uppercase;
+  color: var(--gold) !important;
+  font-size: 30px !important;
+}
+.nav-pills .nav-link{
+  color: white;
+}
+.nav-pills .nav-link.active{
+  background-color: white;
+  color: #000;
 }
