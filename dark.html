@@ -13,96 +13,180 @@
 		<!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js"></script><![endif]-->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
         <link rel="stylesheet" type="text/css" href="css/dark.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        
+		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     </head>
 
     <body>
 
-		<div class="vh-100 bg-img bg-img-fixed" style="background-image: url('img/templates/dark/portada-web-3-1-scaled.jpeg');">
-			<div class="w-100 h-100 d-flex flex-column align-items-center justify-content-center bg-black bg-opacity-50">
-				<h1 class="fs-sm-35 fw-700 text-white text-uppercase m-0 lh-1 ls-10 ms-2">Martín</h1>
-				<h2 class="fs-sm-200 fw-800 lh-1 mb-3 text-gold">30</h2>
-				<h3 class="fs-sm-35 text-white text-uppercase m-0 lh-1 ls-10 ms-2">años</h3>
-				<div class="arrowCta"></div>
-			</div>
-		</div>
+		<!-- /////////////////////////// -->
+		<div id="welcome-load"></div>
+		<script>
+			// Cargar el contenido del archivo HTML externo
+			$('#welcome-load').load('componentes/welcome-cumple.html', function() {
+				// Rellenar las variables con los valores deseados
+				var welcome = {
+					nombre: 'Martín',
+					edad: '30',
+					fecha: '8 SEPTIEMBRE, 21:30 HS',
+					bg: 'img/templates/dark/portada-web-3-1-scaled.jpeg',
+				};
 
-		<section id="date" class="py-5 px-3 text-gold fw-800">
-			<p class="my-4 ls-3 text-center fs-sm-32">8 SEPTIEMBRE, 21:30 HS</p>
-		</section>
+				// Reemplazar las variables en el contenido cargado
+				$(this).html(function(_, html) {
+					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
+						return welcome[key] || match;
+					});
+				});
+			});
+		</script>
+		<!-- /////////////////////////// -->
 
-		<section id="place" class="py-5 bg-light">
-			<div class="container my-4">
-				<div class="px-3 px-sm-0">
-					<div class="row">
-						<div class="col-sm-4 bg-img" style="background-image: url('img/templates/dark/Cruz-espacio.jpg')">
-							<div class="ratio ratio-1x1"></div>
-						</div>
-						<div class="col-sm-8 bg-white d-flex align-items-center">
-							<div class="p-4 text-center flex-fill">
-								<h3 class="fs-sm-32 text-gold fw-800 ls-3 text-uppercase">Dirección</h3>
-								<h4 class="fs-sm-21 fw-800 ls-2 text-uppercase">Cruz Espacio</h4>
-								<p class="fs-sm-14 fw-500 ls-2 text-uppercase">Av. Ramón Cárcano 120, Chateau Carreras, Ramón Cárcano, X5003HGO Córdoba</p>
-								<a href="#" class="d-inline-block py-3 fs-sm-14 px-4 bg-black text-white text-uppercase" target="_blank">Ver ubicación</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
 
-		<section class="bg-black bg-img bg-img-fixed text-center py-5" style="background-image: url('img/templates/dark/fondo-burbujas.png');">
-			<div class="container py-5">
-				<div class="d-flex justify-content-evenly" id="countdown"></div>
-			</div>
-		</section>
+		<!-- /////////////////////////// -->
+		<div id="itinerary-load"></div>
+		<script>
+			// Cargar el contenido del archivo HTML externo
+			$('#itinerary-load').load('componentes/itinerary.html', function() {
+				// Rellenar las variables con los valores deseados
+				var itinerary = {
+					lugar: 'CRUZ ESPACIO',
+					direccion: 'AV. RAMÓN CÁRCANO 120, CHATEAU CARRERAS, RAMÓN CÁRCANO, X5003HGO CÓRDOBA',
+					hora: '21:00 HS',
+					bg: 'img/templates/dark/Cruz-espacio.jpg',
+				};
 
-		<section id="photos" class="py-5">
-			<div class="container my-4">
-				<div class="px-5 position-relative">
-					<div class="my-slider d-flex align-items-center">
-						<div class="h-100"><img src="img/templates/dark/portada-web-2-2-scaled.jpeg" class="img-fluid d-block"></div>
-						<div class="h-100"><img src="img/templates/dark/foto-002-1-scaled.jpeg" class="img-fluid d-block"></div>
-						<div class="h-100"><img src="img/templates/dark/foto-003-scaled.jpeg" class="img-fluid d-block"></div>
-						<div class="h-100"><img src="img/templates/dark/foto-004-scaled.jpeg" class="img-fluid d-block"></div>
-					</div>
-				</div>
-			</div>
-		</section>
+				// Reemplazar las variables en el contenido cargado
+				$(this).html(function(_, html) {
+					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
+						return itinerary[key] || match;
+					});
+				});
+			});
+		</script>
+		<!-- /////////////////////////// -->
 
+
+		<!-- /////////////////////////// -->
+		<div id="countdown-load"></div>
+		<script>
+			// Cargar el contenido del archivo HTML externo
+			$('#countdown-load').load('componentes/countdown.html', function() {
+				// Rellenar las variables con los valores deseados
+				var countdown = {
+				};
+
+				// Reemplazar las variables en el contenido cargado
+				$(this).html(function(_, html) {
+					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
+						return countdown[key] || match;
+					});
+				});
+			});
+		</script>
+		<!-- /////////////////////////// -->
+
+		<!-- /////////////////////////// -->
+		<div id="schedule-load"></div>
+		<script>
+			// Cargar el contenido del archivo HTML externo
+			$('#schedule-load').load('componentes/schedule.html', function() {
+				// Rellenar las variables con los valores deseados
+				var schedule = {
+				};
+
+				// Reemplazar las variables en el contenido cargado
+				$(this).html(function(_, html) {
+					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
+						return schedule[key] || match;
+					});
+				});
+			});
+		</script>
+		<!-- /////////////////////////// -->
+		
+
+		<!-- /////////////////////////// -->
+		<div id="gallery-load"></div>
+		<script>
+			// Cargar el contenido del archivo HTML externo
+			$('#gallery-load').load('componentes/gallery.html', function() {
+				// Rellenar las variables con los valores deseados
+				var gallery = {
+					template_name: 'dark',
+					photos_quanty: 3,
+				};
+
+				// Reemplazar las variables en el contenido cargado
+				$(this).html(function(_, html) {
+					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
+						return gallery[key] || match;
+					});
+				});
+			});
+		</script>
+		<!-- /////////////////////////// -->
+
+
+		<!-- /////////////////////////// -->
 		<div id="gifts-load"></div>
+		<script>
+			// Cargar el contenido del archivo HTML externo
+			$('#gifts-load').load('componentes/gifts.html', function() {
+				// Reemplazar las variables en el contenido cargado
+				$(this).html(function(_, html) {
+					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
+						return data[key] || match;
+					});
+				});
+			});
+		</script>
+		<!-- /////////////////////////// -->
 
-		<section id="hashtag" class="bg-white py-5">
-			<div class="container py-5 text-center">
-				<h3 class="fs-sm-16 fw-700 text-uppercase mb-4">Durante el cumpleaños utiliza el hashtag</h3>
-				<div class="bg-gold text-white text-uppercase fs-sm-24 fw-700 ls-3 py-3 mb-4">#los30deMartin</div>
-				<a href="https://www.instagram.com/explore/tags/cumpledan" class="d-inline-block py-3 fs-sm-14 px-4 bg-black text-white text-uppercase" target="_blank">Ver en instagram</a>
-			</div>
-		</section>
+		
+		<!-- /////////////////////////// -->
+		<div id="hashtag-load"></div>
+		<script>
+			// Cargar el contenido del archivo HTML externo
+			$('#hashtag-load').load('componentes/hashtag.html', function() {
+				// Rellenar las variables con los valores deseados
+				var hashtag = {
+					texto: 'Durante la fiesta utiliza el hashtag',
+					hashtag: '#LOS30DEMARTIN',
+				};
 
-		<section id="songs" class="bg-img bg-img-fixed" style="background-image: url('img/templates/dark/dj-1.jpeg');">
-			<div class="py-5 bg-img" style="background-image: url('img/templates/dark/notas-18.svg')">
-				<div class="container py-5 my-5">
-					<h3 class="fs-sm-24 text-center text-gold fw-800 text-uppercase mb-3 ls-3">¿Qué canciones no pueden faltar?</h3>
-					<p class="fs-sm-14 text-center text-white fw-300 ls-2 text-uppercase">Sugerí las canciones que pensás que no pueden faltar en mi fiesta</p>
+				// Reemplazar las variables en el contenido cargado
+				$(this).html(function(_, html) {
+					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
+						return hashtag[key] || match;
+					});
+				});
+			});
+		</script>
+		<!-- /////////////////////////// -->
 
-					<form class="mt-4">
-						<div class="row justify-content-center">
-							<div class="col-sm-4 mb-3">
-								<label class="fs-sm-14 text-white mb-2">Nombre de la canción*</label>
-								<input type="text" class="bg-white text-dark px-3 py-2 border-0 w-100" name="">
-							</div>
-							<div class="col-sm-4 mb-3">
-								<label class="fs-sm-14 text-white mb-2">Autor*</label>
-								<input type="text" class="bg-white text-dark px-3 py-2 border-0 w-100" name="">
-							</div>
-							<div class="col-sm-8 text-end">
-								<button class="btn btn-light fs-sm-14 fw-600 text-uppercase py-2 px-4 border-0 rounded-0">Enviar</button>
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-		</section>
+		<!-- /////////////////////////// -->
+		<div id="playlist-load"></div>
+		<script>
+			// Cargar el contenido del archivo HTML externo
+			$('#playlist-load').load('componentes/playlist.html', function() {
+				// Rellenar las variables con los valores deseados
+				var playlist = {
+				};
+
+				// Reemplazar las variables en el contenido cargado
+				$(this).html(function(_, html) {
+					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
+						return playlist[key] || match;
+					});
+				});
+			});
+		</script>
+		<!-- /////////////////////////// -->
 
 		<section id="theme" class="py-5">
 			<div class="container py-5 text-center">
@@ -143,13 +227,63 @@
 			</form>
 		</section>
 
+
 		<div id="instagram-cumple-load"></div>
+		<script>
+			// Cargar el contenido del archivo HTML externo
+			$('#instagram-cumple-load').load('componentes/instagram-cumple.html', function() {
+				// Reemplazar las variables en el contenido cargado
+				$(this).html(function(_, html) {
+					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
+						return data[key] || match;
+					});
+				});
+			});
+		</script>
+
 
 		<div id="video-load"></div>
+		<script>
+			// Cargar el contenido del archivo HTML externo
+			$('#video-load').load('componentes/video.html', function() {
+				// Reemplazar las variables en el contenido cargado
+				$(this).html(function(_, html) {
+					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
+						return data[key] || match;
+					});
+				});
+			});
+		</script>
+
 
 		<div id="instagram-filtro-load"></div>
+		<script>
+			// Cargar el contenido del archivo HTML externo
+			$('#instagram-filtro-load').load('componentes/instagram-filtro.html', function() {
+				// Reemplazar las variables en el contenido cargado
+				$(this).html(function(_, html) {
+					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
+						return data[key] || match;
+					});
+				});
+			});
+		</script>
+
 
 		<div id="selpix-load"></div>
+		<script>
+			// Cargar el contenido del archivo HTML externo
+			$('#selpix-load').load('componentes/selpix.html', function() {
+				// Reemplazar las variables en el contenido cargado
+				$(this).html(function(_, html) {
+					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
+						return data[key] || match;
+					});
+				});
+			});
+		</script>
+
+
 
         <footer class="py-4 px-3 text-white text-center bg-black">
             Invitación creada con 
@@ -181,65 +315,11 @@
 			  
         </footer>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-        
-		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+		
 
-		<script type="text/javascript">
-			// Set the date we're counting down to
-			var countDownDate = new Date("Jan 5, 2025 15:37:25").getTime();
-
-			// Update the count down every 1 second
-			var x = setInterval(function() {
-
-			// Get today's date and time
-			var now = new Date().getTime();
-
-			// Find the distance between now and the count down date
-			var distance = countDownDate - now;
-
-			// Time calculations for days, hours, minutes and seconds
-			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-			// Display the result in the element with id="demo"
-			document.getElementById("countdown").innerHTML = '<div class="text-gold fs-sm-48 fw-800 lh-1">' + days + '<br><span class="fs-sm-18 text-white fw-300 text-uppercase">días</span></div><div class="text-gold fs-sm-48 fw-800 lh-1">' + hours + '<br><span class="fs-sm-18 text-white fw-300 text-uppercase">horas</span></div><div class="text-gold fs-sm-48 fw-800 lh-1">' + minutes + '<br><span class="fs-sm-18 text-white fw-300 text-uppercase">minutos</span></div><div class="text-gold fs-sm-48 fw-800 lh-1">' + seconds + '<br><span class="fs-sm-18 text-white fw-300 text-uppercase">segundos</span></div>';
-
-			// If the count down is finished, write some text
-			if (distance < 0) {
-				clearInterval(x);
-				document.getElementById("countdown").innerHTML = "EXPIRED";
-				}
-			}, 1000);
-		</script>
+		
 		
 		<script type="module">
-			if ( $('.my-slider').length > 0 ) {
-				var slider = tns({
-					container: '.my-slider',
-					items: 1,
-					gutter: 30,
-					controlsText: ['', ''],
-					nav: false,
-					autoplayButtonOutput: false,
-					mouseDrag: true,
-					slideBy: 1,
-					autoplay: true,
-					items: 1,
-					responsive: {
-						640: {
-							items: 2
-						},
-						900: {
-							items: 3
-						}
-					}
-				});
-			}
 
 			if ( $('.my-slider-2').length > 0 ) {
 				var slider2 = tns({
@@ -264,69 +344,6 @@
 				});
 			}
 		</script>
-
-		<!-- CARGA DE MODULOS EXTERNOS -->
-		<script>
-			$(document).ready(function() {
-				// Rellenar las variables con los valores deseados
-				var data = {
-					var1: 'Valor 1',
-					// Agrega más variables según sea necesario
-				};
-			
-				// Cargar el contenido del archivo HTML externo
-				$('#instagram-cumple-load').load('componentes/instagram-cumple.html', function() {
-					// Reemplazar las variables en el contenido cargado
-					$(this).html(function(_, html) {
-						return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
-							return data[key] || match;
-						});
-					});
-				});
-
-				//////////////////////////////////
-				$('#instagram-filtro-load').load('componentes/instagram-filtro.html', function() {
-					// Reemplazar las variables en el contenido cargado
-					$(this).html(function(_, html) {
-						return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
-							return data[key] || match;
-						});
-					});
-				});
-
-				//////////////////////////////////
-				$('#video-load').load('componentes/video.html', function() {
-					// Reemplazar las variables en el contenido cargado
-					$(this).html(function(_, html) {
-						return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
-							return data[key] || match;
-						});
-					});
-				});
-
-				//////////////////////////////////
-				$('#selpix-load').load('componentes/selpix.html', function() {
-					// Reemplazar las variables en el contenido cargado
-					$(this).html(function(_, html) {
-						return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
-							return data[key] || match;
-						});
-					});
-				});
-
-				//////////////////////////////////
-				$('#gifts-load').load('componentes/gifts.html', function() {
-					// Reemplazar las variables en el contenido cargado
-					$(this).html(function(_, html) {
-						return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
-							return data[key] || match;
-						});
-					});
-				});
-
-			});
-		</script>
-		<!-- CARGA DE MODULOS EXTERNOS -->
 
     </body>
 

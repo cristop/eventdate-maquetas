@@ -1,0 +1,36 @@
+<section id="gallery" class="py-5">
+    <div class="container my-4">
+        <div class="px-5 position-relative">
+            <div class="my-slider d-flex align-items-center">
+                <div class="h-100"><img src="img/templates/{{ template_name }}/carrousel-1.jpg" class="img-fluid d-block"></div>
+                <div class="h-100"><img src="img/templates/{{ template_name }}/carrousel-2.jpg" class="img-fluid d-block"></div>
+                <div class="h-100"><img src="img/templates/{{ template_name }}/carrousel-3.jpg" class="img-fluid d-block"></div>
+                <div class="h-100"><img src="img/templates/{{ template_name }}/carrousel-4.jpg" class="img-fluid d-block"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<script type="module">
+    if ( $('.my-slider').length > 0 ) {
+        var slider = tns({
+            container: '.my-slider',
+            items: 1,
+            gutter: 30,
+            controlsText: ['', ''],
+            nav: false,
+            autoplayButtonOutput: false,
+            mouseDrag: true,
+            slideBy: 1,
+            autoplay: true,
+            items: 1,
+            responsive: {
+                640: {
+                    items: 2
+                },
+                900: {
+                    items: {{ photos_quanty }}
+                }
+            }
+        });
+    }
+</script>
