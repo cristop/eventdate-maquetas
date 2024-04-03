@@ -237,3 +237,79 @@ body {
     background-size: 115%;
   }
 }
+
+/* dresscode */
+#dresscode{
+  background-color: #212121;
+  color: #fff;
+}
+#dresscode .title{
+  text-transform: uppercase;
+  color: var(--gold);
+}
+#dresscode .bg-gold{
+  text-transform: uppercase;
+  font-weight: 800;
+}
+#dresscode .btn{
+  text-transform: uppercase;
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+
+.bg-gray{
+  background-color: #969696;
+}
+
+/* transport */
+#transport{
+  background-color: #F2F2F2;
+}
+#transport .title{
+  text-transform: uppercase;
+}
+#transport .form-control{
+  background-color: var(--gold);
+  color: #fff;
+  border: 0 !important;
+}
+#transport .form-control::placeholder{
+  color: #fff;
+}
+#transport .btn{
+  background-color: black !important;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+
+#recomendations{
+  background-color: var(--gold) !important;
+}
+#recomendations .accordion-button::after{
+  filter: brightness(0) !important;
+}
+#recomendations .title{
+  text-transform: uppercase !important;
+}
+#recomendations .accordion-flush .accordion-item{
+  border-radius: 8px;
+}
+
+
+#confirmation .title{
+  color: var(--gold) !important;
+  text-transform: uppercase !important;
+}
+#confirmation .btn-light{
+  background-color: var(--gold) !important;
+  text-transform: uppercase !important;
+  color: #fff;
+}
+
+
+#greeting{
+  background-color: var(--gold);
+  color: #fff;
+}

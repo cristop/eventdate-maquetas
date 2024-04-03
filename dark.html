@@ -188,46 +188,9 @@
 		</script>
 		<!-- /////////////////////////// -->
 
-		<section id="theme" class="py-5">
-			<div class="container py-5 text-center">
-				<h3 class="fs-sm-24 fw-800 text-uppercase mb-3 ls-3">Dress code</h3>
-				<div class="bg-light py-3 fs-sm-21 fw-700 text-uppercase ls-3">Elegante-Sport</div>
-			</div>
-		</section>
-
-		<section id="confirmation" class="container pb-5">
-			<form class="bg-black py-5 px-4 mb-5">
-				<h3 class="fs-sm-32 text-white text-uppercase text-center mb-5">Confirmación</h3>
-
-				<div class="row align-items-center">
-					<div class="col-sm-6 text-center">
-						<div class="row justify-content-center">
-							<div class="col-sm-8">
-								<p class="m-0 fs-sm-16 lh-lg ls-1 fw-400 text-white">Para que mis 30 sean lo más organizado posible necesito de tu confirmación antes del Primero de Septiembre de 2023.<br><br>Te espero!</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-6">
-						<div class="d-flex mb-3">
-							<div class="form-check me-3">
-								<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-								<label class="form-check-label text-white" for="flexRadioDefault1">Sí! Confirmo</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-								<label class="form-check-label text-white" for="flexRadioDefault2">No puedo :(</label>
-							</div>
-						</div>
-
-						<textarea class="w-100 bg-white text-dark border-0 rounded-0 p-3 mb-3" rows="4" placeholder="Ingrese algún dato importante..."></textarea>
-						<input type="text" class="bg-white text-dark px-3 py-2 border-0 w-100 mb-3" name="" placeholder="Nombre completo">
-						<button class="btn btn-light fs-sm-14 fw-600 text-uppercase py-2 px-4 border-0 rounded-0">Confirmar</button>
-					</div>
-				</div>
-			</form>
-		</section>
 
 
+		<!-- /////////////////////////// -->
 		<div id="instagram-cumple-load"></div>
 		<script>
 			// Cargar el contenido del archivo HTML externo
@@ -240,12 +203,15 @@
 				});
 			});
 		</script>
+		<!-- /////////////////////////// -->
 
 
-		<div id="video-load"></div>
+
+		<!-- /////////////////////////// -->
+		<div id="dresscode-load"></div>
 		<script>
 			// Cargar el contenido del archivo HTML externo
-			$('#video-load').load('componentes/video.html', function() {
+			$('#dresscode-load').load('componentes/dresscode.html', function() {
 				// Reemplazar las variables en el contenido cargado
 				$(this).html(function(_, html) {
 					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
@@ -254,8 +220,52 @@
 				});
 			});
 		</script>
+		<!-- /////////////////////////// -->
 
 
+		<section class="bg-gray text-white py-5">
+			<div class="container text-center">
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+			</div>
+		</section>
+
+
+
+		<!-- /////////////////////////// -->
+		<div id="transport-load"></div>
+		<script>
+			// Cargar el contenido del archivo HTML externo
+			$('#transport-load').load('componentes/transport.html', function() {
+				// Reemplazar las variables en el contenido cargado
+				$(this).html(function(_, html) {
+					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
+						return data[key] || match;
+					});
+				});
+			});
+		</script>
+		<!-- /////////////////////////// -->
+
+
+
+
+		<!-- /////////////////////////// -->
+		<div id="recomendations-load"></div>
+		<script>
+			// Cargar el contenido del archivo HTML externo
+			$('#recomendations-load').load('componentes/recomendations.html', function() {
+				// Reemplazar las variables en el contenido cargado
+				$(this).html(function(_, html) {
+					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
+						return data[key] || match;
+					});
+				});
+			});
+		</script>
+		<!-- /////////////////////////// -->
+
+
+		<!-- /////////////////////////// -->
 		<div id="instagram-filtro-load"></div>
 		<script>
 			// Cargar el contenido del archivo HTML externo
@@ -268,8 +278,27 @@
 				});
 			});
 		</script>
+		<!-- /////////////////////////// -->
 
 
+		<!-- /////////////////////////// -->
+		<div id="video-load"></div>
+		<script>
+			// Cargar el contenido del archivo HTML externo
+			$('#video-load').load('componentes/video.html', function() {
+				// Reemplazar las variables en el contenido cargado
+				$(this).html(function(_, html) {
+					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
+						return data[key] || match;
+					});
+				});
+			});
+		</script>
+		<!-- /////////////////////////// -->
+
+
+
+		<!-- /////////////////////////// -->
 		<div id="selpix-load"></div>
 		<script>
 			// Cargar el contenido del archivo HTML externo
@@ -282,7 +311,49 @@
 				});
 			});
 		</script>
+		<!-- /////////////////////////// -->
 
+
+
+
+		<!-- /////////////////////////// -->
+		<div id="confirmation-load"></div>
+		<script>
+			// Cargar el contenido del archivo HTML externo
+			$('#confirmation-load').load('componentes/confirmation.html', function() {
+				// Reemplazar las variables en el contenido cargado
+				$(this).html(function(_, html) {
+					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
+						return data[key] || match;
+					});
+				});
+			});
+		</script>
+		<!-- /////////////////////////// -->
+
+
+
+		
+
+		<!-- /////////////////////////// -->
+		<div id="greeting-load"></div>
+		<script>
+			// Cargar el contenido del archivo HTML externo
+			$('#greeting-load').load('componentes/greeting.html', function() {
+				// Reemplazar las variables en el contenido cargado
+				$(this).html(function(_, html) {
+					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
+						return data[key] || match;
+					});
+				});
+			});
+		</script>
+		<!-- /////////////////////////// -->
+
+		
+
+		
+		
 
 
         <footer class="py-4 px-3 text-white text-center bg-black">
