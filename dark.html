@@ -195,10 +195,15 @@
 		<script>
 			// Cargar el contenido del archivo HTML externo
 			$('#instagram-cumple-load').load('componentes/instagram-cumple.html', function() {
+				// Rellenar las variables con los valores deseados
+				var instagram = {
+					image: 'img/templates/dark/download.jpg',
+				};
+
 				// Reemplazar las variables en el contenido cargado
 				$(this).html(function(_, html) {
 					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
-						return data[key] || match;
+						return instagram[key] || match;
 					});
 				});
 			});
@@ -340,10 +345,16 @@
 		<script>
 			// Cargar el contenido del archivo HTML externo
 			$('#greeting-load').load('componentes/greeting.html', function() {
+                // Rellenar las variables con los valores deseados
+				var greeting = {
+					nombre: 'Martin',
+                    fecha: '04.09.2024',
+				};
+
 				// Reemplazar las variables en el contenido cargado
 				$(this).html(function(_, html) {
 					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
-						return data[key] || match;
+						return greeting[key] || match;
 					});
 				});
 			});
