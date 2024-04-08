@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 		<!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js"></script><![endif]-->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
-        <link rel="stylesheet" type="text/css" href="css/teen.css">
+        <link rel="stylesheet" type="text/css" href="css/spring.css">
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
@@ -30,11 +30,11 @@
 			$('#welcome-load').load('componentes/welcome-cumple.html', function() {
 				// Rellenar las variables con los valores deseados
 				var welcome = {
-					nombre: 'Mis 15',
-					edad: 'ludmila',
-					tercera_linea: ' ',
-					fecha: '4 DE SEPTIEMBRE, 2024',
-					bg: 'img/templates/teen/portada-web.jpg',
+					nombre: ' ',
+					edad: 'Camila',
+					tercera_linea: 'Mis 15 años',
+					fecha: '19.09.2024',
+					bg: 'img/templates/spring/portada-web.jpg',
 				};
 
 				// Reemplazar las variables en el contenido cargado
@@ -46,6 +46,56 @@
 			});
 		</script>
 		<!-- /////////////////////////// -->
+
+
+
+        <!-- /////////////////////////// -->
+		<div id="countdown-load"></div>
+		<script>
+			// Cargar el contenido del archivo HTML externo
+			$('#countdown-load').load('componentes/countdown.html', function() {
+				// Rellenar las variables con los valores deseados
+				var countdown = {
+				};
+
+				// Reemplazar las variables en el contenido cargado
+				$(this).html(function(_, html) {
+					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
+						return countdown[key] || match;
+					});
+				});
+			});
+		</script>
+		<!-- /////////////////////////// -->
+
+
+
+
+		<!-- /////////////////////////// -->
+		<div id="schedule-load"></div>
+		<script>
+			// Cargar el contenido del archivo HTML externo
+			$('#schedule-load').load('componentes/schedule.html', function() {
+				// Rellenar las variables con los valores deseados
+				var schedule = {
+				};
+
+				// Reemplazar las variables en el contenido cargado
+				$(this).html(function(_, html) {
+					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
+						return schedule[key] || match;
+					});
+				});
+			});
+		</script>
+		<!-- /////////////////////////// -->
+
+
+        <section class="bg-gray text-white py-5" id="phrase">
+			<div class="container text-center" style="max-width: 800px">
+				"Quiero compartir este día único y especial junto a las personas que me apoyan día a día, y vos sos una de ellas, por eso estas invitado a mi fiesta."
+			</div>
+		</section>
 
 
 		<!-- /////////////////////////// -->
@@ -71,44 +121,7 @@
 		</script>
 		<!-- /////////////////////////// -->
 
-
-		<!-- /////////////////////////// -->
-		<div id="countdown-load"></div>
-		<script>
-			// Cargar el contenido del archivo HTML externo
-			$('#countdown-load').load('componentes/countdown.html', function() {
-				// Rellenar las variables con los valores deseados
-				var countdown = {
-				};
-
-				// Reemplazar las variables en el contenido cargado
-				$(this).html(function(_, html) {
-					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
-						return countdown[key] || match;
-					});
-				});
-			});
-		</script>
-		<!-- /////////////////////////// -->
-
-		<!-- /////////////////////////// -->
-		<div id="schedule-load"></div>
-		<script>
-			// Cargar el contenido del archivo HTML externo
-			$('#schedule-load').load('componentes/schedule.html', function() {
-				// Rellenar las variables con los valores deseados
-				var schedule = {
-				};
-
-				// Reemplazar las variables en el contenido cargado
-				$(this).html(function(_, html) {
-					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
-						return schedule[key] || match;
-					});
-				});
-			});
-		</script>
-		<!-- /////////////////////////// -->
+		
 		
 
 		<!-- /////////////////////////// -->
@@ -118,7 +131,7 @@
 			$('#gallery-load').load('componentes/gallery.html', function() {
 				// Rellenar las variables con los valores deseados
 				var gallery = {
-					template_name: 'cool',
+					template_name: 'spring',
 					photos_quanty: 3,
 				};
 
@@ -154,9 +167,55 @@
 
 
 
-
-		
+        <!-- /////////////////////////// -->
+		<div id="recomendations-load"></div>
+		<script>
+			// Cargar el contenido del archivo HTML externo
+			$('#recomendations-load').load('componentes/recomendations.html', function() {
+				// Reemplazar las variables en el contenido cargado
+				$(this).html(function(_, html) {
+					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
+						return data[key] || match;
+					});
+				});
+			});
+		</script>
 		<!-- /////////////////////////// -->
+
+
+        <!-- /////////////////////////// -->
+		<div id="dresscode-load"></div>
+		<script>
+			// Cargar el contenido del archivo HTML externo
+			$('#dresscode-load').load('componentes/dresscode.html', function() {
+				// Reemplazar las variables en el contenido cargado
+				$(this).html(function(_, html) {
+					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
+						return data[key] || match;
+					});
+				});
+			});
+		</script>
+		<!-- /////////////////////////// -->
+
+
+        <!-- /////////////////////////// -->
+		<div id="video-load"></div>
+		<script>
+			// Cargar el contenido del archivo HTML externo
+			$('#video-load').load('componentes/video.html', function() {
+				// Reemplazar las variables en el contenido cargado
+				$(this).html(function(_, html) {
+					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
+						return data[key] || match;
+					});
+				});
+			});
+		</script>
+		<!-- /////////////////////////// -->
+
+
+        <!-- /////////////////////////// -->
 		<div id="hashtag-load"></div>
 		<script>
 			// Cargar el contenido del archivo HTML externo
@@ -164,7 +223,7 @@
 				// Rellenar las variables con los valores deseados
 				var hashtag = {
 					texto: 'Durante la fiesta utiliza el hashtag',
-					hashtag: '#MIS30dan',
+					hashtag: '#MIS15MORENA',
 				};
 
 				// Reemplazar las variables en el contenido cargado
@@ -177,11 +236,8 @@
 		</script>
 		<!-- /////////////////////////// -->
 
-		
 
-
-
-		<!-- /////////////////////////// -->
+        <!-- /////////////////////////// -->
 		<div id="instagram-cumple-load"></div>
 		<script>
 			// Cargar el contenido del archivo HTML externo
@@ -199,7 +255,7 @@
 				});
 			});
 		</script>
-		<!-- /////////////////////////// -->
+		<!-- /////////////////////////// -->		
 
 
 
@@ -234,65 +290,7 @@
 			});
 		</script>
 		<!-- /////////////////////////// -->
-
-
-
-		<section class="bg-gray text-white py-5">
-			<div class="container text-center" style="max-width: 800px">
-				Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
-			</div>
-		</section>
-
-
-
-		<!-- /////////////////////////// -->
-		<div id="dresscode-load"></div>
-		<script>
-			// Cargar el contenido del archivo HTML externo
-			$('#dresscode-load').load('componentes/dresscode.html', function() {
-				// Reemplazar las variables en el contenido cargado
-				$(this).html(function(_, html) {
-					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
-						return data[key] || match;
-					});
-				});
-			});
-		</script>
-		<!-- /////////////////////////// -->
-
-
-		<!-- /////////////////////////// -->
-		<div id="video-load"></div>
-		<script>
-			// Cargar el contenido del archivo HTML externo
-			$('#video-load').load('componentes/video.html', function() {
-				// Reemplazar las variables en el contenido cargado
-				$(this).html(function(_, html) {
-					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
-						return data[key] || match;
-					});
-				});
-			});
-		</script>
-		<!-- /////////////////////////// -->
-
-
-
-
-		<!-- /////////////////////////// -->
-		<div id="recomendations-load"></div>
-		<script>
-			// Cargar el contenido del archivo HTML externo
-			$('#recomendations-load').load('componentes/recomendations.html', function() {
-				// Reemplazar las variables en el contenido cargado
-				$(this).html(function(_, html) {
-					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
-						return data[key] || match;
-					});
-				});
-			});
-		</script>
-		<!-- /////////////////////////// -->
+		
 
 
 		<!-- /////////////////////////// -->
