@@ -261,7 +261,20 @@
 		<!-- /////////////////////////// -->
 
 
-		
+		<!-- /////////////////////////// -->
+		<div id="video-load"></div>
+		<script>
+			// Cargar el contenido del archivo HTML externo
+			$('#video-load').load('componentes/video.html', function() {
+				// Reemplazar las variables en el contenido cargado
+				$(this).html(function(_, html) {
+					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
+						return data[key] || match;
+					});
+				});
+			});
+		</script>
+		<!-- /////////////////////////// -->
 
 
 
@@ -298,20 +311,7 @@
 		<!-- /////////////////////////// -->
 
 
-		<!-- /////////////////////////// -->
-		<div id="video-load"></div>
-		<script>
-			// Cargar el contenido del archivo HTML externo
-			$('#video-load').load('componentes/video.html', function() {
-				// Reemplazar las variables en el contenido cargado
-				$(this).html(function(_, html) {
-					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
-						return data[key] || match;
-					});
-				});
-			});
-		</script>
-		<!-- /////////////////////////// -->
+		
 
 
 
@@ -359,7 +359,7 @@
 			$('#greeting-load').load('componentes/greeting.html', function() {
                 // Rellenar las variables con los valores deseados
 				var greeting = {
-					nombre: 'DAN',
+					nombre: 'LUDMILA',
                     fecha: '04.09.2024',
 				};
 
