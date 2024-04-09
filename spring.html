@@ -91,11 +91,27 @@
 		<!-- /////////////////////////// -->
 
 
-        <section class="bg-gray text-white py-5" id="phrase">
-			<div class="container text-center" style="max-width: 800px">
-				"Quiero compartir este día único y especial junto a las personas que me apoyan día a día, y vos sos una de ellas, por eso estas invitado a mi fiesta."
-			</div>
-		</section>
+		
+		<!-- /////////////////////////// -->
+		<div id="phrase-load"></div>
+		<script>
+			// Cargar el contenido del archivo HTML externo
+			$('#phrase-load').load('componentes/phrase.html', function() {
+				// Rellenar las variables con los valores deseados
+				var phrase = {
+				};
+
+				// Reemplazar las variables en el contenido cargado
+				$(this).html(function(_, html) {
+					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
+						return phrase[key] || match;
+					});
+				});
+			});
+		</script>
+		<!-- /////////////////////////// -->
+
+		
 
 
 		<!-- /////////////////////////// -->
