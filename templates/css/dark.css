@@ -2,21 +2,36 @@
 @import "_general.css";
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 :root{
-  --gold: #C19E6B;
+  --f-primary: 'Montserrat', sans-serif;
+  --f-secondary: 'Montserrat', sans-serif;
+
+  --c-primary: #C19E6B;
+  --c-secondary: ;
+  --c-tertiary: ;
+  --c-quaternary: ;
 }
+
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--f-primary);
+  overflow-x: hidden !important;
+  width: 100vw;
+  touch-action: pan-y;
 }
+
 .text-gold {
-  color: var(--gold);
+  color: var(--c-primary);
 }
+
 .bg-gold {
-  background-color: var(--gold);
+  background-color: var(--c-primary);
 }
+
 .btn-dark{
   --bs-btn-bg: #000;
 }
+
 .arrowCta {
   display: block;
   height: 13px;
@@ -36,8 +51,8 @@ body {
   left: 0;
 }
 .arrowCta:after {
-  border-bottom: 3px solid var(--gold);
-  border-right: 3px solid var(--gold);
+  border-bottom: 3px solid var(--c-primary);
+  border-right: 3px solid var(--c-primary);
   top: 0;
   left: 0;
   opacity: 1;
@@ -46,8 +61,8 @@ body {
 .arrowCta:before {
   top: 0;
   left: 0;
-  border-bottom: 3px solid var(--gold);
-  border-right: 3px solid var(--gold);
+  border-bottom: 3px solid var(--c-primary);
+  border-right: 3px solid var(--c-primary);
   animation: top-arrow 1.65s infinite;
 }
 @keyframes bottom-arrow {
@@ -124,12 +139,12 @@ body {
 /* welcome */
 
 #welcome .fecha{
-  background-color: var(--gold);
+  background-color: var(--c-primary);
   color: white;
 }
 
 #welcome .edad{
-  color: var(--gold);
+  color: var(--c-primary);
 }
 
 #itinerary{
@@ -153,10 +168,10 @@ body {
 /* Instagram */
 #instagram-cumple .title{
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--c-primary);
 }
 #instagram-cumple img{
-  border-color: var(--gold) !important;
+  border-color: var(--c-primary) !important;
 }
 
 
@@ -169,7 +184,7 @@ body {
 #instagram-filtro .title{
   text-transform: uppercase;
   font-size: 30px !important;
-  color: var(--gold);
+  color: var(--c-primary);
 }
 #instagram-filtro .text{
   font-size: 16px !important;
@@ -190,7 +205,7 @@ body {
   color: white;
 }
 #video .title{
-  color: var(--gold);
+  color: var(--c-primary);
 }
 
 
@@ -204,7 +219,7 @@ body {
   border-radius: 0;
 }
 #selpix .number{
-  background-color: var(--gold);
+  background-color: var(--c-primary);
   color: #fff;
   height: 100px;
   width: 100px;
@@ -233,7 +248,7 @@ body {
 }
 #gifts .title{
   text-transform: uppercase;
-  color: var(--gold) !important;
+  color: var(--c-primary) !important;
   font-size: 30px !important;
 }
 .nav-pills .nav-link{
@@ -267,7 +282,7 @@ body {
 }
 #dresscode .title{
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--c-primary);
 }
 #dresscode .bg-gold{
   text-transform: uppercase;
@@ -292,7 +307,7 @@ body {
   text-transform: uppercase;
 }
 #transport .form-control{
-  background-color: var(--gold);
+  background-color: var(--c-primary);
   color: #fff;
   border: 0 !important;
 }
@@ -307,7 +322,7 @@ body {
 
 
 #recomendations{
-  background-color: var(--gold) !important;
+  background-color: var(--c-primary) !important;
 }
 #recomendations .accordion-button::after{
   filter: brightness(0) !important;
@@ -321,17 +336,17 @@ body {
 
 
 #confirmation .title{
-  color: var(--gold) !important;
+  color: var(--c-primary) !important;
   text-transform: uppercase !important;
 }
 #confirmation .btn-light{
-  background-color: var(--gold) !important;
+  background-color: var(--c-primary) !important;
   text-transform: uppercase !important;
   color: #fff;
 }
 
 
 #greeting{
-  background-color: var(--gold);
+  background-color: var(--c-primary);
   color: #fff;
 }
