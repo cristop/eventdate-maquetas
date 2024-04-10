@@ -626,16 +626,17 @@ section#itinerary .flex-fill p {
     font-weight: 500;
 }
 
-section#itinerary .text-gold {
+#itinerary .container .row > div h3 {
     color: #000;
-    font-size: 30px !important;
+    font-size: 32px !important;
+    letter-spacing: 0;
 }
 
-section#itinerary .fs-sm-21 {
+#itinerary .container .row > div h4 {
     font-size: 18px !important;
 }
 
-section#itinerary .text-gold:after {
+#itinerary .container .row > div h3:after {
     content: "";
     display: block;
     background-color: var(--c-primary) !important;

@@ -705,9 +705,11 @@ section#itinerary .flex-fill p {
     color: #000;
     font-size: 30px !important;
     margin-bottom: 0;
+    color: var(--c-primary);
+    display: none;
 }
 
-section#itinerary .fs-sm-21 {
+#itinerary .container .row div > :nth-child(5) {
     font-size: 18px !important;
 }
 
