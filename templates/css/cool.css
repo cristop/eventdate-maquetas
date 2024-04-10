@@ -5,14 +5,25 @@
 
 :root {
     --gold: #769B85;
+
+    --f-primary: 'Oswald', sans-serif;
+    --f-secondary: 'Montserrat', sans-serif;
+
+    --c-primary: #C19E6B;
+    --c-secondary: ;
+    --c-tertiary: ;
+    --c-quaternary: ;
 }
 
 body {
-    font-family: "Oswald", sans-serif;
+    font-family: var(--f-primary);
+    overflow-x: hidden !important;
+    width: 100vw;
+    touch-action: pan-y;
 }
 
 .form-control{
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--f-secondary);
     font-size: 0.8rem;
     border-radius: 0 !important;
 }
@@ -415,7 +426,7 @@ section#selpix .text {
     background-image: url(../../img/templates/cool/textura1.jpg);
     background-size: cover;
     background-position: center;
-    /* font-family: 'Montserrat'; */
+    /* font-family: var(--f-secondary); */
 }
 
 section#recomendations .fs-sm-16 {
@@ -432,7 +443,7 @@ section#recomendations .fs-sm-16 {
 
 #recomendations .accordion-flush .accordion-item {
     border-radius: 0px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--f-secondary);
 }
 
 #confirmation .title {
