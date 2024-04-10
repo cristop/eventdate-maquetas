@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="109" height="109" viewBox="0 0 109 109">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectángulo_104" data-name="Rectángulo 104" width="67.697" height="68.13" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="ICONO_SELPIX" data-name="ICONO SELPIX" transform="translate(-904 -4400)">
+    <rect id="Rectángulo_1362" data-name="Rectángulo 1362" width="109" height="109" transform="translate(904 4400)" fill="#212121"/>
+    <g id="Grupo_96" data-name="Grupo 96" transform="translate(925 4420)">
+      <g id="Grupo_95" data-name="Grupo 95" clip-path="url(#clip-path)">
+        <path id="Trazado_3582" data-name="Trazado 3582" d="M51.805,0H15.892A15.836,15.836,0,0,0,0,15.779V52.351A15.817,15.817,0,0,0,13.584,67.962V33.1h.025a20.068,20.068,0,1,1,8.046,16.973V68.13H51.805A15.836,15.836,0,0,0,67.7,52.351V15.779A15.836,15.836,0,0,0,51.805,0m3.437,17.014a4.119,4.119,0,1,1,4.149-4.119,4.134,4.134,0,0,1-4.149,4.119" transform="translate(0 0)" fill="#fff"/>
+        <path id="Trazado_3583" data-name="Trazado 3583" d="M86.127,97.413A10.009,10.009,0,1,0,76.047,87.4a10.045,10.045,0,0,0,10.08,10.009" transform="translate(-52.41 -53.339)" fill="#fff"/>
+        <path id="Trazado_3584" data-name="Trazado 3584" d="M86.127,97.413A10.009,10.009,0,1,0,76.047,87.4a10.045,10.045,0,0,0,10.08,10.009" transform="translate(-52.41 -53.339)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

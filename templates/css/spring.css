@@ -354,7 +354,6 @@ section#hashtag .bg-gold {
 #instagram-cumple .title {
 }
 
-
 #instagram-cumple .text {
     font-family: 'times new roman', serif;
 }
@@ -681,14 +680,7 @@ section#confirmation .btn {
     /* color: #212121; */
 }
 
-/* Gallery */
-@media screen and (min-width: 900px) {
-    #gallery .my-slider img {
-        height: 400px;
-        width: 100%;
-        object-fit: cover;
-    }
-}
+
 
 #itinerary {
     background-color: #fff !important;
@@ -825,7 +817,6 @@ section#phrase {
 #confirmation .d-flex.mb-5.align-items-center.justify-content-center {
     font-family: 'times new roman', serif;
 }
-
 
 .icon img {
     width: 70px;

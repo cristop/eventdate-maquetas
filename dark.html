@@ -320,12 +320,17 @@
 		<!-- /////////////////////////// -->
 		<div id="selpix-load"></div>
 		<script>
+			// Rellenar las variables con los valores deseados
+			var selpix = {
+				icon: 'img/templates/dark/icon-selpix.svg',
+			};
+
 			// Cargar el contenido del archivo HTML externo
 			$('#selpix-load').load('componentes/selpix.html', function() {
 				// Reemplazar las variables en el contenido cargado
 				$(this).html(function(_, html) {
 					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
-						return data[key] || match;
+						return selpix[key] || match;
 					});
 				});
 			});

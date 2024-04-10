@@ -279,10 +279,13 @@
     height: 100%;
 }
 
-section#gallery img{
-    display: block;
-    max-width: 100%;
-    height: auto;
+/* Gallery */
+@media screen and (min-width: 900px) {
+    #gallery .my-slider img {
+        height: 400px;
+        width: 100%;
+        object-fit: cover;
+    }
 }
 
 /* PLAYLIST */
