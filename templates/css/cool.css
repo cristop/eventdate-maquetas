@@ -152,6 +152,11 @@ body {
     box-shadow: none !important;
 }
 
+/* welcome */
+#welcome .edad{
+    color: var(--gold);
+}
+
 /* Gallery */
 @media screen and (min-width: 900px) {
     #gallery img {
