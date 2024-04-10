@@ -212,6 +212,7 @@ textarea.form-control {
 #welcome .fecha {
     background-color: var(--c-secondary);
     border-radius: 40px;
+    color: white;
 }
 
 @media screen and (max-width: 900px) {
@@ -646,7 +647,7 @@ section#itinerary .text-gold:after {
     margin-top: 10px;
 }
 
-#itinerary .bg-img {
+#itinerary .row > :first-child {
     border-radius: 25px;
     border: 10px solid #E8E8E8;
 }

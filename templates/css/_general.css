@@ -62,8 +62,7 @@
     color: white;
 }
 
-#welcolme .fecha{
-    position: absolute;
+#welcome .fecha{
     bottom: 0px;
     font-weight: 700;
     padding-right: 1.5rem;
@@ -71,6 +70,7 @@
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     margin-bottom: 3rem;
+    margin-top: 3rem;
 }
 
 /* COUNTDOWN */
@@ -185,13 +185,13 @@
     gap: 1.5rem;
 }
 
-#itinerary .bg-img{
+#itinerary .row > :first-child{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#itinerary .container .row >:last-child{
+#itinerary .container .row .col-sm-8{
 
 }
 
@@ -209,7 +209,6 @@
 }
 
 #itinerary .container .row > :last-child .bg-white > div h3{
-    color: #F5D09C;
     font-weight: 800;
     letter-spacing: 3px;
     text-transform: uppercase;

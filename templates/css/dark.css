@@ -120,6 +120,22 @@ body {
 .accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed {
   box-shadow: none !important;
 }
+
+/* welcome */
+
+#welcome .fecha{
+  background-color: var(--gold);
+  color: white;
+}
+
+#welcome .edad{
+  color: var(--gold);
+}
+
+#itinerary{
+  background-color: rgb(248, 249, 250);
+}
+
 /* Gallery */
 @media screen and (min-width: 900px) {
   #gallery img{

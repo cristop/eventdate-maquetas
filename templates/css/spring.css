@@ -263,6 +263,7 @@ div#welcome:after {
     z-index: 1;
     position: relative !important;
     margin-top: 50px;
+    color: white;
 }
 
 @media screen and (max-width: 900px) {
@@ -700,7 +701,7 @@ section#itinerary .flex-fill p {
     font-weight: 500;
 }
 
-section#itinerary .text-gold {
+#itinerary .container .row .col-sm-8 > div > div h3 {
     color: #000;
     font-size: 30px !important;
     margin-bottom: 0;
@@ -710,7 +711,7 @@ section#itinerary .fs-sm-21 {
     font-size: 18px !important;
 }
 
-section#itinerary .text-gold:after {
+#itinerary .container .row .col-sm-8 > div > div h3:after {
     /* content: ""; */
     display: block;
     background-color: var(--c-primary) !important;
@@ -722,9 +723,8 @@ section#itinerary .text-gold:after {
     margin-top: 10px;
 }
 
-#itinerary .bg-img {
+#itinerary .row > :first-child{
     border-radius: 20px;
-    /* border: 10px solid #E8E8E8; */
 }
 
 .btn {
