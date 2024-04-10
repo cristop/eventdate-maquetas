@@ -59,6 +59,7 @@
 					direccion: 'ACC, AV. DR. TRISTÁN ACHÁVAL RODRÍGUEZ 1353, CABA',
 					hora: '21:00 HS',
 					bg: 'img/templates/teen/Cruz-espacio.jpg',
+					icon: 'img/templates/teen/icon-itinerary.svg',
 				};
 
 				// Reemplazar las variables en el contenido cargado
@@ -98,6 +99,7 @@
 			$('#schedule-load').load('componentes/schedule.html', function() {
 				// Rellenar las variables con los valores deseados
 				var schedule = {
+					icon: 'img/templates/teen/icon-schedule.svg',
 				};
 
 				// Reemplazar las variables en el contenido cargado
@@ -140,6 +142,7 @@
 			$('#playlist-load').load('componentes/playlist.html', function() {
 				// Rellenar las variables con los valores deseados
 				var playlist = {
+					icon: 'img/templates/teen/icon-playlist.svg',
 				};
 
 				// Reemplazar las variables en el contenido cargado
@@ -165,6 +168,7 @@
 				var hashtag = {
 					texto: 'Durante la fiesta utiliza el hashtag',
 					hashtag: '#MIS30dan',
+					icon: 'img/templates/teen/icon-hashtag.svg',
 				};
 
 				// Reemplazar las variables en el contenido cargado
@@ -189,6 +193,7 @@
 				// Rellenar las variables con los valores deseados
 				var instagram = {
 					image: 'img/templates/teen/ig.jpg',
+					icon: 'img/templates/teen/icon-instagram.svg',
 				};
 
 				// Reemplazar las variables en el contenido cargado
@@ -206,12 +211,17 @@
 		<!-- /////////////////////////// -->
 		<div id="transport-load"></div>
 		<script>
+			// Rellenar las variables con los valores deseados
+			var transport = {
+				icon: 'img/templates/teen/icon-transport.svg',
+			};
+
 			// Cargar el contenido del archivo HTML externo
 			$('#transport-load').load('componentes/transport.html', function() {
 				// Reemplazar las variables en el contenido cargado
 				$(this).html(function(_, html) {
 					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
-						return data[key] || match;
+						return transport[key] || match;
 					});
 				});
 			});
@@ -223,12 +233,17 @@
 		<!-- /////////////////////////// -->
 		<div id="gifts-load"></div>
 		<script>
+			// Rellenar las variables con los valores deseados
+			var gifts = {
+				icon: 'img/templates/teen/icon-gifts.svg',
+			};
+
 			// Cargar el contenido del archivo HTML externo
 			$('#gifts-load').load('componentes/gifts.html', function() {
 				// Reemplazar las variables en el contenido cargado
 				$(this).html(function(_, html) {
 					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
-						return data[key] || match;
+						return gifts[key] || match;
 					});
 				});
 			});
@@ -262,12 +277,17 @@
 		<!-- /////////////////////////// -->
 		<div id="dresscode-load"></div>
 		<script>
+			// Rellenar las variables con los valores deseados
+			var dresscode = {
+				icon: 'img/templates/teen/icon-dresscode.svg',
+			};
+
 			// Cargar el contenido del archivo HTML externo
 			$('#dresscode-load').load('componentes/dresscode.html', function() {
 				// Reemplazar las variables en el contenido cargado
 				$(this).html(function(_, html) {
 					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
-						return data[key] || match;
+						return dresscode[key] || match;
 					});
 				});
 			});
@@ -296,12 +316,17 @@
 		<!-- /////////////////////////// -->
 		<div id="recomendations-load"></div>
 		<script>
+			// Rellenar las variables con los valores deseados
+			var recomendations = {
+				icon: 'img/templates/teen/icon-recomendations.svg',
+			};
+
 			// Cargar el contenido del archivo HTML externo
 			$('#recomendations-load').load('componentes/recomendations.html', function() {
 				// Reemplazar las variables en el contenido cargado
 				$(this).html(function(_, html) {
 					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
-						return data[key] || match;
+						return recomendations[key] || match;
 					});
 				});
 			});
@@ -312,12 +337,17 @@
 		<!-- /////////////////////////// -->
 		<div id="instagram-filtro-load"></div>
 		<script>
+			// Rellenar las variables con los valores deseados
+			var instagram_filtro = {
+				icon: 'img/templates/teen/icon-instagram-filtro.svg',
+			};
+
 			// Cargar el contenido del archivo HTML externo
 			$('#instagram-filtro-load').load('componentes/instagram-filtro.html', function() {
 				// Reemplazar las variables en el contenido cargado
 				$(this).html(function(_, html) {
 					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
-						return data[key] || match;
+						return instagram_filtro[key] || match;
 					});
 				});
 			});
@@ -332,12 +362,17 @@
 		<!-- /////////////////////////// -->
 		<div id="selpix-load"></div>
 		<script>
+			// Rellenar las variables con los valores deseados
+			var selpix = {
+				icon: 'img/templates/teen/icon-selpix.svg',
+			};
+
 			// Cargar el contenido del archivo HTML externo
 			$('#selpix-load').load('componentes/selpix.html', function() {
 				// Reemplazar las variables en el contenido cargado
 				$(this).html(function(_, html) {
 					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
-						return data[key] || match;
+						return selpix[key] || match;
 					});
 				});
 			});
