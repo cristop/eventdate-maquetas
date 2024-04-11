@@ -291,7 +291,8 @@ section#countdown .text-gold {
 }
 
 section#hashtag {
-    background-color: #F2F2F2;
+    background-color: #FFF;
+    color: #272727;
 }
 
 section#hashtag .hashtag-phrase {
@@ -353,6 +354,7 @@ div#schedule:after {
 #instagram-filtro .instructions {
     padding: 60px 40px;
     max-width: 650px;
+    text-align: center;
 }
 
 #instagram-filtro .title {
@@ -368,7 +370,7 @@ div#schedule:after {
 }
 
 #instagram-filtro .instructions .btn {
-    border: 2px solid var(--c-primary) !important;
+    /* border: 2px solid var(--c-primary) !important; */
     color: white;
     font-weight: 500;
 }
@@ -519,7 +521,7 @@ section#dresscode .text {
     /* color: var(--c-primary); */
 }
 
-#dresscode .bg-gold {
+#dresscode .dresscode {
     text-transform: uppercase;
     font-weight: 800;
     border-radius: 30px;
@@ -529,7 +531,7 @@ section#dresscode .text {
 
 #dresscode .btn {
     text-transform: uppercase;
-    background-color: transparent !important;
+    /* background-color: transparent !important; */
     /* color: #000 !important; */
 }
 
@@ -654,20 +656,7 @@ section#confirmation {
     position: relative;
 }
 
-section#confirmation:before {
-    content: "";
-    background-image: var(--flores3);
-    display: block;
-    width: 320px;
-    padding-bottom: 17%;
-    background-size: 98%;
-    background-position: center;
-    position: absolute;
-    background-repeat: no-repeat;
-    top: 0;
-    transform: rotate(-25deg);
-    left: -80px;
-}
+
 
 section#confirmation .text-white {
     color: #272727 !important;
@@ -795,7 +784,7 @@ section#instagram-cumple {
     background-color: var(--c-secondary);
 }
 
-section#instagram-cumple .bg-black {
+section#instagram-cumple .bg {
     border-radius: 25px;
     background-color: #fff !important;
 }
