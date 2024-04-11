@@ -1,3 +1,18 @@
+.btn{
+    background-color: #272727;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border-radius: 0;
+    font-weight: 600;
+    -webkit-transition: all 0.2s ease;  
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;  
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
 .icon img{
     width: 100px;
     height: 100px;
@@ -135,19 +150,9 @@
     margin: 0px;
 }
 
-#schedule .container .text{
+#schedule .text{
     padding-top: 1.5rem;
     padding-bottom: 3rem;
-}
-
-#schedule .container .btn{
-    background-color: #272727;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    border-radius: 0 !important;
-    font-weight: 600;
 }
 
 /* PHRASE */
@@ -161,6 +166,7 @@
 
 #phrase .container{
     text-align: center;
+    max-width: 800px;
 }
 
 /* ITINERARY */
@@ -221,21 +227,21 @@
     font-size: 32px;
 }
 
-#itinerary .container .row > div h4{
+#itinerary  h4{
     font-weight: 800;
     letter-spacing: 2px;
     text-transform: uppercase;
     font-size: 21px;
 }
 
-#itinerary .container .row > div p{
+#itinerary  p{
     font-weight: 500;
     letter-spacing: 2px;
     text-transform: uppercase;
     font-size: 14px;
 }
 
-#itinerary .container .row div > :nth-child(5){
+#itinerary .row div > :nth-child(5){
     font-weight: 800;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -244,20 +250,6 @@
     font-size: 21px;
 }
 
-#itinerary .container .row > div a.btn{
-    display: inline-block;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    border: 2px solid white;
-    border-radius: 40px ;
-    border: 0;
-    font-size: 14px;
-    color: white;
-}
 
 /* GALLERY  */
 
@@ -455,15 +447,6 @@
     margin-bottom: 3rem;
 }
 
-#dresscode .btn{
-    font-weight: 600;
-    border-radius: 0;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5em;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    border: 0;
-}
 
 /* VIDEO */
 
@@ -516,8 +499,8 @@
     margin-bottom: 1.5rem;
 }
 
-#hashtag .container > :nth-child(4){
-    background-color: #272727;
+#hashtag .hashtag-phrase{
+    background-color: #e5e5e5;
     color: white;
     text-transform: uppercase;
     font-weight: 700;
@@ -526,17 +509,7 @@
     margin-bottom: 3rem;
 }
 
-#hashtag .container a.btn{
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    background-color: transparent;
-    color: dark;
-    text-transform: uppercase;
-    font-weight: 700;
-    border-radius: 0px;
-}
+
 
 /* INSTAGRAM */
 
@@ -668,15 +641,7 @@
     border-radius: 0px;
 }
 
-#transport .container form input.btn{
-    border: 0px;
-    border-radius: 0px;
-    padding-top: 0.5rem !important;
-    padding-bottom: 0.5rem !important;
-    padding-right: 3rem !important;
-    padding-left: 3rem !important;
-    font-weight: 700;
-}
+
 
 /* GIFTS */
 
@@ -693,7 +658,7 @@
     padding-bottom: 3rem;
 }
 
-#gifts .container h3{
+#gifts .title{
     font-size: 28px;
     font-weight: 800;
     color: white;
@@ -811,7 +776,7 @@
     #hashtag .text{
         font-size: 16px;
     }
-    #hashtag .container > :nth-child(4){
+    #hashtag .hashtag-phrase{
         font-size: 24px;
     }
     #hashtag .container a.btn{
@@ -826,7 +791,7 @@
     #transport .container .text{
         font-size: 14px;
     }
-    #gifts .container h3{
+    #gifts .title{
         font-size: 42px;
     }
     #gifts .container .row p.text{
@@ -850,3 +815,13 @@
     }
 }
 
+
+
+div#selpix-countdown .row > div {
+    position: relative;
+}
+
+section#instagram-filtro {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
