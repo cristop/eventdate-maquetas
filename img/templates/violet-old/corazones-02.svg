@@ -21,42 +21,4 @@
       <path id="Trazado_3577" data-name="Trazado 3577" d="M279.548,44.623c2.639-6.362,3.771-13.589,1.756-20.174-.477-1.56-1.235-3.191-2.694-3.92-1.879-.94-4.195-.007-5.772,1.382-4.588,4.039-5.081,10.893-5.244,17a43.67,43.67,0,0,0-5.721-9.955c-2.466-2.942-5.9-5.276-9.727-5.584s-7.958,1.821-9.2,5.452c-1.5,4.373,1.467,9.1,5.151,11.895,4.386,3.322,9.8,4.989,14.44,7.945a19.8,19.8,0,0,1,5.21,4.717c1.242,1.655,1.767,4.428,3.341,5.491,3.6-3.844,6.448-9.4,8.46-14.252" transform="translate(-46.887 -6.882)" fill="#f0cdf5"/>
     </g>
   </g>
-<!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
 </svg>

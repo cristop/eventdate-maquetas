@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="107" height="107.034" viewBox="0 0 107 107.034">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.692" x2="1.357" y2="0.308" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#484848"/>
+      <stop offset="0.432" stop-color="#d9d9d9"/>
+      <stop offset="1" stop-color="#262626"/>
+    </linearGradient>
+  </defs>
+  <path id="Icon_awesome-music" data-name="Icon awesome-music" d="M106,6.628A6.621,6.621,0,0,0,97.385.312L31.138,19.876A6.623,6.623,0,0,0,26.5,26.191V80.313a28.639,28.639,0,0,0-6.625-.812C8.9,79.5,0,85.433,0,92.751S8.9,106,19.875,106,39.75,100.07,39.75,92.751V44.37l53-15.531V67.063a28.639,28.639,0,0,0-6.625-.812c-10.977,0-19.875,5.931-19.875,13.25s8.9,13.25,19.875,13.25S106,86.82,106,79.5l0-72.873Z" transform="translate(0.5 0.533)" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1" fill="url(#linear-gradient)"/>
+</svg>

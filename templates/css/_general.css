@@ -440,7 +440,7 @@ form .row .col-sm-12{
     font-weight: 500;
 }
 
-#dresscode .container > :nth-child(4){
+#dresscode .dresscode{
     color: white;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -448,6 +448,7 @@ form .row .col-sm-12{
     padding-left: 0.5rem;
     font-weight: 700;
     margin-bottom: 3rem;
+    background-color: var(--c-tertiary);
 }
 
 
@@ -847,7 +848,7 @@ form .row .col-sm-12{
     #dresscode h3{
         font-size: 28px;
     }
-    #dresscode .container > :nth-child(4){
+    #dresscode .dresscode{
         font-size: 21px;
     }
     #video .title{
