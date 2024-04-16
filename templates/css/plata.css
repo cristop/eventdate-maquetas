@@ -11,9 +11,14 @@
     --c-quaternary: ;
     --forma-hero: url(../../img/templates/plata/formas.svg);
     --forma-top: url(../../img/templates/plata/formas-05.png);
+    --forma-top2: url(../../img/templates/plata/formas-06.png);
     --forma-bottom: url(../../img/templates/plata/formas-02.png);
     --corazones1: url(../../img/templates/plata/corazones-01.svg);
     --corazones2: url(../../img/templates/plata/corazones-02.svg);
+    --glitter1: url(../../img/templates/plata/glitter-1.png);
+    --glitter2: url(../../img/templates/plata/glitter-2.png);
+    --glitter3: url(../../img/templates/plata/glitter-3.png);
+    --glitter4: url(../../img/templates/plata/glitter-4.png);
     --bg-degrade: linear-gradient(43deg, #484848 0%, #d9d9d9 46%, #262626 100%);
 }
 
@@ -176,6 +181,35 @@ textarea.form-control {
     position: relative;
 }
 
+#welcome > div:before{
+    background-image: var(--glitter1);
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 28.5%;
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    right: -100px;
+    top: -38%;
+}
+
+#welcome > div::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 28.5%;
+    background-image: var(--glitter2);
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    left: -105px;
+    bottom: -49%;
+    z-index: 0;
+}
+
 div#welcome:after {
     content: "";
     background-image: var(--forma-hero);
@@ -195,10 +229,6 @@ div#welcome:after {
     background-repeat: no-repeat;
     background-size: 550px;
 }
-
-
-
-
 
 #welcome .nombre {
     color: #E8C1BA !important;
@@ -499,6 +529,24 @@ section#selpix .text {
     background-position: center;
     background-size: 90%;
     color: #000 !important;
+    position: relative;
+}
+
+#playlist::before {
+    background-image: var(--glitter1);
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -20vw;
+    left: -6rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 12%;
+    z-index: 0;
+    transform: scaleX(-1);
 }
 
 #playlist .text {
@@ -506,6 +554,10 @@ section#selpix .text {
     color: #000 !important;
     font-size: 14px !important;
     font-family: var(--f-secondary);
+}
+
+section#gallery{
+    z-index: 1;
 }
 
 @media screen and (max-width: 900px) {
@@ -619,6 +671,38 @@ section#recomendations .fs-sm-16 {
     color: inherit;
 }
 
+#recomendations::before{
+    content: "";
+    display: block;
+    background-image: var(--glitter3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 4rem;
+    left: -15%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-bottom: 20%;
+    transform: scaleY(-1);
+}
+
+#recomendations::after{
+    content: "";
+    display: block;
+    background-image: var(--glitter3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0px;
+    right: -14rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-bottom: 20%;
+    transform: scaleX(-1);
+}
+
 #confirmation .title {
     text-transform: uppercase !important;
     color: #272727 !important;
@@ -689,6 +773,22 @@ section#confirmation .btn {
 
 #itinerary {
     background-color: #fff !important;
+    position: relative;
+}
+
+#itinerary::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 28.5%;
+    background-image: var(--glitter2);
+    transform: scaleX(-1);
+    background-repeat: no-repeat;
+    right: -105px;
+    bottom: -56%;
+    z-index: 0;
 }
 
 section#itinerary .flex-fill p {
@@ -765,6 +865,20 @@ section#gifts:before {
     background-image: var(--forma-top);
 }
 
+section#gallery:before{
+    background-image: var(--forma-top2);
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: -14vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 15%;
+}
+
 section#gallery:after ,
 section#video:after,
 section#gifts:after {
@@ -783,6 +897,10 @@ section#gifts:after {
 
 section#gallery .my-slider img {
     border-radius: 20px;
+}
+
+#gallery .container{
+    padding-top: 5rem;
 }
 @media screen and (min-width: 900px) {
     #gallery .my-slider img {
@@ -848,6 +966,15 @@ section#phrase {
     font-size: 15px;
     position: relative;
     background-color: #707070;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#phrase .container::before{
+    background-image: url(../../img/templates/plata/portada-web.jpg);
 }
 
 

@@ -168,12 +168,21 @@
     max-width: 800px;
 }
 
+#phrase .container::before{
+    content: "";
+    display: block;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
 /* ITINERARY */
 
 #itinerary{
     background-color: #272727;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 7rem;
+    padding-bottom: 15rem;
 }
 
 #itinerary .container{
