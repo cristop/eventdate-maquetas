@@ -159,8 +159,8 @@
 #phrase{
     background-color: gray;
     color: white;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
 }
 
 #phrase .container{
@@ -175,6 +175,21 @@
     position: absolute;
     left: 0;
     top: 0;
+}
+
+#phrase .container .text{
+    position: relative;
+    z-index: 1;
+}
+
+#phrase::before{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* ITINERARY */

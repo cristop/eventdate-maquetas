@@ -9,6 +9,7 @@
     --c-secondary: #FFF;
     --c-tertiary: #D5D4D4;
     --c-quaternary: ;
+    --bg-principal: url(../../img/templates/plata/portada-web.jpg);
     --forma-hero: url(../../img/templates/plata/formas.svg);
     --forma-top: url(../../img/templates/plata/formas-06.png);
     --forma-top2: url(../../img/templates/plata/formas-06.png);
@@ -20,6 +21,9 @@
     --glitter2: url(../../img/templates/plata/glitter-2.png);
     --glitter3: url(../../img/templates/plata/glitter-3.png);
     --glitter4: url(../../img/templates/plata/glitter-4.png);
+    --glitter-mobile: url(../../img/templates/plata/glitter-portada-mobile.png);
+    --glitter3-mobile: url(../../img/templates/plata/glitter-03-mobile.png);
+    --glitter4-mobile: url(../../img/templates/plata/glitter-04-mobile.png);
     --bg-degrade: linear-gradient(43deg, #484848 0%, #d9d9d9 46%, #262626 100%);
 }
 
@@ -970,6 +974,7 @@ section#instagram-filtro::after {
 
 section#phrase {
     font-family: var(--f-secondary);
+    background-image: var(--bg-principal);
     font-size: 15px;
     position: relative;
     background-color: rgb(112, 112, 112);
@@ -978,10 +983,12 @@ section#phrase {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    z-index: 0;
 }
 
 #phrase .container::before {
-    background-image: url("../../img/templates/plata/portada-web.jpg");
+    content: "";
+    display: block;
 }
 
 #gifts-load .p-4.text-center.fs-sm-16.fw-500 {
@@ -998,6 +1005,30 @@ section#phrase {
     margin-bottom: 35px;
 }
 
+#phrase .container::before{
+    content: "";
+    display: block;
+    background-image: var(--glitter3-mobile);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+    left: 0px;
+    top: 0px;
+}
+#phrase .container::after{
+    content: "";
+    display: block;
+    background-image: var(--glitter4-mobile);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
 /* mobile */
 
 @media screen and (max-width: 900px){
@@ -1008,7 +1039,13 @@ section#phrase {
     background-position: center;
     }
     #welcome>div::after{
-        
+      background-image: var(--glitter-mobile);
+      transform: inherit;
+      bottom: 0;
+      background-position: bottom;
+    }
+    div#welcome::after{
+        padding-bottom: 46%;
     }
     #instagram-cumple::after, #selpix::after{
     right: 0;
