@@ -10,7 +10,7 @@
     --c-tertiary: #D5D4D4;
     --c-quaternary: ;
     --forma-hero: url(../../img/templates/plata/formas.svg);
-    --forma-top: url(../../img/templates/plata/formas-05.png);
+    --forma-top: url(../../img/templates/plata/formas-06.png);
     --forma-top2: url(../../img/templates/plata/formas-06.png);
     --forma-bottom: url(../../img/templates/plata/formas-02.png);
     --corazones1: url(../../img/templates/plata/corazones-01.svg);
@@ -437,6 +437,7 @@ section#video .text {
 
 #video .title {
     /* color: var(--c-primary); */
+    padding-top: 5rem;
 }
 
 /* Selpix */
@@ -573,6 +574,8 @@ section#gallery{
     /* color: #fff; */
     background-size: cover;
     background-position: center;
+    padding-top: 5rem;
+    padding-bottom: 8rem;
 }
 
 section#dresscode .text {
@@ -679,7 +682,7 @@ section#recomendations .fs-sm-16 {
     height: 100%;
     position: absolute;
     bottom: 4rem;
-    left: -15%;
+    left: -13%;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: left;
@@ -852,20 +855,6 @@ section#gifts {
 section#gallery:before,
 section#video:before,
 section#gifts:before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 0;
-    /* position: absolute; */
-    /* top: -14vw; */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding-bottom: 11%;
-    background-image: var(--forma-top);
-}
-
-section#gallery:before{
     background-image: var(--forma-top2);
     content: "";
     display: block;
