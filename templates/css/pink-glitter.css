@@ -336,7 +336,6 @@ section#gallery .my-slider img{
     padding: 0px;
     position: absolute;
     width: 65px;
-    filter: brightness(0) invert(1);
 }
 
 #gallery .container > :last-child{
