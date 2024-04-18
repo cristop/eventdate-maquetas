@@ -15,6 +15,7 @@
     --forma-bottom: url(../../img/templates/blue-glitter/formas-02.png);
 }
 
+
 body {
     font-family: var(--f-primary);
     overflow-x: hidden !important;

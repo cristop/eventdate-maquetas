@@ -44,6 +44,115 @@
 			});
 		</script>
 		<!-- /////////////////////////// -->
+
+		
+        <!-- /////////////////////////// -->
+		<div id="countdown-load"></div>
+		<script>
+			// Cargar el contenido del archivo HTML externo
+			$('#countdown-load').load('componentes/countdown.html', function() {
+				// Rellenar las variables con los valores deseados
+				var countdown = {
+				};
+
+				// Reemplazar las variables en el contenido cargado
+				$(this).html(function(_, html) {
+					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
+						return countdown[key] || match;
+					});
+				});
+			});
+		</script>
+		<!-- /////////////////////////// -->
+
+		
+		<!-- /////////////////////////// -->
+		<div id="schedule-load"></div>
+		<script>
+			// Cargar el contenido del archivo HTML externo
+			$('#schedule-load').load('componentes/schedule.html', function() {
+				// Rellenar las variables con los valores deseados
+				var schedule = {
+					icon: 'img/templates/pink-glitter/icon-schedule.svg',
+				};
+		
+				// Reemplazar las variables en el contenido cargado
+				$(this).html(function(_, html) {
+					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
+						return schedule[key] || match;
+					});
+				});
+			});
+		</script>
+		<!-- /////////////////////////// -->
+
+
+		<!-- /////////////////////////// -->
+		<div id="phrase-load"></div>
+		<script>
+			// Cargar el contenido del archivo HTML externo
+			$('#phrase-load').load('componentes/phrase.html', function() {
+				// Rellenar las variables con los valores deseados
+				var phrase = {
+				};
+		
+				// Reemplazar las variables en el contenido cargado
+				$(this).html(function(_, html) {
+					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
+						return phrase[key] || match;
+					});
+				});
+			});
+		</script>
+		<!-- /////////////////////////// -->
+
+
+		<!-- /////////////////////////// -->
+		<div id="itinerary-load"></div>
+		<script>
+			// Cargar el contenido del archivo HTML externo
+			$('#itinerary-load').load('componentes/itinerary.html', function() {
+				// Rellenar las variables con los valores deseados
+				var itinerary = {
+					lugar: 'BRISAS DEL PLATA',
+					direccion: 'ACC, AV. DR. TRISTÁN ACHÁVAL RODRÍGUEZ 1353, CABA',
+					hora: '21:00 HS',
+					bg: 'img/templates/teen/Cruz-espacio.jpg',
+					icon: 'img/templates/blue-glitter/icon-itinerary.svg',
+				};
+
+				// Reemplazar las variables en el contenido cargado
+				$(this).html(function(_, html) {
+					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
+						return itinerary[key] || match;
+					});
+				});
+			});
+		</script>
+		<!-- /////////////////////////// -->
+
+
+		<!-- /////////////////////////// -->
+		<div id="gallery-load"></div>
+		<script>
+			// Cargar el contenido del archivo HTML externo
+			$('#gallery-load').load('componentes/gallery.html', function() {
+				// Rellenar las variables con los valores deseados
+				var gallery = {
+					template_name: 'blue-glitter',
+					photos_quanty: 3,
+					icon: 'img/templates/pink-glitter/icon-gallery.svg',
+				};
+
+				// Reemplazar las variables en el contenido cargado
+				$(this).html(function(_, html) {
+					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
+						return gallery[key] || match;
+					});
+				});
+			});
+		</script>
+		<!-- /////////////////////////// -->
     
 </body>
 </html>
