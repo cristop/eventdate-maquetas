@@ -5,8 +5,9 @@
 :root {
     --f-primary: 'Quicksand', sans-serif;
     --f-secondary: 'Quicksand', sans-serif;
-    --c-primary:  #272727;
+    --c-primary:  #fff;
     --c-secondary: #FFBEC4;
+    --c-secondary-light: #FFDDE0;
     --light: #FFFEFD;
     --brown: #AE9461;
     --c-quaternary: ;
@@ -45,7 +46,12 @@ body{
     border-radius: 0 !important;
     border-radius: 25px !important;
     min-height: 45px;
-    background-color: var(--c-secondary) !important;
+    background-color: var(--c-secondary-light) !important;
+}
+
+.title{
+    font-weight: bold!important;
+    text-transform: uppercase!important;
 }
 
 /* welcome */
@@ -77,18 +83,23 @@ body{
     top: 0;
 }
 
-#welcome > div::after{
+#welcome > div::after, #playlist > div::after, #instagram-cumple > div::after, #instagram-filtro > div::after{
     content: "";
     display: block;
     background-image: var(--star2);
-    width: 400px;
+    width: 250px;
     height: 600px;
     background-repeat: no-repeat;
     background-position: right;
     position: absolute;
+    background-size: contain;
     right: 0;
     bottom: 0;
     z-index: 1;
+}
+
+#playlist > div::after{
+    height: 372px;
 }
 
 div#welcome:after{
@@ -234,6 +245,7 @@ section#phrase{
     background-color: #FFFEFD;
     padding-bottom: 7rem;
     position: relative;
+    color: #000;
 }
 
 #itinerary .container{
@@ -254,7 +266,7 @@ section#phrase{
     display: none;
 }
 
-#itinerary::before{
+#itinerary::before, #dresscode::before, #transport::before, #confirmation::before{
     content: "";
     display: block;
     background-image: var(--star3);
@@ -266,6 +278,14 @@ section#phrase{
     background-size: contain;
     z-index: 0;
     left: 0;
+}
+
+#confirmation{
+    position: relative;
+}
+
+#confirmation::before{
+    bottom: 10rem;
 }
 
 /* gallery */
@@ -342,10 +362,258 @@ section#gallery .my-slider img{
     padding-left: 5rem;
 }
 
+#playlist{
+    background-color: #fff;
+    color: #000 !important;
+    position: relative;
+}
+
+#playlist p{
+    color: #000!important;
+}
+
+#recomendations{
+    background-color: var(--c-secondary-light);
+}
+
+#recomendations .container h3{
+    color: #000;
+    text-transform: uppercase;
+}
+
+#recomendations .accordion-flush .accordion-item{
+    border-radius: 30px;
+}
+
+#dresscode{
+    color: #000;
+    position: relative;
+}
+
+#dresscode .dresscode{
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 30px;
+    background-color: var(--c-secondary-light);
+    color: #272727 !important;
+}
+
+#video{
+    color: #000!important;
+}
+
+#hashtag{
+    background-color: #fff;
+    color: #000;
+}
+
+#hashtag .hashtag-phrase{
+    background-color: var(--c-secondary-light);
+    border-radius: 50px;
+    color: #272727 !important;
+}
+
+#instagram-cumple{
+    background-color: var(--c-secondary);
+    color: #000;
+    position: relative;
+}
+
+section#instagram-cumple .bg{
+    border-radius: 25px;
+    background-color: #fff !important;
+}
+
+#instagram-cumple .profile-name{
+    color: #000 !important;
+}
+
+#instagram-cumple .bg img{
+    border-color: var(--c-secondary-light)!important;
+}
+
+#instagram-cumple .btn-ig{
+    font-weight: bold;
+}
+
+#instagram-cumple > div::after{
+    
+    height: 350px; 
+    bottom: 150px;
+}
+
+#transport{
+    color: #000;
+    position: relative;
+}
+
+#transport .form-control{
+    color: #272727;
+    border: 0 !important;
+}
+
+section#transport select.rounded-0{
+    border-radius: 20px!important;
+    border: 0px;
+}
+
+#gifts .title, #gifts .row p.text{
+    color: #000!important;
+}
+
+#gifts{
+    color: #000!important;
+}
+
+#gifts .pills .rounded-pill{
+    border-radius: 10px!important;
+}
+
+.nav-pills .nav-link.active{
+    background-color: white;
+    color: #000;
+}
+
+.nav-pills .nav-link{
+    color: white;
+}
+
+#gifts .tns-item a{
+    border-color: #212121 !important;
+}
+
+#instagram-filtro{
+    color: #212121;
+    position: relative;
+}
+
+#instagram-filtro .instructions{
+    padding: 60px 40px;
+    max-width: 650px;
+    text-align: center;
+}
+
+#instagram-filtro > div::after{
+    z-index: -1;
+}
+
+#selpix{
+    background-color: var(--c-secondary-light);
+    color: #212121;
+}
+
+#selpix .number{
+    background-color: #fff;
+    color: var(--brown);
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    border-radius: 50%;
+}
+
+#confirmation .title, #confirmation .text, #confirmation .checks{
+    color: #272727!important;
+}
+
+.form-check-input:checked{
+    background-color: var(--c-secondary);
+    border-color: var(--c-secondary);
+}
+
+#greeting{
+    background-color: var(--c-primary);
+    color: #fff;
+    background-image: var(--textura);
+    background-size: cover;
+    background-position: center;
+}
+
+section#greeting .name{
+    color: #272727;
+    background-color: white;
+    border-radius: 40px;
+    width: fit-content;
+    margin: 17px auto;
+    text-transform: uppercase;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+#countdown .container .row > div{
+    display: grid;
+    gap: 10px;
+}
+
+section#countdown .justify-content-evenly > div > div:last-child{
+    color: #212121;
+}
 @media screen and (min-width: 900px){
     #gallery .my-slider img{
         height: 300px;
         width: 100%;
         object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 900px){
+    #welcome > div::before{
+        width: 150px;
+        height: 250px;
+        background-size: contain;
+    }
+    #welcome > div::after{
+        width: 150px;
+        height: 250px;
+        background-size: contain;
+    }
+    div#welcome:after{
+        bottom: 0px;
+    }
+    #itinerary::before{
+        width: 150px;
+        height: 350px;
+        top: 0;
+    }
+    #playlist > div::after{
+        height: 220px;
+        z-index: -1;
+    }
+    #playlist .container{
+        position: relative;
+        z-index: 2;
+    }
+    #video .title {
+        font-size: 25px;
+    }
+    #instagram-cumple > div::after{
+        height: 204px;
+        bottom: inherit;
+        top: 0;
+    }
+    #itinerary::before, #dresscode::before, #transport::before, #confirmation::before{
+        width: 150px;
+        height: 250px;
+    }
+    #dresscode::before{
+        z-index: -1;
+        bottom: 0;
+    }
+    #transport::before{
+        top: 0;
+    }
+    #instagram-filtro > div::after{
+        width: 150px;
+        height: 250px;
+    }
+    #confirmation::before{
+        bottom: 0;
+        z-index: -1;
     }
 }

@@ -153,6 +153,261 @@
 			});
 		</script>
 		<!-- /////////////////////////// -->
+
+
+		<!-- /////////////////////////// -->
+		<div id="playlist-load"></div>
+		<script>
+			// Cargar el contenido del archivo HTML externo
+			$('#playlist-load').load('componentes/playlist.html', function() {
+				// Rellenar las variables con los valores deseados
+				var playlist = {
+					icon: 'img/templates/pink-glitter/icon-playlist.svg',
+				};
+
+				// Reemplazar las variables en el contenido cargado
+				$(this).html(function(_, html) {
+					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
+						return playlist[key] || match;
+					});
+				});
+			});
+		</script>
+		<!-- /////////////////////////// -->
+
     
+        <!-- /////////////////////////// -->
+		<div id="recomendations-load"></div>
+		<script>
+			// Rellenar las variables con los valores deseados
+			var recomendations = {
+				icon: 'img/templates/pink-glitter/icon-recomendations.svg',
+			};
+
+			// Cargar el contenido del archivo HTML externo
+			$('#recomendations-load').load('componentes/recomendations.html', function() {
+				// Reemplazar las variables en el contenido cargado
+				$(this).html(function(_, html) {
+					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
+						return recomendations[key] || match;
+					});
+				});
+			});
+		</script>
+		<!-- /////////////////////////// -->
+
+
+        <!-- /////////////////////////// -->
+		<div id="dresscode-load"></div>
+		<script>
+			// Rellenar las variables con los valores deseados
+			var dresscode = {
+				icon: 'img/templates/pink-glitter/icon-dresscode.svg',
+			};
+
+			// Cargar el contenido del archivo HTML externo
+			$('#dresscode-load').load('componentes/dresscode.html', function() {
+				// Reemplazar las variables en el contenido cargado
+				$(this).html(function(_, html) {
+					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
+						return dresscode[key] || match;
+					});
+				});
+			});
+		</script>
+		<!-- /////////////////////////// -->
+
+
+        <!-- /////////////////////////// -->
+		<div id="video-load"></div>
+		<script>
+			// Cargar el contenido del archivo HTML externo
+			$('#video-load').load('componentes/video.html', function() {
+				// Reemplazar las variables en el contenido cargado
+				$(this).html(function(_, html) {
+					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
+						return data[key] || match;
+					});
+				});
+			});
+		</script>
+		<!-- /////////////////////////// -->
+
+
+        <!-- /////////////////////////// -->
+		<div id="hashtag-load"></div>
+		<script>
+			// Cargar el contenido del archivo HTML externo
+			$('#hashtag-load').load('componentes/hashtag.html', function() {
+				// Rellenar las variables con los valores deseados
+				var hashtag = {
+					texto: 'Durante la fiesta utiliza el hashtag',
+					hashtag: '#MIS15MORENA',
+					icon: 'img/templates/pink-glitter/icon-hashtag.svg',
+				};
+
+				// Reemplazar las variables en el contenido cargado
+				$(this).html(function(_, html) {
+					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
+						return hashtag[key] || match;
+					});
+				});
+			});
+		</script>
+		<!-- /////////////////////////// -->
+
+	
+        <!-- /////////////////////////// -->
+		<div id="instagram-cumple-load"></div>
+		<script>
+			// Cargar el contenido del archivo HTML externo
+			$('#instagram-cumple-load').load('componentes/instagram-cumple.html', function() {
+				// Rellenar las variables con los valores deseados
+				var instagram = {
+					image: 'img/templates/pink-glitter/ig.jpg',
+					icon: 'img/templates/pink-glitter/icon-instagram.svg',
+				};
+
+				// Reemplazar las variables en el contenido cargado
+				$(this).html(function(_, html) {
+					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
+						return instagram[key] || match;
+					});
+				});
+			});
+		</script>
+		<!-- /////////////////////////// -->	
+
+
+		<!-- /////////////////////////// -->
+		<div id="transport-load"></div>
+		<script>
+			// Cargar el contenido del archivo HTML externo
+			$('#transport-load').load('componentes/transport.html', function() {
+				// Rellenar las variables con los valores deseados
+				var transport = {
+					icon: 'img/templates/pink-glitter/icon-transport.svg',
+				};
+
+				// Reemplazar las variables en el contenido cargado
+				$(this).html(function(_, html) {
+					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
+						return transport[key] || match;
+					});
+				});
+			});
+		</script>
+		<!-- /////////////////////////// -->
+
+
+
+		<!-- /////////////////////////// -->
+		<div id="gifts-load"></div>
+		<script>
+			// Cargar el contenido del archivo HTML externo
+			$('#gifts-load').load('componentes/gifts.html', function() {
+				// Rellenar las variables con los valores deseados
+				var gifts = {
+					icon: 'img/templates/blue-glitter/icon-gifts.svg',
+				};
+
+				// Reemplazar las variables en el contenido cargado
+				$(this).html(function(_, html) {
+					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
+						return gifts[key] || match;
+					});
+				});
+			});
+		</script>
+		<!-- /////////////////////////// -->
+
+
+		
+		<!-- /////////////////////////// -->
+		<div id="instagram-filtro-load"></div>
+		<script>
+			// Rellenar las variables con los valores deseados
+			var instagram_filtro = {
+				icon: 'img/templates/pink-glitter/icon-instagram-filtro.svg',
+			};
+
+			// Cargar el contenido del archivo HTML externo
+			$('#instagram-filtro-load').load('componentes/instagram-filtro.html', function() {
+				// Reemplazar las variables en el contenido cargado
+				$(this).html(function(_, html) {
+					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
+						return instagram_filtro[key] || match;
+					});
+				});
+			});
+		</script>
+		<!-- /////////////////////////// -->
+
+
+
+		<!-- /////////////////////////// -->
+		<div id="selpix-load"></div>
+		<script>
+			// Rellenar las variables con los valores deseados
+			var selpix = {
+				icon: 'img/templates/pink-glitter/icon-selpix.svg',
+			};
+
+			// Cargar el contenido del archivo HTML externo
+			$('#selpix-load').load('componentes/selpix.html', function() {
+				// Reemplazar las variables en el contenido cargado
+				$(this).html(function(_, html) {
+					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
+						return selpix[key] || match;
+					});
+				});
+			});
+		</script>
+		<!-- /////////////////////////// -->
+
+
+
+		<!-- /////////////////////////// -->
+		<div id="confirmation-load"></div>
+		<script>
+			// Rellenar las variables con los valores deseados
+			var confirmation = {
+				icon: 'img/templates/pink-glitter/icon-confirmation.svg',
+			};
+
+			// Cargar el contenido del archivo HTML externo
+			$('#confirmation-load').load('componentes/confirmation.html', function() {
+				// Reemplazar las variables en el contenido cargado
+				$(this).html(function(_, html) {
+					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
+						return confirmation[key] || match;
+					});
+				});
+			});
+		</script>
+		<!-- /////////////////////////// -->
+
+
+
+		<!-- /////////////////////////// -->
+		<div id="greeting-load"></div>
+		<script>
+			// Cargar el contenido del archivo HTML externo
+			$('#greeting-load').load('componentes/greeting.html', function() {
+                // Rellenar las variables con los valores deseados
+				var greeting = {
+					nombre: 'Morena',
+                    fecha: '04.09.2024',
+				};
+
+				// Reemplazar las variables en el contenido cargado
+				$(this).html(function(_, html) {
+					return html.replace(/{{\s*(\w+)\s*}}/g, function(match, key) {
+						return greeting[key] || match;
+					});
+				});
+			});
+		</script>
+		<!-- /////////////////////////// -->
 </body>
 </html>
