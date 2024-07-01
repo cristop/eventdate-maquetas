@@ -376,7 +376,7 @@ section#hashtag:before {
 section#hashtag .hashtag-phrase {
     border-radius: 50px;
     color: #272727 !important;
-    background-color: var(--c-tertiary);
+    background-color: var(--c-primary);
 }
 
 #hashtag .text {
@@ -502,7 +502,7 @@ section#video .text {
 
 /* Selpix */
 #selpix {
-    background-color: var(--c-tertiary);
+    background-color: var(--c-secondary);
     position: relative;
 }
 
@@ -510,23 +510,32 @@ section#video .text {
     content: "";
     display: block;
     position: absolute;
-    right: 0;
-    width: 190px;
-    background-image: var(--corazones3);
-    padding-bottom: 25%;
+    background-image: var(--mariposas2);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: left;
-    pointer-events: none;
-    /* transform: scaleX(-1); */
-    bottom: 40px;
+    width: 150px;
+    padding-bottom: 13%;
+    right: 0;
+    background-color: transparent;
+}
+
+#selpix::after{
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: var(--mariposas1);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 150px;
+    padding-bottom: 13%;
+    right: 0;
+    background-color: transparent;
+    left: 0;
+    bottom: 150px;
 }
 
 section#selpix .logo {
     display: none;
-}
-
-section#selpix .title {
 }
 
 section#selpix .text {
@@ -557,11 +566,14 @@ section#selpix .text {
     font-weight: 500;
 }
 
+#selpix .icon img{
+    filter: none;
+}
+
 /* gifts */
 #gifts {
     background-size: cover;
     background-position: center;
-    background-color: var(--c-primary) !important;
     padding-top: 0 !important;
 }
 
@@ -669,6 +681,7 @@ section#dresscode .text {
 
 /* transport */
 #transport {
+    background-color: var(--c-quaternary);
 }
 
 section#transport select.rounded-0 {
@@ -767,7 +780,7 @@ section#recomendations .fs-sm-16 {
 }
 
 #greeting {
-    background-color: var(--c-primary);
+    background-color: var(--c-tertiary);
     color: #fff;
     /* background-image: var(--textura); */
     background-size: cover;
@@ -890,7 +903,7 @@ section#itinerary .flex-fill p {
 section#gallery,
 section#video,
 section#gifts {
-    background-color: var(--c-tertiary);
+    background-color: var(--c-tertiary)!important;
     position: relative;
     background-size: cover;
     background-position: center;
@@ -904,19 +917,31 @@ section#gallery .icon img, section#video .icon img, section#gifts .icon img{
 }
 
 section#gifts .container:before {
+    content: "";
     display: block;
     position: absolute;
-    left: -90px;
-    width: 260px;
-    background-image: var(--corazones2);
-    padding-bottom: 25%;
+    background-image: var(--mariposas2);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: left;
-    pointer-events: none;
-    /* transform: scaleX(-1); */
-    top: 10px;
+    width: 150px;
+    padding-bottom: 13%;
+    right: 0;
+    background-color: transparent;
+}
+
+section#gifts .container::after{
     content: "";
+    display: block;
+    position: absolute;
+    background-image: var(--mariposas1);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 150px;
+    padding-bottom: 13%;
+    right: 0;
+    background-color: transparent;
+    left: 0;
+    top: 300px;
 }
 
 section#gallery:before,
@@ -948,8 +973,6 @@ section#gifts:after {
     background-position: center;
     padding-bottom: 10.5%;
     background-image: var(--forma-hero2);
-    margin-top: 70px;
-    margin-bottom: -1px;
     background-color: var(--c-quaternary);
 }
 
@@ -997,17 +1020,29 @@ section#instagram-cumple:after {
     content: "";
     display: block;
     position: absolute;
-    right: 0;
-    width: 210px;
-    background-image: var(--corazones3);
-    padding-bottom: 25%;
+    background-image: var(--mariposas2);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: left;
-    pointer-events: none;
-    /* transform: scaleX(-1); */
-    top: 0;
-    bottom: -150px;
+    width: 150px;
+    padding-bottom: 13%;
+    right: 0;
+    background-color: transparent;
+    top: 100px;
+}
+
+section#instagram-cumple::before{
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: var(--mariposas1);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 150px;
+    padding-bottom: 13%;
+    right: 0;
+    background-color: transparent;
+    left: 0;
+    bottom: 100px;
 }
 
 section#instagram-cumple .bg {
@@ -1022,6 +1057,10 @@ section#instagram-cumple .profile-name {
 
 section#instagram-cumple .btn-ig {
     color: white;
+}
+
+#instagram-cumple .icon img{
+    filter: none;
 }
 
 section#instagram-filtro {
@@ -1098,4 +1137,124 @@ section#phrase::after{
     height: 70px;
     margin-bottom: 35px;
     filter: var(--f-icons);
+}
+
+
+@media screen and (max-width: 480px){
+    #welcome > div:before{
+        padding-bottom: 40%;
+        width: 128px;
+    }
+    #welcome > div:after{
+        background-position: initial;
+        padding-bottom: 40%;
+    }
+    div#welcome:after{
+        padding-bottom: 60%;
+    }
+    #countdown::before{
+        width: 84px;
+        padding-bottom: 30%;
+    }
+    #countdown::after{
+        width: 84px;
+        padding-bottom: 30%;
+        top: 50px;
+    }
+    section#phrase::before{
+        padding-bottom: 30%;
+        top: 0;
+        width: 90px;
+    }
+    section#phrase::after{
+        padding-bottom: 30%;
+        top: inherit;
+        bottom: 0;
+    }
+    #itinerary{
+        padding-top: 3rem;
+    }
+    #itinerary .container > div .row{
+        display: grid;
+    }
+    #itinerary .row > :first-child{
+        grid-row: 2;
+    }
+    section#gallery:before, section#video:before, section#gifts:before{
+        padding-bottom: 50%;
+    }
+    section#gallery:after, section#video:after, section#gifts:after{
+        padding-bottom: 50%;
+    }
+    #gallery .formaTop{
+        padding-bottom: 30%;
+        width: 100px;
+    }
+    #gallery .formaDown{
+        padding-bottom: 30%;
+        width: 100px;
+        bottom: 100px;
+    }
+    #recomendations:before{
+        padding-bottom: 30%;
+        top: 30px;
+    }
+    #recomendations::after{
+        width: 100px;
+        padding-bottom: 30%;
+        bottom: 10px;
+    }
+    #dresscode .container{
+        padding-bottom: 0px;
+    }
+    #video .container:before{
+        padding-bottom: 30%;
+        top: 150px;
+        width: 100px;
+    }
+    #video .container::after{
+        padding-bottom: 30%;
+        bottom: 100px;
+    }
+    section#instagram-cumple::before{
+        padding-bottom: 30%;
+        bottom: 0;
+    }
+        section#instagram-cumple:after{
+        width: 100px;
+        padding-bottom: 30%;
+        top: 40px;
+    }
+    #transport .container{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    #gifts .container{
+        padding-bottom: 0px;
+    }
+    section#gifts .container:before{
+        padding-bottom: 30%;
+        width: 100px;
+        top: 50%;
+    }
+    section#gifts .container::after{
+        padding-bottom: 30%;
+        width: 100px;
+        top: 50%;
+    }
+    section#instagram-filtro{
+        padding-top: 1rem;
+    }
+    #selpix:before{
+        width: 100px;
+        padding-bottom: 30%;
+    }
+        #selpix::after{
+        padding-bottom: 30%;
+        bottom: 0;
+    }
+    #confirmation form{
+        padding-top: 0px!important;
+        padding-bottom: 0px!important;
+    }
 }
