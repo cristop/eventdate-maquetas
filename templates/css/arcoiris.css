@@ -361,10 +361,8 @@ section#countdown .number {
     font-family: var(--f-secondary);
 }
 
-
-section#countdown .text-gold {
-    /* color: white !important; */
-    color: #000 !important;
+#countdown .container .row{
+    position: relative;
 }
 
 section#hashtag {
