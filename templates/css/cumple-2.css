@@ -1,16 +1,18 @@
 @import "_custom.css"; 
 @import "_general.css"; 
-@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --c-primary: #E0C385;
-    --c-secondary: #2D2D2D;
-    --c-tertiary: #EEE8DC;
+    --c-primary: #3535D9;
+    --c-secondary: #212121;
+    --c-tertiary: #E6E6E6;
     --c-quaternary: #FFFFFF;
     /* fuentes */
-    --f-primary: "Quicksand", sans-serif;
-    --f-secondary: "Kalnia", serif;
+    --f-primary: "Montserrat", sans-serif;
+    --f-secondary: "Fira Code", monospace;
     /* formas */
+    --bg-fondo1: url(../../img/templates/cumple-2/bg-fondo02.svg);
+    --bg-fondo2: url(../../img/templates/cumple-2/bg-fondo01.svg);
     --f-icons: brightness(0) invert(91%) sepia(91%) saturate(551%) hue-rotate(313deg) brightness(104%) contrast(101%);
     --filter-drawing1: brightness(0) invert(95%) sepia(68%) saturate(7499%) hue-rotate(317deg) brightness(98%) contrast(103%);
     --filter-drawing2: brightness(0) invert(84%) sepia(40%) saturate(262%) hue-rotate(106deg) brightness(89%) contrast(93%);
@@ -165,11 +167,11 @@ body {
 }
 
 .tns-controls [data-controls="prev"] {
-    background-image: url(../../img/templates/cande/ico-arrow-prev.svg);
+    background-image: url(../../img/templates/cumple-2/ico-arrow-prev.svg);
 }
 
 .tns-controls [data-controls="next"] {
-    background-image: url(../../img/templates/cande/ico-arrow-next.svg);
+    background-image: url(../../img/templates/cumple-2/ico-arrow-next.svg);
     right: 0;
 }
 
@@ -201,30 +203,20 @@ body {
 }
 
 #welcome > div:before {
-    content: "";
-    display: block;
-    position: absolute;
-    background-image: url(../../img/templates/cande/forma-portada03.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
-    width: 400px;
-    padding-bottom: 19%;
-    right: 0;
-    top: 4vh;
+
 }
 
 #welcome > div:after {
     content: "";
     display: block;
     position: absolute;
-    background-image: url(../../img/templates/cande/forma-portada01.svg);
+    background-image: url(../../img/templates/cumple-2/corazones01.svg);
     background-size: contain;
     width: 400px;
-    padding-bottom: 7%;
+    padding-bottom: 22%;
     background-repeat: no-repeat;
     top: 0;
-    right: 5vh;
+    right: -5vw;
     background-position: left;
 }
 
@@ -232,10 +224,10 @@ body {
     content: "";
     display: block;
     position: absolute;
-    background-image: url(../../img/templates/cande/forma-portada02.svg);
+    background-image: url(../../img/templates/cumple-2/corazones02.svg);
     background-size: contain;
     width: 400px;
-    padding-bottom: 13%;
+    padding-bottom: 20%;
     background-repeat: no-repeat;
     bottom: 0;
     left: -35px;
@@ -275,7 +267,7 @@ body {
 
 #welcome .fecha {
     background-color: var(--c-primary);
-    color: #2D2D2D;
+    color: white;
     border-radius: 10px;
     font-size: 22px !important;
     z-index: 1;
@@ -301,10 +293,12 @@ body {
     background-image: none;
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-position: center center; */
+    background-position: center center;
+    position: static;
     padding-top: 6rem;
     padding-bottom: 6rem;
     background-attachment: scroll;
+    background-image: var(--bg-fondo2);
 }
 
 #countdown::before{
@@ -396,22 +390,12 @@ section#countdown .number {
 }
 
 #hashtag:before {
-    content: "";
-    display: block;
-    position: absolute;
-    background-image: url(../../img/templates/cande/florcita04.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 200px;
-    height: 200px;
-    padding-bottom: 10%;
-    left: -2vw;
-    bottom: 5vh;
+
 }
 
 #hashtag .hashtag-phrase {
-    border-radius: 50px;
-    color: #272727 !important;
+    border-radius: 12px;
+    color: white !important;
     background-color: var(--c-primary);
     text-transform: inherit;
 }
@@ -435,14 +419,19 @@ section#countdown .number {
     content: "";
     display: block;
     position: absolute;
-    background-image: url(../../img/templates/cande/florcita02.svg);
-    background-size: cover;
+    background-image: url(../../img/templates/cumple-2/estrellitas.svg);
+    background-size: 90%;
     background-repeat: no-repeat;
-    width: 200px;
-    height: 200px;
-    padding-bottom: 10%;
+    width: 150px;
+    height: 150px;
+    padding-bottom: 15%;
     left: 0;
-    bottom: 0;
+    top: 5vh;
+}
+
+#schedule .btn:hover{
+    background-color: var(--c-quaternary)!important;
+    color: #212121!important;
 }
 
 /* Filtro */
@@ -462,14 +451,15 @@ section#countdown .number {
     content: "";
     display: block;
     position: absolute;
-    background-image: url(../../img/templates/cande/florcita04.svg);
+    background-image: url(../../img/templates/cumple-2/corazones04.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 200px;
+    width: 242px;
     height: 200px;
-    padding-bottom: 13%;
-    left: -2vw;
-    bottom: 4vh;
+    padding-bottom: 16%;
+    left: 0;
+    top: 4vh;
+    transform: scaleX(-1);
 }
 
 #instagram-filtro .title {
@@ -493,19 +483,11 @@ section#countdown .number {
     background-position: center;
     position: relative;
     overflow: hidden;
+    background-image: var(--bg-fondo1);
 }
 
 #video:before {
-    content: "";
-    display: block;
-    position: absolute;
-    background-image: url(../../img/templates/cande/florcita06.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 400px;
-    padding-bottom: 10%;
-    right: 0;
-    bottom: 0;
+
 }
 
 #video .title:before {
@@ -530,15 +512,14 @@ section#countdown .number {
     content: "";
     display: block;
     position: absolute;
-    background-image: url(../../img/templates/cande/florcita03.svg);
-    background-size: cover;
+    background-image: url(../../img/templates/cumple-2/corazones07.svg);
+    background-size: 90%;
     background-repeat: no-repeat;
     width: 200px;
     height: 200px;
-    padding-bottom: 10%;
-    left: 0;
-    top: -2vh;
-    filter: invert(1);
+    padding-bottom: 22%;
+    right: 3vw;
+    bottom: 0;
     transform: scaleX(-1);
 }
 #selpix::after{
@@ -632,9 +613,9 @@ section#selpix .text {
     content: "";
     display: block;
     background-repeat: no-repeat;
-    background-image: url(../../img/templates/cande/bg-formitas.svg);
-    background-position: center;
-    background-size: 91%;
+    background-image: url(../../img/templates/cumple-2/bg-fondo03.svg);
+    background-position: center center;
+    background-size: 90%;
     width: 100%;
     height: 100%;
     top: 0;
@@ -663,18 +644,20 @@ section#selpix .text {
     position: relative;
     overflow: hidden;
     color: white;
+    background-image: var(--bg-fondo2);
 }
 
 #dresscode::before{
     content: "";
     display: block;
     position: absolute;
-    right: 0;
-    top: 10vh;
+    left: 0;
+    /* top: 10vh; */
     width: 280px;
-    background-image: var(--cloud-secondary);
-    padding-bottom: 25%;
-    background-size: contain;
+    height: 280px;
+    background-image: url(../../img/templates/cumple-2/corazones07.svg);
+    padding-bottom: 27%;
+    background-size: 90%;
     background-repeat: no-repeat;
     pointer-events: none;
 }
@@ -696,6 +679,11 @@ section#selpix .text {
     color: #212121!important;
 }
 
+#dresscode .btn:hover{
+    background-color: var(--c-primary)!important;
+    color: white!important;
+}
+
 .bg-gray {
     background-color: #707070;
 }
@@ -713,13 +701,13 @@ section#selpix .text {
     content: "";
     display: block;
     position: absolute;
-    background-image: url(../../img/templates/cande/florcitas01.svg);
-    background-size: cover;
+    background-image: url(../../img/templates/cumple-2/estrellitas.svg);
+    background-size: 90%;
     background-repeat: no-repeat;
-    width: 300px;
-    height: 400px;
-    padding-bottom: 12%;
-    left: -5vw;
+    width: 200px;
+    height: 200px;
+    padding-bottom: 19%;
+    right: 3vw;
     bottom: 0;
     transform: scaleX(-1);
 }
@@ -756,18 +744,7 @@ section#selpix .text {
     padding-bottom: 3rem;
 }
 #recomendations::before{
-    content: "";
-    display: block;
-    position: absolute;
-    background-image: url(../../img/templates/cande/florcita02.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 200px;
-    height: 200px;
-    padding-bottom: 10%;
-    right: 0;
-    bottom: 0;
-    transform: scaleX(-1);
+
 }
 #recomendations::after{
 
@@ -829,16 +806,15 @@ section#selpix .text {
     content: "";
     display: block;
     position: absolute;
-    background-image: url(../../img/templates/cande/florcita05.svg);
-    background-size: cover;
+    background-image: url(../../img/templates/cumple-2/estrellitas.svg);
+    background-size: 90%;
     background-repeat: no-repeat;
     width: 200px;
-    height: 240px;
-    padding-bottom: 15%;
-    right: -6vh;
+    height: 200px;
+    padding-bottom: 18%;
+    left: 0;
     background-color: transparent;
     bottom: 5vh;
-    filter: invert(1);
 }
 #confirmation .text-white {
     color: #272727 !important;
@@ -849,6 +825,11 @@ section#selpix .text {
 }
 #confirmation button.btn{
     background-color: var(--c-primary) !important;
+}
+
+#confirmation button.btn:hover{
+    background-color: var(--c-quaternary)!important;
+    color:#212121!importan
 }
 
 /* greeting */
@@ -888,13 +869,13 @@ section#greeting .name {
     content: "";
     display: block;
     position: absolute;
-    background-image: url(../../img/templates/cande/florcitas01.svg);
-    background-size: cover;
+    background-image: url(../../img/templates/cumple-2/corazones03.svg);
+    background-size: 90%;
     background-repeat: no-repeat;
     width: 200px;
-    height: 200px;
-    padding-bottom: 10%;
-    right: -2vw;
+    height: 150px;
+    padding-bottom: 19%;
+    right: 2vw;
     bottom: 0;
 }
 #itinerary .container{
@@ -955,19 +936,20 @@ section#greeting .name {
     background-repeat: no-repeat;
     position: relative;
     padding-top: 3rem!important;
+    background-image: var(--bg-fondo1);
 }
 #gifts::before{
     content: "";
     display: block;
     position: absolute;
-    background-image: url(../../img/templates/cande/florcita03.svg);
-    background-size: cover;
+    background-image: url(../../img/templates/cumple-2/corazones04.svg);
+    background-size: 90%;
     background-repeat: no-repeat;
-    width: 200px;
-    height: 200px;
-    padding-bottom: 13%;
-    right: 0;
-    top: -2vh;
+    width: 310px;
+    height: 310px;
+    padding-bottom: 21%;
+    right: 5vw;
+    top: 2vh;
 }
 #gifts::after{
 
@@ -1054,17 +1036,7 @@ section#gallery .my-slider img {
 }
 
 #instagram-cumple:after {
-    content: "";
-    display: block;
-    position: absolute;
-    background-image: url(../../img/templates/cande/florcita05.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 200px;
-    height: 200px;
-    padding-bottom: 18%;
-    right: -2vw;
-    bottom: 5vh;
+
 }
 
 #instagram-cumple .bg img{
@@ -1108,6 +1080,10 @@ section#gallery .my-slider img {
 #instagram-filtro:after {
 
 }
+#instagram-cumple .btn-ig:hover{
+    background-color: var(--c-primary)!important;
+    color: white!important;
+}
 
 #gifts-load .p-4.text-center.fs-sm-16.fw-500 {
     font-family: var(--f-secondary);
@@ -1130,6 +1106,11 @@ section#gallery .my-slider img {
 }
 #phrase::before{
     display: none;
+}
+
+#phrase .bg{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 @media screen and (max-width: 1150px){
@@ -1290,7 +1271,8 @@ section#gallery .my-slider img {
         padding-right: 1rem;
     }
     #playlist:before{
-        background-image: url(../../img/templates/cande/fondo-mobile.svg);
+        background-image: url(../../img/templates/cumple-2/bg-fondo-mobile01.svg);
+        background-size: cover;
     }
     #dresscode::before{
         height: 180px;
