@@ -1,0 +1,81 @@
+<section id="speakers" class="py-5">
+    <div class="container">
+        <h2 class="title mb-5">Speakers</h2>
+        <div class="position-relative">
+            <div class="speakerSlider">
+                <div class="h-100">
+                    <div>
+                        <img src="img/templates/{{ template_name }}/speaker01.jpg" class="img-fluid rounded-pill p-2">
+                        <h4 class="mt-4">Juliana Chávez</h4>
+                        <p>Emprendedora</p>
+                        <div class="d-flex justify-content-center gap-2">
+                            <a href="#" target="_blank"><img src="img/templates/business/instagram.svg" class="bg-primary p-1 rounded-2" width="25" height="25" alt="icono de instagram"></a>
+                            <a href="#" target="_blank"><img src="img/templates/business/facebook.svg" class="bg-primary p-1 rounded-2" width="25" height="25" alt="icono de facebook"></a>
+                            <a href="#" target="_blank"><img src="img/templates/business/twitter.svg" class="bg-primary p-1 rounded-2" width="25" height="25" alt="icono de twitter"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-100">
+                    <div>
+                        <img src="img/templates/{{ template_name }}/speaker02.jpg" class="img-fluid rounded-pill p-2">
+                        <h4 class="mt-4">Juliana Chávez</h4>
+                        <p>Emprendedora</p>
+                        <div class="d-flex justify-content-center gap-2">
+                            <a href="#" target="_blank"><img src="img/templates/business/instagram.svg" class="bg-primary p-1 rounded-2" width="25" height="25" alt="icono de instagram"></a>
+                            <a href="#" target="_blank"><img src="img/templates/business/facebook.svg" class="bg-primary p-1 rounded-2" width="25" height="25" alt="icono de facebook"></a>
+                            <a href="#" target="_blank"><img src="img/templates/business/twitter.svg" class="bg-primary p-1 rounded-2" width="25" height="25" alt="icono de twitter"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-100">
+                    <div>
+                        <img src="img/templates/{{ template_name }}/speaker03.jpg" class="img-fluid rounded-pill p-2">
+                        <h4 class="mt-4">Juliana Chávez</h4>
+                        <p>Emprendedora</p>
+                        <div class="d-flex justify-content-center gap-2">
+                            <a href="#" target="_blank"><img src="img/templates/business/instagram.svg" class="bg-primary p-1 rounded-2" width="25" height="25" alt="icono de instagram"></a>
+                            <a href="#" target="_blank"><img src="img/templates/business/facebook.svg" class="bg-primary p-1 rounded-2" width="25" height="25" alt="icono de facebook"></a>
+                            <a href="#" target="_blank"><img src="img/templates/business/twitter.svg" class="bg-primary p-1 rounded-2" width="25" height="25" alt="icono de twitter"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-100">
+                    <div>
+                        <img src="img/templates/{{ template_name }}/informacion-evento.png" class="img-fluid rounded-pill p-2">
+                        <h4 class="mt-4">Juliana Chávez</h4>
+                        <p>Emprendedora</p>
+                        <div class="d-flex justify-content-center gap-2">
+                            <a href="#" target="_blank"><img src="img/templates/business/instagram.svg" class="bg-primary p-1 rounded-2" width="25" height="25" alt="icono de instagram"></a>
+                            <a href="#" target="_blank"><img src="img/templates/business/facebook.svg" class="bg-primary p-1 rounded-2" width="25" height="25" alt="icono de facebook"></a>
+                            <a href="#" target="_blank"><img src="img/templates/business/twitter.svg" class="bg-primary p-1 rounded-2" width="25" height="25" alt="icono de twitter"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script type="module">
+    if ( $('.speakerSlider').length > 0 ) {
+        var slider = tns({
+            container: '.speakerSlider',
+            items: 1,
+            gutter: 10,
+            controlsText: ['', ''],
+            nav: false,
+            autoplayButtonOutput: false,
+            mouseDrag: true,
+            slideBy: 1,
+            autoplay: true,
+            items: 1,
+            responsive: {
+                640: {
+                    items: 3
+                },
+                900: {
+                    items: {{ photos_quanty }}
+                }
+            }
+        });
+    }
+</script>

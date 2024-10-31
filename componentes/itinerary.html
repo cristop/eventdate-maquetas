@@ -1,9 +1,10 @@
-<section id="itinerary">
+<section id="itinerary" class="py-5">
     <div class="container">
         <div>
             <div class="row">
-                <div class="col" style="background-image: url('{{ bg }}')">
-                    <div class="ratio ratio-1x1"></div>
+                <div class="col position-relative p-sm-0">
+                    <div class="forma-linea position-absolute w-100 h-100"></div>
+                    <div class="ratio h-100 w-100 rounded-4" style="background-image: url('{{ bg }}')"></div>
                 </div>
                 <div class="col-sm-8">
                     <div>
@@ -11,11 +12,12 @@
                             <div class="icon">
                                 <img src="{{ icon }}" alt="" />
                             </div>
+                            <p class="text">{{ fecha }}</p>
                             <h3 class="title">Dirección</h3>
                             <h4 class="lugar">{{ lugar }}</h4>
                             <p>{{ direccion }}</p>
                             <div>{{ hora }}</div>
-                            <a href="#" class="btn" target="_blank">Ver ubicación</a>
+                            <a href="#" class="btn mt-3" target="_blank">Ver ubicación</a>
                         </div>
                     </div>
                 </div>
