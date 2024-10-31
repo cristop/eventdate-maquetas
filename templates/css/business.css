@@ -940,9 +940,12 @@ section#greeting .name {
     color: white;
 }
 #instagram-cumple:after {
-    content: "";
+    content: var(--circle);
     display: block;
     position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(-1) scaleY(-1);
 }
 #instagram-cumple::before{
     content: "";
@@ -955,9 +958,16 @@ section#greeting .name {
 }
 #instagram-cumple .profile-name {
     font-weight: 600;
+    max-width: 450px;
+    margin: 0 auto;
+    background-color: #31303A;
+    padding: 8px 15px;
+    border-radius: 8px;
 }
 #instagram-cumple .btn-ig {
     color: white;
+    background-color: var(--c-primary)!important;
+    margin-top: 3rem;
 }
 #instagram-cumple .icon img{
     filter: none;
@@ -968,6 +978,21 @@ section#greeting .name {
 }
 #instagram-cumple img {
     border-color: var(--c-primary) !important;
+}
+
+#awards{
+    background-color: var(--c-tertiary);
+    color: white;
+}
+#awards .container{
+    text-align: center;
+}
+#awards .title {
+    margin-bottom: 3rem;
+}
+#awards .card{
+    background-color: transparent;
+    border: 1px solid var(--c-primary);
 }
 
 section#instagram-filtro {

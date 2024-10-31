@@ -606,16 +606,11 @@ form .row .col-sm-12{
 #instagram-cumple .profile-name{
     font-weight: 700;
     color: white;
-    padding-bottom: 1.5rem;
 }
 
 #instagram-cumple .btn-ig{
     font-weight: 500;
     border-radius: 0px;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
 }
 
 #instagram-cumple .container .bg .py-4{

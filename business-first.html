@@ -292,6 +292,25 @@
 		</script>
 	<!-- /////////////////////////// -->
 
+		<!-- /////////////////////////// -->
+		<div id="awards-load"></div>
+		<script>
+		  // Cargar el contenido del archivo HTML externo
+		  $("#awards-load").load(
+			"componentes/awards.html",
+			function () {
+			  // Rellenar las variables con los valores deseados
+			  // Reemplazar las variables en el contenido cargado
+			  $(this).html(function (_, html) {
+				return html.replace(/{{\s*(\w+)\s*}}/g, function (match, key) {
+				  return data[key] || match;
+				});
+			  });
+			}
+		  );
+		</script>
+	<!-- /////////////////////////// -->
+
     <!-- /////////////////////////// -->
     <div id="playlist-load"></div>
     <script>
